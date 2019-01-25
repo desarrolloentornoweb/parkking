@@ -1,0 +1,57 @@
+<h1>Lista de estacionamientos por fecha</h1>
+<br>
+<%= form_for :lista, :html => { :method => :get, :class => "form-horizontal"}, :url => { :action => "ListarEstac"} do |l| %>
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= l.label :fechaini, "Fecha inicial" %>
+		</div>
+		<div class="col-sm-3">
+			<%= l.date_field :fechaini, {:class => "form-control" }  %>
+		</div>
+		<div class="col-sm-1">
+			<span class="glyphicon glyphicon-calendar"></span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= l.label :fechafin, "Fecha final" %>
+		</div>
+		<div class="col-sm-3">
+			<%= l.date_field :fechafin, {:class => "form-control"}  %>
+		</div>
+		<div class="col-sm-1">
+			<span class="glyphicon glyphicon-calendar"></span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-3 col-sm-5">
+			<%= l.submit "Aceptar", :class => "btn btn-info btn-lg", :onclick => "return _onclick();" %>
+			<%= l.submit "Cancelar", :class => "btn btn-info btn-lg" %>
+		</div>
+	</div>
+<% end %>
+
+<script type="text/javascript">
+	function _onclick() {
+		var fechaini = $("#lista_fechaini").val();
+
+		if (fechaini == '') {
+			alert('Ingresa una fecha inicial');
+			$("#lista_fechaini").focus();
+			return false;
+		}
+	}
+
+	function _onclick() {
+		var fechafin = $("#lista_fechafin").val();
+
+		if (fechaini == '') {
+			alert('Ingresa una fecha final');
+			$("#lista_fechafin").focus();
+			return false;
+		}
+	}
+</script>
+

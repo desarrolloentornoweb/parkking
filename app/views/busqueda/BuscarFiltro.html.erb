@@ -1,0 +1,26 @@
+<h1>Elige tu proximo estacionamiento</h1>
+<%= form_for :login, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :BuscarFiltro} do |a| %>
+<br>
+	<div class="form-group">
+		<div class="col-sm-2">
+			<br>
+			<%= a.label :ingresarbusqueda, "Ingrese su busqueda " %>
+		</div>
+	<br>
+		<div class="col-sm-6">
+			<%= a.select :todos_los_resultados, [["Distrito",1], ["Tipo",2], ["Ubicación",2], ["Precio por Hora",3], ["Puntuación",4],], {:include_blank => "Todos los resultados"}, {:class => "form-control", :placeholder => "Todos los resultados  "} %>
+	</div>
+
+	<br>
+		<div class="col-sm-9">
+			<br>
+			<%= a.text_field :tipobusqueda, {:class => "form-control", :placeholder => "Ingrese su busqueda"} %>
+		</div>
+	</div>
+	<div class="col-sm-offset-8 col-sm-2  btn-white btn-xs-block">
+		<br>
+		<%= a.submit "Buscar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+	</div>
+
+
+<% end %>

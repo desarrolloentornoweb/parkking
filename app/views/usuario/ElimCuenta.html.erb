@@ -1,0 +1,42 @@
+<h1>DAR DE BAJA A MI CUENTA</h1>
+<p>Si esta seguro de dar de baja a su cuenta ingrese lso siguientes datos y confirme</p>
+<%= form_for :upc, :html => { :method => :post }, :url => { :action => :baja } do |f| %>
+
+<div class="form-group">
+	<div class="col-sm-2">
+		<%= f.label :usuario %>
+	</div>
+	<div class="col-sm-10">
+		<%= f.text_field :usuario, { :class => "form-control", :placeholder => "Email o nombre de usuario" } %>
+	</div>
+</div>
+<div class="form-group">
+	<div class="col-sm-2">
+		<%= f.label :Password %>
+	</div>
+	<div class="col-sm-10">
+		<%= f.text_field :Password, { :type => "password", :class => "form-control", :placeholder => "Tu contrasena" } %>
+	</div>		
+</div>
+<div class="form-group">
+	<div class="col-sm-2">
+		<%= f.label :motivo %>
+	</div>
+	<div class="col-sm-10">
+		<%= f.text_area :motivo, { :rows => 4, :class => "form-control" } %>
+	</div>	
+</div>
+<br>
+<div class="form-group">
+	<div class="col-sm-2">
+	</div>		
+	<div class="col-sm-4">
+		<%= f.submit "CONFIRMAR", :class => "btn btn-primary" %>
+	</div>
+	<div class="col-sm-4">
+		<%= f.submit "REGRESAR", :class => "btn btn-primary" %>
+	</div>
+	<div class="col-sm-2">
+	</div>		
+</div>
+<% end %>

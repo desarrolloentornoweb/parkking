@@ -1,0 +1,126 @@
+<h1>DUEÑO</h1>
+<p>Aqui usted encontrara las opciones para poder manejar su cuenta y alquilar estacionamientos</p>
+<%= form_for :upc, :html => { :method => :get, :class => "form-horizontal" } do |f| %>
+<div class="form-group">
+	<div class="col-sm-offset-10 col-sm-2">		
+		<%= link_to "Cambiar Contraseña", { :controller => "usuario", :action => "CambPass" } %>	
+		<%= link_to "Editar Perfil", { :controller => "usuario", :action => "EditPerfil" } %>
+		<%= link_to "Dar baja", { :controller => "usuario", :action => "ElimCuenta" } %>
+	</div>
+</div>
+<div class="form-group">
+	<div class="col-sm-12">		
+		<%= f.submit "Publicar estacionamiento", :class => "btn btn-primary btn-block" %>
+	</div>
+</div>
+<div class="form-group">
+	<div class="col-sm-4">
+		<img src="/assets/background.jpg" class="img-thumbnail" alt="Cinque Terre">
+	</div>
+	<div class="col-sm-6">
+		<h1>Alquiler de estacionamiento en Magdalena del MAR</h1>
+		<p>S/. 200.00</p>
+		<p>Lima-Lima-Magdalena del Mar</p>
+		<p>Av El morro 655</p>
+		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
+		<p>Interior</p>
+	</div>
+	<div class="col-sm-2">
+		<br>
+		<br>
+		<%= link_to "Ver mas", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Editar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Servicios Adicionales", { :controller => "home", :action => "Nosotros" } %>
+	</div>		
+</div>
+<div class="form-group">
+	<div class="col-sm-4">
+		<img src="/assets/background.jpg" class="img-thumbnail" alt="Cinque Terre">
+	</div>
+	<div class="col-sm-6">
+		<h1>Alquiler de estacionamiento en Magdalena del MAR</h1>
+		<p>S/. 200.00</p>
+		<p>Lima-Lima-Magdalena del Mar</p>
+		<p>Av El morro 655</p>
+		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
+		<p>Interior</p>
+	</div>
+	<div class="col-sm-2">
+		<br>
+		<br>
+		<%= link_to "Ver mas", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Editar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Servicios Adicionales", { :controller => "home", :action => "Nosotros" } %>
+	</div>		
+</div>
+<div class="form-group">
+	<div class="col-sm-4">
+		<img src="/assets/background.jpg" class="img-thumbnail" alt="Cinque Terre">
+	</div>
+	<div class="col-sm-6">
+		<h1>Alquiler de estacionamiento en Magdalena del MAR</h1>
+		<p>S/. 200.00</p>
+		<p>Lima-Lima-Magdalena del Mar</p>
+		<p>Av El morro 655</p>
+		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
+		<p>Interior</p>
+	</div>
+	<div class="col-sm-2">
+		<br>
+		<br>
+		<%= link_to "Ver mas", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Editar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Servicios Adicionales", { :controller => "home", :action => "Nosotros" } %>
+	</div>	
+</div>
+<div class="form-group">
+	<div class="col-sm-4">
+		<img src="/assets/background.jpg" class="img-thumbnail" alt="Cinque Terre">
+	</div>
+	<div class="col-sm-6">
+		<h1>Alquiler de estacionamiento en Magdalena del MAR</h1>
+		<p>S/. 200.00</p>
+		<p>Lima-Lima-Magdalena del Mar</p>
+		<p>Av El morro 655</p>
+		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
+		<p>Interior</p>
+	</div>
+	<div class="col-sm-2">
+		<br>
+		<br>
+		<%= link_to "Ver mas", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Editar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
+		<br>
+		<br>
+		<%= link_to "Servicios Adicionales", { :controller => "home", :action => "Nosotros" } %>
+	</div>	
+</div>
+
+<% end %>
+

@@ -1,0 +1,89 @@
+<h1>Alquila tu Estacionamiento</h1>
+<%= form_for :alquilar, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :RegAlquiler} do |a| %>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :fecha, "Fecha" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.date_field :fecha, {:class => "form-control"} %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :hora, "Hora" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.number_field :hora, {:class => "form-control", :min => 1, :max => 24 } %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :tpago, "Tipo de pago" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.select :tpago, [["Efectivo",1], ["Tarjeta",2]], {:include_blank => "Seleccionar"}, {:class => "form-control", :placeholder => "Seleccione un tipo de pago"} %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :sadicionales, "Servicios Adicionales" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.label :lavado, { :class => "checkbox" } do %>
+			<%= a.check_box :lavado, {}, "Lavado", nil %>
+			Lavado
+			<% end %>
+
+			<%= a.label :encerado, { :class => "checkbox" } do %>
+			<%= a.check_box :encerado, {}, "Encerado", nil %>
+			Encerado
+			<% end %>
+
+			<%= a.label :revison, { :class => "checkbox" } do %>
+			<%= a.check_box :revison, {}, "Revisión", nil %>
+			Revisión mecánica
+			<% end %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-3 col-sm-9">
+			<%= a.submit "Aceptar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+			<%= a.submit "Cancelar", :class => "btn btn-info" %>
+		</div>	
+	</div>
+	
+<% end %>
+
+<script type="text/javascript">
+		function _onclick() {
+			var fecha = $("#alquilar_fecha").val();
+
+			if (fecha == '') {
+				alert('Falta ingresar la fecha de alquiler');
+				$("#alquilar_fecha").focus();
+				return false;
+			}
+		}
+
+		function _onclick() {
+			var hora = $("#alquilar_hora").val();
+
+			if (hora == '') {
+				alert('Falta ingresar la hora de alquiler');
+				$("#alquilar_hora").focus();
+				return false;
+			}
+		}
+
+		function _onclick() {
+			var tpago = $("#alquilar_pago").val();
+
+			if (tpago == '') {
+				alert('Ingrese el tipo de pago');
+				$("#alquilar_pago").focus();
+				return false
+			}
+		}
+</script>
+
