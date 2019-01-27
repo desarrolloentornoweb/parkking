@@ -1,2 +1,125 @@
-<h1>ServAdicionales#ServEstac</h1>
-<p>Find me in app/views/serv_adicionales/ServEstac.html.erb</p>
+<div class="text-justify">
+	<h1>LISTA Servicios Adicionales</h1>
+
+</div>
+<%= form_for :alquilar, :html => {:method => :post, :class => "form-horizontal"} do |a| %>
+<div class="form-group">
+  <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+
+      <%= a.label :sadicionales, "Servicios Adicionales" %>
+    </div>
+    <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      <%= a.label :lavado, { :class => "checkbox" } do %>
+      <%= a.check_box :lavado, {}, "Lavado", nil %>
+      Lavado
+      <% end %>
+
+      <%= a.label :encerado, { :class => "checkbox" } do %>
+      <%= a.check_box :encerado, {}, "Encerado", nil %>
+      Encerado
+      <% end %>
+
+      <%= a.label :revison, { :class => "checkbox" } do %>
+      <%= a.check_box :revison, {}, "Revisión", nil %>
+      Revisión mecánica
+      <% end %>
+    </div>
+    <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      <%= link_to "Agregre un servicio que no esta en la lista", { :controller => "serv_adicionales", :action => "RegServicio" } %>
+    </div>
+    <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <%= a.submit "Aceptar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+      <%= a.submit "Cancelar", :class => "btn btn-info" %>
+    </div>  
+  </div>
+
+</div>
+<% end %>
+<!--Imágenes-->
+<div class="form-group col-sm-offset-3 col-sm-6 col-sm-offset-3">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag "", size: "800x600" %>
+      </div>
+
+      <div class="item">
+        <%= image_tag "", size: "800x600" %>
+      </div>
+
+      <div class="item">
+        <%= image_tag "", size: "800x600" %>
+      </div>
+      <div class="item">
+        <%= image_tag "", size: "800x600" %>
+      </div>
+      <div class="item">
+        <%= image_tag "", size: "800x600" %>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- Comentarios -->
+<div class="form-group">
+  <div class="container">
+    <div class="row text-center col-sm-12">
+      <h2>Comentarios</h2>
+    </div>  
+	<div class="media col-sm-12">
+		<br>
+		<div class="media-left">
+			<%= image_tag "Usuario01.jpg", size:"70x80" %>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">Melcochita <small><i>Publicado el 12 de Enero del 2019</i></small></h4>
+			<br>
+			<p>Muy buen servicio, NO VAYAN....</p>
+		</div>
+	</div>
+	<!-- Right-aligned -->
+	<div class="media col-sm-12">
+		<br>
+		<div class="media-left">
+			<%= image_tag "Usuario02.jpg", size: "70x80" %>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">La ChiHuan<small><i>Publicado el 15 de Enero del 2019</i></h4>
+			<br>
+			<p>Dan buen servicio pero estoy chihuan...</p>
+		</div>
+	<div class="media col-sm-12">
+		<br>
+		<div class="media-left">
+			<%= image_tag "Usuario03.jpg", size: "70x80" %>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">RicoMcPato<small><i>Publicado el 2 de Enero del 2019</i></small></h4>
+			<br>
+			<p>El Precio Justo para mi billetera</p>
+		</div>
+	</div>
+  </div>
+</div>

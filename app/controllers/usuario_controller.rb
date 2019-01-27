@@ -1,4 +1,6 @@
 class UsuarioController < ApplicationController
+  layout 'dueño', except: [:PrincipalCli]
+  layout 'cliente', except: [:PrincipalDue]
   def CambPass
   end
 

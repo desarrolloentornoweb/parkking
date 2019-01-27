@@ -18,6 +18,14 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-3">
+			<%= a.label :nhora, "Número de horas" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.number_field :nhora, {:class => "form-control", :min => 1, :max => 24 } %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
 			<%= a.label :tpago, "Tipo de pago" %>
 		</div>
 		<div class="col-sm-3">
@@ -62,26 +70,24 @@
 			if (fecha == '') {
 				alert('Falta ingresar la fecha de alquiler');
 				$("#alquilar_fecha").focus();
-				return false;
 			}
-		}
-
-		function _onclick() {
 			var hora = $("#alquilar_hora").val();
 
 			if (hora == '') {
 				alert('Falta ingresar la hora de alquiler');
 				$("#alquilar_hora").focus();
-				return false;
 			}
-		}
+			var nhora = $("#alquilar_nhora").val();
 
-		function _onclick() {
-			var tpago = $("#alquilar_pago").val();
+			if (nhora == '') {
+				alert('Falta ingresar el número de horas.');
+				$("#alquilar_nhora").focus();
+			}
+			var tpago = $("#alquilar_tpago").val();
 
 			if (tpago == '') {
 				alert('Ingrese el tipo de pago');
-				$("#alquilar_pago").focus();
+				$("#alquilar_tpago").focus();
 				return false
 			}
 		}

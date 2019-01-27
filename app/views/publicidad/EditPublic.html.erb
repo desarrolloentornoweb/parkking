@@ -1,2 +1,210 @@
-<h1>Publicidad#EditPublic</h1>
-<p>Find me in app/views/publicidad/EditPublic.html.erb</p>
+<h1>Editar datos del segmento Publicitario</h1>
+<br>
+
+<%= form_for :registro, :html => { :method => :post, :class => "form-horizontal"}, :url => {:controller => :usuario, :action => :PrincipalDue} do |r| %>
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :nombre, "Nombre de Contratante" %>
+		</div>
+		<div class="col-sm-10">
+			<%= r.text_field :nombre, {:class => "form-control", :placeholder => "Nombre del estacionamiento"} %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :departamento, "Departamento" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.select :departamento, [["Amazonas",1], ["Áncash",2], ["Apurímac",3], ["Arequipa",4], ["Ayacucho",5], ["Cajamarca",6], ["Cusco",7], ["huancavelica",8], ["Huánuco",9], ["Ica",10], ["Junín",11], ["La Libertad",12], ["Lambayeque",13], ["Lima",14], ["Loreto",15], ["Madre de Dios",16], ["Moquegua",17], ["Pasco",18], ["Piura",19], ["Puno",20], ["San Martín",21], ["Tacna",22], ["Tumbes",23], ["Ucayali",24]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+		</div>
+
+		<div class="col-sm-2">
+			<%= r.label :provincia, "Provincia" %>
+		</div>
+
+		<div class="col-sm-4">
+			<%= r.select :provincia, [["Lima",1], ["Cusco",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+			<!--
+			<%= r.select :provincia, [["Arequipa",1], ["Camana",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+			<%= r.select :provincia, [["Cajabamba",1], ["Cutervo",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+			<%= r.select :provincia, [["Acomayo",1], ["Cusco",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+			<%= r.select :provincia, [["Ambo",1], ["Huánuco",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+			<%= r.select :provincia, [["Ancón",1], ["San Isidro",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+		-->
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :distrito, "Distrito" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.select :distrito, [["Ancón",1], ["Ate",2], ["Barranco",3], ["Breña",4], ["Carabayllo",5], ["Chaclacayo",6], ["Chorrillos",7], ["Cieneguilla",8], ["Comas",9], ["El Agustino",10]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.label :direccion, "Dirección" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.text_field :direccion, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-8">
+			<%= r.label :mapa, "Dele click en el boton para seleccionar la ubicación de su estacionamiento en el mapa" %>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Buscar mapa</button>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :latitud, "Empresa Privada NO PYME" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.text_field :latitud, { :class => "form-control"} %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.label :longitud, "Empresa Privada PYME" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.text_field :longitud, { :class => "form-control"} %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :telf, "Teléfono" %>
+		</div>
+		<div class="col-sm-10">
+			<%= r.phone_field :telf, { :class => "text_field", :placeholder => "Ingrese número telefónico"} %>
+		</div>
+	</div>
+
+	<p><b>Datos Genericos Publicitarios</b></p>
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :largo, "Formato Impreso" %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.number_field :largo, { :class => "text_field", :step => 0.01, :placeholder => "tiraje"} %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.label :ancho, "Virtual" %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.number_field :ancho, { :class => "text_field", :step => 0.01, :placeholder => "dias vigencia internet"} %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.label :alto, "Frecuencia de Publicacion" %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.number_field :alto, { :class => "text_field", :step => 0.01, :placeholder => "En dias"} %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :precio, "Presupuesto Aproximado (S/.)" %>
+		</div>
+		<div class="col-sm-10">
+			<%= r.number_field :precio, { :class => "text_field", :step => 0.01, :placeholder => "Ingrese el monto"} %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :img, "Agregar Logo" %>
+		</div>
+		<div class="col-sm-10">
+			<%= r.file_field :img %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-8 col-sm-4">
+			<%= r.submit "Guardar", :class => "btn btn-info btn-lg", :onclick => "return _onclick1(); _onclick2()" %>,
+			<%= r.submit "Cancelar", :class => "btn btn-info btn-lg" %>
+		</div>
+	</div>
+<% end %>
+
+<script type="text/javascript">
+	function _onclick1() {
+		var nombre = $("#registro_nombre").val();
+
+		if (nombre == '') {
+			$("#registro_nombre").focus();
+			return false;
+		}
+		var telf = $("#registro_telf").val();
+
+		if (telf == '') {
+			alert('Falta ingresar un numero de teléfono');
+			$("#registro_telf").focus();
+			return false;
+		}
+	}
+
+	function _onclick2() {
+		
+	}
+</script>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Seleccionar ubicación</h4>
+      </div>
+      <div class="modal-body">
+        <div id="map" style="width:100%;height: 400px">
+        	
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+      var map;
+      var marker;
+      function initMap() {
+		  var myLatLng = {lat: -12.041876, lng: -77.043035};
+
+		  map = new google.maps.Map(document.getElementById('map'), {
+		    zoom: 16,
+		    center: myLatLng
+		  });
+		  google.maps.event.addListener(map, 'click', function (event) {
+		  	$("#registro_latitud").val(event.latLng.lat)
+		  	$("#registro_longitud").val(event.latLng.lng)
+		  	 _onclick(event.latLng);});
+		}
+
+	function _onclick(myLatLng) {
+		if (marker != undefined ) {
+			marker.setMap(null)
+		}
+		marker = new google.maps.Marker({
+		    position: myLatLng,
+		    map: map,
+		    title: 'Hello World!'
+		  });
+	}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW_fSpTSF90-1M5zQzlS5KZJ9hqiilGHk&callback=initMap"
+    async defer></script>
+
+
+

@@ -1,6 +1,7 @@
 <style>
+
   body {
-    background-image: url(/assets/INDEX.jpg);
+    background-image: url(/assets/INDEX.jpeg);
   }
 
   html, body{
@@ -26,18 +27,41 @@
 
 <%= form_for :upc, :html => { :method => :get, :class => "form-horizontal" }, :url => { :controller => "home", :action => "Index" } do |f| %>
 
+
+
+<div class="container">
+ <center><h1><p class="bg-info">BUSCA TU ESTACIONAMIENTO</p></h1></center>
+</div>
+<br>
+</br>
+
+
 <div class="vertical-center">
+  <div class="container">
+      <div class="row">
+        <div class="input-group col-sm-offset-2 col-sm-8 col-sm-offset-2">
+          <%= f.select :selecciontipo, [["Distrito",1],["Tipo",2], ["Ubicación",3],["Tipo",4],["Precio por Hora",5],["Puntuación",4]], {:include_blank => "Buscar por"},{:class=>"form-control input-lg"} %>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="vertical-center">
+  <br>
   <div class="container">
     <div class="row">
       <div class="input-group col-sm-offset-2 col-sm-8 col-sm-offset-2">
-        <%= f.text_field :direccion, { :class => "form-control input-lg", :placeholder => "Ingrese su busqueda" } %>
+        <%= f.text_field :direccion, { :class => "form-control input-lg", :placeholder => "Ingrese una palabra clave" } %>
         <span class="input-group-btn">
-          <%= f.submit "Buscar", :class => "btn btn-primary input-lg", :onclick => "return _onclickModal();", :id => "btnBuscar" %>
+          <%= link_to "Buscar", {:controller => "busqueda", :action => "BuscarFiltro"}, {:class => "btn btn-primary input-lg"} %>
+          </form>"
         </span>
       </div>
     </div>
   </div>
+  </br>
 </div>
+
 
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -55,7 +79,6 @@
     </div>
   </div>
 </div>
-
 <% end %>
 
 <script type="text/javascript">
@@ -65,3 +88,4 @@
     }
   });
 </script>
+

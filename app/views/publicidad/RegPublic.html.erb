@@ -1,2 +1,75 @@
-<h1>Publicidad#RegPublic</h1>
-<p>Find me in app/views/publicidad/RegPublic.html.erb</p>
+ height="100"/>
+<h1>Mantenimiento de Publicidad</h1>
+<%= form_for :Servicios, :html => {:method => :post, :class => "form-horizontal"}, :url => {:controller=>:publicidad, :action => :RegPublic} do |a| %>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :fecha, "Fecha de Inicio" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.date_field :fecha, {:class => "form-control"} %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :fecha, "Fecha de Fin" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.date_field :fecha, {:class => "form-control"} %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :titulo, "Titulo" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.text_field :itulo, {:class => "form-control", :min => 7, :max => 24 } %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :contenido, "Contenido" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.text_field :contenido, {:class => "form-control", :min => 7, :max => 240 } %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :tpublicidad, "Ubicacion" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.select :tpublicidad, [["Pagina Principal",1], ["Pagina de Cliente",2],["Pagina del Dueño",3]], {:include_blank => "Seleccionar"}, {:class => "form-control", :placeholder => "Seleccione un tipo de publicidad"} %>
+		</div>
+	</div>
+	  
+	<div class="form-group">
+		<div class="col-sm-offset-3 col-sm-9">
+			<%= a.submit "Aceptar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+			<%= a.submit "Cancelar", :class => "btn btn-info" %>
+		</div>	
+	</div>
+	
+<% end %>
+
+<script type="text/javascript">
+		function _onclick() {
+			var fecha = $("#alquilar_fecha").val();
+
+			if (fecha == '') {
+				alert('Falta ingresar la fecha de alquiler');
+				$("#alquilar_fecha").focus();
+				return false;
+			}
+		}
+
+		
+		function _onclick() {
+			var tpublicidad = $("#alquilar_pago").val();
+
+			if (tpago == '') {
+				alert('Ingrese el tipo de publicidad');
+				$("#alquilar_pago").focus();
+				return false
+			}
+		}
+</script>

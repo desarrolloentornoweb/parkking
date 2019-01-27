@@ -1,2 +1,36 @@
-<h1>Comentario#RegComentario</h1>
-<p>Find me in app/views/comentario/RegComentario.html.erb</p>
+<h1>Registre su Comentario </h1>
+	<%= form_for :comentario, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :RegComentario} do |a| %>
+			</br>
+
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :puntuacion, "Puntuación" %>
+			    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+			    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+			    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+			    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+			    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+		</div>
+		<div class="col-sm-9">
+			<%= a.select :puntuacion, [["(5) - Excelente",1], ["(4) - Bueno",2],["(3) - Regular",3],["(2) - Malo",2],["(1) - Muy Malo",2]], {:include_blank => "Seleccionar del 1 al 5"}, {:class => "form-control", :placeholder => "Seleccione"} %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :comentario, "Comentar" %>
+	</div>
+
+ 		<form>
+   	 	<div class="form-group col-sm-9">
+     	<textarea class="form-control" rows="8" id="comment"></textarea>
+		</br>
+	</div>
+	<div class="col-sm-offset-8 col-sm-2">
+		<br>
+		<%= a.submit "Enviar comentario ", :class => "btn btn-info", :onclick => "return _onclick();" %>
+	</div>
+	<div class="col-sm-2">
+		<br>
+		<%= a.submit "Cancelar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+	</div>
+<% end %>

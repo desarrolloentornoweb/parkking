@@ -1,4 +1,4 @@
-<%= form_for :upc, :html => { :method => :post }, :url => { :action => :modificar } do |f| %>
+<%= form_for :upc, :html => { :method => :post, :class => "form-horizontal"}, :url => { :action => :modificar } do |f| %>
 <div class="form-group">
 	<div class="col-sm-2">
 		<%= f.label :nombres, "Nombres" %>
@@ -88,3 +88,4 @@
 
 
 <% end %>
+

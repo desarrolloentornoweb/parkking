@@ -1,35 +1,24 @@
-<h1>Recuperar usuario</h1>
-<%= form_for :upc, :html => { :method => :post }, :url => { :action => :recuperar } do |f| %>
+<h1>Restablecer Contraseña</h1>
+<%= form_for :recuperarclave, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :RecupContr} do |a| %>
 
-<div class="form-group">
-	<div class="col-sm-2">
-		<%= f.label :usuario %>
+	<div class="form-group">
+		
+		<div class="text_field">Ingrese la cuenta asociada para enviarle la nueva contraseña </div>
+		<br>
+		<div class="col-sm-3">
+			<%= a.label :correo, "Dirección de su cuenta" %>
+		</div>
+		<div class="col-sm-9">
+			<%= a.text_field :correo, {:class => "form-control", :placeholder => ""} %>
+		</div>
+		</br>
 	</div>
-	<div class="col-sm-10">
-		<%= f.text_field :usuario, { :class => "form-control", :placeholder => "Email o nombre de usuario" } %>
-	</div>
-</div>
-
-<div class="form-group">
-	<div class="col-sm-2">
-		<%= f.label :respuesta,"Respuesta pregunta secreta" %>
-	</div>
-	<div class="col-sm-10">
-		<%= f.text_field :respuesta, { :class => "form-control", :placeholder => "Ingrese la resuesta de su pregunta secreta" } %>
-	</div>
-</div>
-
-<br>
-<div class="form-group">
-	<div class="col-sm-2">
-	</div>		
-	<div class="col-sm-4">
-		<%= f.submit "VERIFICAR", :class => "btn btn-primary" %>
-	</div>
-	<div class="col-sm-4">
-		<%= f.submit "SALIR", :class => "btn btn-primary" %>
+	<div class="col-sm-offset-8 col-sm-2">
+		<br>
+		<%= a.submit "Restaurar Contraseña", :class => "btn btn-info", :onclick => "return _onclick();" %>
 	</div>
 	<div class="col-sm-2">
-	</div>		
-</div>
+		<br>
+		<%= a.submit "Cancelar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+	</div>
 <% end %>

@@ -1,2 +1,47 @@
-<h1>ServAdicionales#RegServicio</h1>
-<p>Find me in app/views/serv_adicionales/RegServicio.html.erb</p>
+<div class="text-justify">
+  <h4>****************************************</h4>	
+  <h3>       Nuevo Servicio Adicional         </h3>
+  <h4>****************************************</h4>
+</div>
+
+<%= form_for :Servicios, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :ServEstac} do |a| %>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :fecha, "Nombre del nuevo Servicio" %>
+		</div>
+		<div class="col-sm-3">
+      <%= a.text_field :nuevoservicio, {:class => "form-control", :min => 8, :max => 240 } %>
+    </div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
+			<%= a.label :precios, "Precio sugerido nuevo servicio" %>
+		</div>
+		<div class="col-sm-3">
+			<%= a.text_field :precios, {:class => "form-control",:min => 7, :max => 24 }  %>
+		</div>
+	</div>
+	
+	
+	  
+	<div class="form-group">
+		<div class="col-sm-offset-3 col-sm-9">
+			<%= a.submit "Aceptar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+			<%= a.submit "Cancelar", :class => "btn btn-info" %>
+		</div>	
+	</div>
+	
+<% end %>
+
+<script type="text/javascript">
+		function _onclick() {
+			var fecha = $("#alquilar_fecha").val();
+
+			if (fecha == '') {
+				alert('Falta ingresar la fecha de alquiler');
+				$("#alquilar_fecha").focus();
+				return false;
+			}
+		}
+		
+</script>

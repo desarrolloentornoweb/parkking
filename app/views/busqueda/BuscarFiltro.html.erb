@@ -1,26 +1,133 @@
-<h1>Elige tu proximo estacionamiento</h1>
-<%= form_for :login, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :BuscarFiltro} do |a| %>
-<br>
-	<div class="form-group">
-		<div class="col-sm-2">
-			<br>
-			<%= a.label :ingresarbusqueda, "Ingrese su busqueda " %>
-		</div>
-	<br>
-		<div class="col-sm-6">
-			<%= a.select :todos_los_resultados, [["Distrito",1], ["Tipo",2], ["Ubicación",2], ["Precio por Hora",3], ["Puntuación",4],], {:include_blank => "Todos los resultados"}, {:class => "form-control", :placeholder => "Todos los resultados  "} %>
-	</div>
+<h1>BUSQUEDA AVANZADA</h1>
+<p>Aqui usted encontrara las opciones para poder manejar su cuenta y alquilar estacionamientos</p>
+<%= form_for :upc, :html => { :method => :get, :class => "form-horizontal" } do |f| %>
 
-	<br>
-		<div class="col-sm-9">
-			<br>
-			<%= a.text_field :tipobusqueda, {:class => "form-control", :placeholder => "Ingrese su busqueda"} %>
-		</div>
-	</div>
-	<div class="col-sm-offset-8 col-sm-2  btn-white btn-xs-block">
-		<br>
-		<%= a.submit "Buscar", :class => "btn btn-info", :onclick => "return _onclick();" %>
-	</div>
+<div class="form-group">
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">FILTRAR POR</div>
+  	     <%= f.label :todoslosresultados, { :class => "radio-inline"} do %>
+    	     <%= f.radio_button :todoslosresultados, "ValorSeleccionado" %>
+    	     Todos los resultados 
+         <% end %>
+    
+
+      <div class="panel-heading">CATEGORIAS</div>
+        <div class="container">
+            <h4>TIPO</h4>
+
+                <div class="checkbox">
+                   <label><input type="checkbox" value="">Interior</label>
+                </div>
+
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Exterior</label>
+                </div>
+
+                  <div class="checkbox">
+                <label><input type="checkbox" value="">Aire Libre</label>
+                </div>
+
+            <h4>UBICACIÓN</h4>
+           
+                <div class="checkbox">
+                   <label><input type="checkbox" value="">Primer Piso</label>
+                </div>
+
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Segundo Piso</label>
+                </div>
+
+                  <div class="checkbox">
+                <label><input type="checkbox" value="">Sótano</label>
+                </div>
+
+            <br>
+            <h4>CALIFICACIÓN</h4>
+        
+                <div class="checkbox">
+
+                   <label><input type="checkbox" value="">1</label>
+                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                </div>
+
+                <div class="checkbox">
+                <label><input type="checkbox" value="">2</label>
+                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                </div>
+
+                  <div class="checkbox">
+                <label><input type="checkbox" value="">3</label>
+                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                </div>
+
+                <div class="checkbox">
+                <label><input type="checkbox" value="">4</label>
+                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+
+                </div>
+
+                <div class="checkbox">
+                <label><input type="checkbox" value="">5</label>
+                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                     <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                </div>
+
+             <br>
+            <h4>DISTRITO</h4>
+            <div class="col-sm-3">       
+            <%= f.select :documentos, [["Lima",1],["Callao",2],["Cercado",3],["SMP",2],["SJL",2],["Surco",2]], {:include_blank => "Seleccione"},{:class=>"form-control"} %>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+    <div class="col-sm-4">
+      <img src="/assets/img02.jpg" class="img-thumbnail" alt="Cinque Terre">
+    </div>
+    <div class="col-sm-4">
+      <h1>Alquiler de estacionamiento en Magdalena del MAR</h1>
+      <p>S/. 200.00</p>
+      <p>Lima-Lima-Magdalena del Mar</p>
+      <p>Av El morro 655</p>
+      <p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
+      <p>Interior</p>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="/assets/img03.jpg" class="img-thumbnail" alt="Cinque Terre">
+    </div>
+    <div class="col-sm-4">
+      <h1>Alquiler de estacionamiento en Cercado de Lima </h1>
+      <p>S/. 100.00</p>
+      <p>Lima-Lima-Cercado de Lima</p>
+      <p>Av Jiron de la Unión </p>
+      <p>Largo:4mtrs Alto:2mtrs Ancho:3mtrs</p>
+      <p>Interior</p>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="/assets/img04.jpg" class="img-thumbnail" alt="Cinque Terre">
+    </div>
+    <div class="col-sm-4">
+      <h1>Alquiler de estacionamiento en Surco</h1>
+      <p>S/. 150.00</p>
+      <p>Lima-Lima-Surco</p>
+      <p>Av Primavera </p>
+      <p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
+      <p>Interior</p>
+    </div>
 
 
+</div>
 <% end %>

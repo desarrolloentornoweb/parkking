@@ -11,7 +11,11 @@ class SeguridadController < ApplicationController
   	if session[:usuario]=="cliente@gmail.com"
   		render "usuario/PrincipalCli"
   	else
-  		render "usuario/PrincipalDue"
+        if session[:usuario]=="dueño@gmail.com"
+  		  render "usuario/PrincipalDue"
+      else
+        render "publicidad/RegPublic"
+       end
   	end  		
   end
   

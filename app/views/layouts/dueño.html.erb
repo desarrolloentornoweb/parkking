@@ -31,22 +31,25 @@
           <li id="m1"><%= link_to "Nosotros", { :controller => "home", :action => "Nosotros" } %></li>
           <li id="m2"><%= link_to "Contáctenos", { :controller => "home", :action => "Contactenos" } %></li>
         </ul>
+
         <ul class="nav navbar-nav navbar-right">
           <li><a><span class="glyphicon"></span>Bienvenido: <%= session[:usuario] %> </a></li>
-          <li><%= link_to " Registrarse", { :controller => "usuario", :action => "CrearCuenta" },:class => "glyphicon glyphicon-user" %>
-          </li>          
-          <li><%= link_to " Ingresar", { :controller => "seguridad", :action => "Login" },:class => "glyphicon glyphicon-log-in" %>
+  
+            <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalCli" },:class => "glyphicon glyphicon-home" %>
+            </li>
+            <<li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalDue" },:class => "glyphicon glyphicon-home" %>
+            </li>k
+
+          <li><%= link_to " Salir", { :controller => "home", :action => "Index" },:class => "glyphicon glyphicon-off" %>
           </li>
         </ul>
+        
       </div>
     </nav>
     
-    <div class="container"> 
+    <div class="container">
+      <h1><%= yield :header_title %> <small><%= yield :header_sub_title %></small></h1>
       <%= yield %>
-    </div>
-    <br>
-    <div class="container text-center"> 
-      <img src="/assets/img12.jpg" class="img-thumbnail" alt="Cinque Terre">
     </div>
   </body>
 </html>

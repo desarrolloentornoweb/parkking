@@ -4,6 +4,10 @@ class HomeController < ApplicationController
   end
 
   def Contactenos
+  	
+  end
+  def EnvioContactenos
+  	render "home/Index"
   end
 
   def Nosotros

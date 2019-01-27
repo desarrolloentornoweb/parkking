@@ -129,28 +129,91 @@
 			<%= r.select :distrito, [["Ancón",1], ["Ate",2], ["Barranco",3], ["Breña",4], ["Carabayllo",5], ["Chaclacayo",6], ["Chorrillos",7], ["Cieneguilla",8], ["Comas",9], ["El Agustino",10]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 		</div>
 		<div class="col-sm-2">
-			<%= r.label :distrito, "Distrito" %>
+			<%= r.label :dirección, "Dirección" %>
 		</div>
 		<div class="col-sm-4">
-			<%= r.text_field :distrito, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
+			<%= r.text_field :dirección, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-8">
+			<%= r.label :mapa, "Dele click en el boton para seleccionar la ubicación de su estacionamiento en el mapa" %>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Buscar mapa</button>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-2">
+			<%= r.label :latitud, "Latitud" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.text_field :latitud, { :class => "form-control"} %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.label :longitud, "Longitud" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.text_field :longitud, { :class => "form-control"} %>
 		</div>
 	</div>
 
 	<div class="form-group">
 		<div class="col-sm-2">
-			<%= r.label :google, "Dirección en Google Maps" %>
+			<%= r.label :dias, "Horario de atención" %>
 		</div>
-		<div class="col-sm-10">
-			<%= r.text_field :google, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
+		<div class="col-sm-2">
+			<%= r.label :lunes, { :class => "checkbox" } do %>
+			<%= r.check_box :lunes, {}, "Lunes", nil %>
+			Lunes
+			<% end %>
+
+			<%= r.label :martes, { :class => "checkbox" } do %>
+			<%= r.check_box :martes, {}, "Martes", nil %>
+			Martes
+			<% end %>
+
+			<%= r.label :miercoles, { :class => "checkbox" } do %>
+			<%= r.check_box :miercoles, {}, "Miércoles", nil %>
+			Miércoles
+			<% end %>
+
+			<%= r.label :jueves, { :class => "checkbox" } do %>
+			<%= r.check_box :jueves, {}, "Jueves", nil %>
+			Jueves
+			<% end %>
+
+			<%= r.label :viernes, { :class => "checkbox" } do %>
+			<%= r.check_box :viernes, {}, "Viernes", nil %>
+			Viernes
+			<% end %>
+
+			<%= r.label :sabado, { :class => "checkbox" } do %>
+			<%= r.check_box :sabado, {}, "Sábado", nil %>
+			Sábado
+			<% end %>
+
+			<%= r.label :domingo, { :class => "checkbox" } do %>
+			<%= r.check_box :domingo, {}, "Domingo", nil %>
+			Domingo
+			<% end %>
 		</div>
 	</div>
+
 
 	<div class="form-group">
 		<div class="col-sm-2">
 			<%= r.label :telf, "Teléfono" %>
 		</div>
-		<div class="col-sm-10">
-			<%= r.phone_field :telf, { :class => "text_field", :placeholder => "Ingrese número de teléfono"} %>
+		<div class="col-sm-4">
+			<%= r.phone_field :telf, { :class => "text_field", :placeholder => "Ingrese número telefónico"} %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.label :nespac, "Número de espacios" %>
+		</div>
+		<div class="col-sm-4">
+			<%= r.number_field :nespac, { :class => "text_field", :placeholder => "Ingrese el número de espacios"} %>
 		</div>
 	</div>
 
@@ -194,26 +257,27 @@
 		</div>
 	</div>
 
+	<div class="form-group col-sm-offset-2 col-sm-10">
+		<%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "RegServicio"}, {:class => "btn btn-info"} %>
+	</div>
+
 	<div class="form-group">
-		<div class="col-sm-offset-8 col-sm-4">
-			<%= r.submit "Guardar", :class => "btn btn-info btn-lg" %>,
+		<div class="col-sm-offset-2 col-sm-10">
+			<%= r.submit "Guardar", :class => "btn btn-info btn-lg", :onclick => "return _onclick1(); _onclick2()" %>,
 			<%= r.submit "Cancelar", :class => "btn btn-info btn-lg" %>
 		</div>
 	</div>
 <% end %>
 
 <script type="text/javascript">
-	function _onclick() {
+	function _onclick1() {
 		var nombre = $("#registro_nombre").val();
 
 		if (nombre == '') {
-			alert('Falta ingresar el nombre');
+			alert('Ingresa el nombre');
 			$("#registro_nombre").focus();
 			return false;
 		}
-	}
-
-	function _onclick() {
 		var telf = $("#registro_telf").val();
 
 		if (telf == '') {
@@ -222,4 +286,65 @@
 			return false;
 		}
 	}
+
+	function _onclick2() {
+		
+	}
 </script>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Seleccionar ubicación</h4>
+      </div>
+      <div class="modal-body">
+        <div id="map" style="width:100%;height: 400px">
+        	
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+      var map;
+      var marker;
+      function initMap() {
+		  var myLatLng = {lat: -12.041876, lng: -77.043035};
+
+		  map = new google.maps.Map(document.getElementById('map'), {
+		    zoom: 16,
+		    center: myLatLng
+		  });
+		  google.maps.event.addListener(map, 'click', function (event) {
+		  	$("#registro_latitud").val(event.latLng.lat)
+		  	$("#registro_longitud").val(event.latLng.lng)
+		  	 _onclick(event.latLng);});
+		}
+
+	function _onclick(myLatLng) {
+		if (marker != undefined ) {
+			marker.setMap(null)
+		}
+		marker = new google.maps.Marker({
+		    position: myLatLng,
+		    map: map,
+		    title: 'Hello World!'
+		  });
+	}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW_fSpTSF90-1M5zQzlS5KZJ9hqiilGHk&callback=initMap"
+    async defer></script>
+
+
+
