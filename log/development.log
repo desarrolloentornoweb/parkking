@@ -9610,3 +9610,871 @@ Processing by HomeController#Index as HTML
 Completed 200 OK in 174ms (Views: 162.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-28 00:35:10 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (87.5ms)
+Completed 200 OK in 1957ms (Views: 1942.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-28 00:35:13 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 140ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 00:35:20 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (45.1ms)
+Completed 200 OK in 213ms (Views: 202.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/ListarEstac" for 127.0.0.1 at 2019-01-28 00:35:39 -0500
+Processing by EstacionamientoController#ListarEstac as HTML
+  Rendering estacionamiento/ListarEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/ListarEstac.html.erb within layouts/dueño (63.8ms)
+Completed 200 OK in 172ms (Views: 162.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/HistoricoEstac" for 127.0.0.1 at 2019-01-28 00:35:53 -0500
+Processing by AlquilerController#HistoricoEstac as HTML
+  Rendering alquiler/HistoricoEstac.html.erb within layouts/application
+  Rendered alquiler/HistoricoEstac.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 128ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 00:36:35 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/cliente
+  Rendered alquiler/RegAlquiler.html.erb within layouts/cliente (3.2ms)
+Completed 200 OK in 121ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/HistoricoEstac" for 127.0.0.1 at 2019-01-28 00:37:13 -0500
+Processing by AlquilerController#HistoricoEstac as HTML
+  Rendering alquiler/HistoricoEstac.html.erb within layouts/application
+  Rendered alquiler/HistoricoEstac.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 139ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-28 00:54:30 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 205ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-28 00:54:54 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 140ms (Views: 129.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-28 00:54:57 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/cliente
+  Rendered usuario/CrearCuenta.html.erb within layouts/cliente (115.1ms)
+Completed 500 Internal Server Error in 292ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    33:         </ul>
+    34:         <ul class="nav navbar-nav navbar-right">
+    35:           <li><a><span class="glyphicon"></span>Bienvenido: <%= session[:usuario] %> </a></li>
+    36:           <% session[:usuario] = params[:upc][:usuario] %>
+    37:           <% if session[:usuario]=="cliente@gmail.com" %>
+    38:             <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalCli" },:class => "glyphicon glyphicon-home" %>
+    39:           </li>
+  
+app/views/layouts/cliente.html.erb:36:in `_app_views_layouts_cliente_html_erb__306836102_101070320'
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-28 00:55:02 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/cliente
+  Rendered usuario/CrearCuenta.html.erb within layouts/cliente (3.2ms)
+Completed 500 Internal Server Error in 1088ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    33:         </ul>
+    34:         <ul class="nav navbar-nav navbar-right">
+    35:           <li><a><span class="glyphicon"></span>Bienvenido: <%= session[:usuario] %> </a></li>
+    36:           <% session[:usuario] = params[:upc][:usuario] %>
+    37:           <% if session[:usuario]=="cliente@gmail.com" %>
+    38:             <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalCli" },:class => "glyphicon glyphicon-home" %>
+    39:           </li>
+  
+app/views/layouts/cliente.html.erb:36:in `_app_views_layouts_cliente_html_erb__306836102_100163820'
+Started GET "/" for 127.0.0.1 at 2019-01-28 00:55:23 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 138ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-01-28 00:55:25 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 138ms (Views: 127.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-01-28 00:55:45 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPrp60AruSNDFRZY9iVribl2hgbeGIHokxyMhRB514UiM7MoPzkYDIpiQYf0iOFzQeZVOaKfPlrS31P2NxTCbQ==", "upc"=>{"usuario"=>"cliente@gmail.com"}, "password"=>"[FILTERED]", "commit"=>"LOGGIN"}
+  Rendering usuario/PrincipalCli.html.erb within layouts/application
+  Rendered usuario/PrincipalCli.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 150ms (Views: 148.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-01-28 00:55:53 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 135ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-01-28 00:56:07 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k3nNJGIlw6AfXlS0fJV4AI2czsXWF2/Rt2+q2v2DKvP1sJfnHTdij9YpA2t+OPL6dQwd+qqQ0GP2rHWp2u4/Gw==", "upc"=>{"usuario"=>"dueño@gmail.com"}, "password"=>"[FILTERED]", "commit"=>"LOGGIN"}
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 190ms (Views: 188.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-28 00:56:28 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/cliente
+  Rendered usuario/CrearCuenta.html.erb within layouts/cliente (2.4ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    33:         </ul>
+    34:         <ul class="nav navbar-nav navbar-right">
+    35:           <li><a><span class="glyphicon"></span>Bienvenido: <%= session[:usuario] %> </a></li>
+    36:           <% session[:usuario] = params[:upc][:usuario] %>
+    37:           <% if session[:usuario]=="cliente@gmail.com" %>
+    38:             <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalCli" },:class => "glyphicon glyphicon-home" %>
+    39:           </li>
+  
+app/views/layouts/cliente.html.erb:36:in `_app_views_layouts_cliente_html_erb__306836102_100621960'
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-28 00:59:15 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 150ms (Views: 139.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-01-28 00:59:18 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 126ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-01-28 00:59:22 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQHINL92YM4fBRMMg2dafWpRscQJu902bMNPICPw4YpnyJL3wGTB4dZyRNOBytCHksFi+3U8YoQtAJBTBJ30Yg==", "upc"=>{"usuario"=>"cliente@gmail.com"}, "password"=>"[FILTERED]", "commit"=>"LOGGIN"}
+  Rendering usuario/PrincipalCli.html.erb within layouts/application
+  Rendered usuario/PrincipalCli.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 146ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/EditPerfil" for 127.0.0.1 at 2019-01-28 00:59:24 -0500
+Processing by UsuarioController#EditPerfil as HTML
+  Rendering usuario/EditPerfil.html.erb within layouts/application
+  Rendered usuario/EditPerfil.html.erb within layouts/application (127.6ms)
+Completed 200 OK in 283ms (Views: 274.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:05:35 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/cliente
+  Rendered alquiler/RegAlquiler.html.erb within layouts/cliente (5.4ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    33:         </ul>
+    34:         <ul class="nav navbar-nav navbar-right">
+    35:           <li><a><span class="glyphicon"></span>Bienvenido: <%= session[:usuario] %> </a></li>
+    36:           <% session[:usuario] = params[:upc][:usuario] %>
+    37:           <% if session[:usuario]=="cliente@gmail.com" %>
+    38:             <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalCli" },:class => "glyphicon glyphicon-home" %>
+    39:           </li>
+  
+app/views/layouts/cliente.html.erb:36:in `_app_views_layouts_cliente_html_erb__306836102_100773560'
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:06:03 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 160ms (Views: 144.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:07:12 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 121ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:07:35 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 124ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:08:15 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 139ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:08:30 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 141ms (Views: 128.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:08:41 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 138ms (Views: 127.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:08:52 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 144ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:09:06 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 148ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:09:33 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 118ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:09:45 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 142ms (Views: 131.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:09:56 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 146ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:10:08 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 141ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:10:24 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 138ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:10:49 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 131ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:11:02 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 140ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:11:10 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 139ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:11:26 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 122ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:11:29 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 148ms (Views: 136.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:11:45 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 203ms (Views: 193.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:11:55 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 145ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:12:39 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 144ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:12:53 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 162ms (Views: 149.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:13:08 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 139ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:13:33 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 122ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:13:49 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 145ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:14:12 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 138ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:14:23 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 133ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:14:31 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 144ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:14:37 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 143ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:14:59 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 126ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:15:12 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 140ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:16:03 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 138ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:16:31 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 123ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:17:00 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 159ms (Views: 144.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:17:19 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 150ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-01-28 01:17:55 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 162ms (Views: 152.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:19:01 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (8.4ms)
+Completed 200 OK in 152ms (Views: 139.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:20:03 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.0ms)
+Completed 200 OK in 122ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:20:33 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.6ms)
+Completed 200 OK in 121ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:20:52 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (14.8ms)
+Completed 200 OK in 132ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:21:11 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.5ms)
+Completed 200 OK in 123ms (Views: 113.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:21:19 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (12.1ms)
+Completed 200 OK in 170ms (Views: 161.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:21:36 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.2ms)
+Completed 200 OK in 125ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:21:41 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.1ms)
+Completed 200 OK in 124ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:22:16 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.1ms)
+Completed 200 OK in 127ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:22:51 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.9ms)
+Completed 200 OK in 116ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:23:26 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (11.0ms)
+Completed 200 OK in 120ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:24:10 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.5ms)
+Completed 200 OK in 118ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:24:39 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.2ms)
+Completed 200 OK in 140ms (Views: 127.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:25:01 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.8ms)
+Completed 200 OK in 113ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:25:21 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.7ms)
+Completed 200 OK in 117ms (Views: 107.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:25:22 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.5ms)
+Completed 200 OK in 119ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:25:22 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.7ms)
+Completed 200 OK in 115ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:25:22 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.8ms)
+Completed 200 OK in 118ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:25:53 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:25:53 -0500
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (22.4ms)
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.7ms)
+Completed 200 OK in 275ms (Views: 260.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 201ms (Views: 170.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:28:39 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.1ms)
+Completed 200 OK in 119ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:28:48 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.2ms)
+Completed 200 OK in 138ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:29:14 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.5ms)
+Completed 200 OK in 150ms (Views: 136.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:29:48 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.3ms)
+Completed 200 OK in 115ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:29:57 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (13.9ms)
+Completed 200 OK in 133ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:30:16 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.7ms)
+Completed 200 OK in 139ms (Views: 129.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:30:26 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.5ms)
+Completed 200 OK in 144ms (Views: 134.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:30:33 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.6ms)
+Completed 200 OK in 146ms (Views: 136.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:31:26 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (12.9ms)
+Completed 200 OK in 141ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:31:35 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.9ms)
+Completed 200 OK in 121ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:31:37 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.8ms)
+Completed 200 OK in 120ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:31:44 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.3ms)
+Completed 200 OK in 117ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:31:50 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.4ms)
+Completed 200 OK in 127ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:31:58 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.8ms)
+Completed 200 OK in 144ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:32:16 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (16.4ms)
+Completed 200 OK in 170ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:32:27 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.6ms)
+Completed 200 OK in 117ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:32:38 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (10.4ms)
+Completed 200 OK in 118ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:32:48 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.4ms)
+Completed 200 OK in 147ms (Views: 134.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:32:59 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.9ms)
+Completed 200 OK in 137ms (Views: 127.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:33:07 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.9ms)
+Completed 200 OK in 134ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:33:18 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (11.3ms)
+Completed 200 OK in 181ms (Views: 164.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:33:43 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.7ms)
+Completed 200 OK in 121ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:01 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.1ms)
+Completed 200 OK in 135ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:18 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (11.8ms)
+Completed 200 OK in 135ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:35 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.5ms)
+Completed 200 OK in 148ms (Views: 136.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:36 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.5ms)
+Completed 200 OK in 120ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:41 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.4ms)
+Completed 200 OK in 124ms (Views: 115.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:42 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (6.2ms)
+Completed 200 OK in 118ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:43 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (5.6ms)
+Completed 200 OK in 128ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:43 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.1ms)
+Completed 200 OK in 173ms (Views: 153.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:43 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (9.9ms)
+Completed 200 OK in 142ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:43 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.2ms)
+Completed 200 OK in 126ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:49 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.1ms)
+Completed 200 OK in 121ms (Views: 112.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:51 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (7.8ms)
+Completed 200 OK in 146ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/RegEstac" for 127.0.0.1 at 2019-01-28 01:34:57 -0500
+Processing by EstacionamientoController#RegEstac as HTML
+  Rendering estacionamiento/RegEstac.html.erb within layouts/dueño
+  Rendered estacionamiento/RegEstac.html.erb within layouts/dueño (9.3ms)
+Completed 200 OK in 135ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 15:57:59 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (84.7ms)
+Started GET "/" for 127.0.0.1 at 2019-01-29 15:58:00 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 206ms (Views: 196.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1322ms (Views: 1299.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busqueda/BuscarFiltro?utf8=%E2%9C%93&upc%5Bselecciontipo%5D=&upc%5Bdireccion%5D=&commit=Buscar" for 127.0.0.1 at 2019-01-29 15:58:05 -0500
+Processing by BusquedaController#BuscarFiltro as HTML
+  Parameters: {"utf8"=>"✓", "upc"=>{"selecciontipo"=>"", "direccion"=>""}, "commit"=>"Buscar"}
+  Rendering busqueda/BuscarFiltro.html.erb within layouts/application
+  Rendered busqueda/BuscarFiltro.html.erb within layouts/application (250.5ms)
+Completed 200 OK in 458ms (Views: 387.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busqueda/BuscarFiltro?utf8=%E2%9C%93&upc%5Bselecciontipo%5D=&upc%5Bdireccion%5D=&commit=Buscar" for 127.0.0.1 at 2019-01-29 15:58:12 -0500
+Processing by BusquedaController#BuscarFiltro as HTML
+  Parameters: {"utf8"=>"✓", "upc"=>{"selecciontipo"=>"", "direccion"=>""}, "commit"=>"Buscar"}
+  Rendering busqueda/BuscarFiltro.html.erb within layouts/application
+  Rendered busqueda/BuscarFiltro.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 148ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+

@@ -27,7 +27,7 @@
 
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-5">
-			<%= l.submit "Aceptar", :class => "btn btn-info btn-lg", :onclick => "return _onclick();" %>
+			<%= link_to :Aceptar, {:controller => "alquiler", :action => "HistoricoEstac"}, {:class => "btn btn-info btn-lg"} %>
 			<%= l.submit "Cancelar", :class => "btn btn-info btn-lg" %>
 		</div>
 	</div>

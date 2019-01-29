@@ -25,7 +25,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-         <%= link_to "Mi Sitio", root_path, :class => "navbar-brand" %>
+         <%= link_to "Parkking", root_path, :class => "navbar-brand" %>
         </div>
         <ul class="nav navbar-nav">
           <li id="m1"><%= link_to "Nosotros", { :controller => "home", :action => "Nosotros" } %></li>
@@ -33,8 +33,17 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a><span class="glyphicon"></span>Bienvenido: <%= session[:usuario] %> </a></li>
-          <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalCli" },:class => "glyphicon glyphicon-home" %>
-          </li>          
+          <% session[:usuario] = params[:upc][:usuario] %>
+          <% if session[:usuario]=="cliente@gmail.com" %>
+            <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalCli" },:class => "glyphicon glyphicon-home" %>
+          </li>
+          <% else %>
+              <% if session[:usuario]=="dueño@gmail.com" %>
+                <li><%= link_to " Inicio", { :controller => "usuario", :action => "PrincipalDue" },:class => "glyphicon glyphicon-home" %>
+              <% else %>
+                <li><%= link_to " Inicio", { :controller => "publicidad", :action => "RegPublic" },:class => "glyphicon glyphicon-home" %>
+             <% end %>
+          <% end %>
           <li><%= link_to " Salir", { :controller => "home", :action => "Index" },:class => "glyphicon glyphicon-off" %>
           </li>
         </ul>

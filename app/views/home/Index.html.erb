@@ -25,9 +25,7 @@
   }
 </style>
 
-<%= form_for :upc, :html => { :method => :get, :class => "form-horizontal" }, :url => { :controller => "home", :action => "Index" } do |f| %>
-
-
+<%= form_for :upc, :html => { :method => :get, :class => "form-horizontal" }, :url => { :controller => "busqueda", :action => "BuscarFiltro" } do |f| %>
 
 <div class="container">
  <center><h1><p class="bg-info">BUSCA TU ESTACIONAMIENTO</p></h1></center>
@@ -53,7 +51,7 @@
       <div class="input-group col-sm-offset-2 col-sm-8 col-sm-offset-2">
         <%= f.text_field :direccion, { :class => "form-control input-lg", :placeholder => "Ingrese una palabra clave" } %>
         <span class="input-group-btn">
-          <%= link_to "Buscar", {:controller => "busqueda", :action => "BuscarFiltro"}, {:class => "btn btn-primary input-lg"} %>
+          <%= f.submit "Buscar", {:class => "btn btn-primary input-lg"} %>
           </form>"
         </span>
       </div>

@@ -2,19 +2,19 @@
 <br>
 <%= form_for :registro, :html => { :method => :post, :class => "form-horizontal"}, :url => {:action => :RegEstac} do |r| %>
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :nombre, "Nombre" %>
 		</div>
-		<div class="col-sm-10">
+		<div class="col-sm-3">
 			<%= r.text_field :nombre, {:class => "form-control", :placeholder => "Nombre del estacionamiento"} %>
 		</div>
 	</div>
 
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :departamento, "Departamento" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.select :departamento, [["Amazonas",1], ["Áncash",2], ["Apurímac",3], ["Arequipa",4], ["Ayacucho",5], ["Cajamarca",6], ["Cusco",7], ["huancavelica",8], ["Huánuco",9], ["Ica",10], ["Junín",11], ["La Libertad",12], ["Lambayeque",13], ["Lima",14], ["Loreto",15], ["Madre de Dios",16], ["Moquegua",17], ["Pasco",18], ["Piura",19], ["Puno",20], ["San Martín",21], ["Tacna",22], ["Tumbes",23], ["Ucayali",24]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 		</div>
 
@@ -109,7 +109,7 @@
 			}
 		</script>
 -->
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.select :provincia, [["Bagua",1], ["Chachapoyas",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 			<!--
 			<%= r.select :provincia, [["Arequipa",1], ["Camana",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
@@ -122,45 +122,45 @@
 	</div>
 
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :distrito, "Distrito" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.select :distrito, [["Ancón",1], ["Ate",2], ["Barranco",3], ["Breña",4], ["Carabayllo",5], ["Chaclacayo",6], ["Chorrillos",7], ["Cieneguilla",8], ["Comas",9], ["El Agustino",10]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 		</div>
 		<div class="col-sm-2">
 			<%= r.label :dirección, "Dirección" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.text_field :dirección, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
 		</div>
 	</div>
 
 	<div class="form-group">
-		<div class="col-sm-8">
+		<div class="col-sm-offset-1 col-sm-7">
 			<%= r.label :mapa, "Dele click en el boton para seleccionar la ubicación de su estacionamiento en el mapa" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Buscar mapa</button>
 		</div>
 	</div>
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :latitud, "Latitud" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.text_field :latitud, { :class => "form-control"} %>
 		</div>
 		<div class="col-sm-2">
 			<%= r.label :longitud, "Longitud" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.text_field :longitud, { :class => "form-control"} %>
 		</div>
 	</div>
 
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :dias, "Horario de atención" %>
 		</div>
 		<div class="col-sm-2">
@@ -203,35 +203,35 @@
 
 
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :telf, "Teléfono" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.phone_field :telf, { :class => "text_field", :placeholder => "Ingrese número telefónico"} %>
 		</div>
 		<div class="col-sm-2">
 			<%= r.label :nespac, "Número de espacios" %>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<%= r.number_field :nespac, { :class => "text_field", :placeholder => "Ingrese el número de espacios"} %>
 		</div>
 	</div>
 
-	<p><b>Medidas del estacionamiento</b></p>
+	<p class="col-sm-offset-1"><b>Medidas del estacionamiento</b></p>
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-1">
 			<%= r.label :largo, "Largo" %>
 		</div>
 		<div class="col-sm-2">
 			<%= r.number_field :largo, { :class => "text_field", :step => 0.01, :placeholder => "En metros"} %>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-1">
 			<%= r.label :ancho, "Ancho" %>
 		</div>
 		<div class="col-sm-2">
 			<%= r.number_field :ancho, { :class => "text_field", :step => 0.01, :placeholder => "En metros"} %>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-1">
 			<%= r.label :alto, "Altura" %>
 		</div>
 		<div class="col-sm-2">
@@ -240,31 +240,37 @@
 	</div>
 
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :precio, "Precio en soles (S/.)" %>
 		</div>
-		<div class="col-sm-10">
+		<div class="col-sm-9">
 			<%= r.number_field :precio, { :class => "text_field", :step => 0.01, :placeholder => "Ingrese el monto"} %>
 		</div>
 	</div>
 
 	<div class="form-group">
-		<div class="col-sm-2">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :img, "Agregar foto" %>
 		</div>
-		<div class="col-sm-10">
+		<div class="col-sm-9">
 			<%= r.file_field :img %>
 		</div>
 	</div>
 
-	<div class="form-group col-sm-offset-2 col-sm-10">
-		<%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "RegServicio"}, {:class => "btn btn-info"} %>
+	<div class="col-sm-offset-1 col-sm-11">
+		<br>
+		<%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+		<br>
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
 
 	<div class="form-group">
-		<div class="col-sm-offset-2 col-sm-10">
-			<%= r.submit "Guardar", :class => "btn btn-info btn-lg", :onclick => "return _onclick1(); _onclick2()" %>,
-			<%= r.submit "Cancelar", :class => "btn btn-info btn-lg" %>
+		<div class="col-sm-offset-3 col-sm-9">
+			<%= r.submit "Guardar", :class => "btn btn-info", :onclick => "return _onclick1(); _onclick2()" %>,
+			<%= r.submit "Cancelar", :class => "btn btn-info" %>
 		</div>
 	</div>
 <% end %>
@@ -303,8 +309,7 @@
         <h4 class="modal-title">Seleccionar ubicación</h4>
       </div>
       <div class="modal-body">
-        <div id="map" style="width:100%;height: 400px">
-        	
+        <div id="map" style="width:100%;height: 400px">      	
         </div>
       </div>
       <div class="modal-footer">
