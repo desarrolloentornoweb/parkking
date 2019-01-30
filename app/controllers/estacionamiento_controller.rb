@@ -1,5 +1,4 @@
 class EstacionamientoController < ApplicationController
-  layout 'dueño'
   def DetalleEstac
   end
 

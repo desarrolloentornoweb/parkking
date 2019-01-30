@@ -1,4 +1,4 @@
-<h1>Registrar nuevo Estacionamiento</h1>
+<h1 class="text-center" >Registrar nuevo Estacionamiento</h1>
 <br>
 <%= form_for :registro, :html => { :method => :post, :class => "form-horizontal"}, :url => {:action => :RegEstac} do |r| %>
 	<div class="form-group">
@@ -8,15 +8,14 @@
 		<div class="col-sm-3">
 			<%= r.text_field :nombre, {:class => "form-control", :placeholder => "Nombre del estacionamiento"} %>
 		</div>
-	</div>
 
-	<div class="form-group">
-		<div class="col-sm-offset-1 col-sm-2">
+		<div class="col-sm-2">
 			<%= r.label :departamento, "Departamento" %>
 		</div>
 		<div class="col-sm-3">
 			<%= r.select :departamento, [["Amazonas",1], ["Áncash",2], ["Apurímac",3], ["Arequipa",4], ["Ayacucho",5], ["Cajamarca",6], ["Cusco",7], ["huancavelica",8], ["Huánuco",9], ["Ica",10], ["Junín",11], ["La Libertad",12], ["Lambayeque",13], ["Lima",14], ["Loreto",15], ["Madre de Dios",16], ["Moquegua",17], ["Pasco",18], ["Piura",19], ["Puno",20], ["San Martín",21], ["Tacna",22], ["Tumbes",23], ["Ucayali",24]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 		</div>
+	</div>
 
 	<!--
 	<script type="js/jquery.cascading-drop-down.js"></script>
@@ -94,21 +93,10 @@
 	</div>
 	
 	-->
-		<div class="col-sm-2">
+	<div class="form-group">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :provincia, "Provincia" %>
 		</div>
-
-<!--
-		<script type="text/javascript">
-			function _onclick() {
-				var distrito = $("#registro_distrito").val();
-
-				if (distrito == 1) {
-					return "1";
-				}
-			}
-		</script>
--->
 		<div class="col-sm-3">
 			<%= r.select :provincia, [["Bagua",1], ["Chachapoyas",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 			<!--
@@ -119,31 +107,31 @@
 			<%= r.select :provincia, [["Ancón",1], ["San Isidro",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 		-->
 		</div>
-	</div>
 
-	<div class="form-group">
-		<div class="col-sm-offset-1 col-sm-2">
+		<div class="col-sm-2">
 			<%= r.label :distrito, "Distrito" %>
 		</div>
 		<div class="col-sm-3">
 			<%= r.select :distrito, [["Ancón",1], ["Ate",2], ["Barranco",3], ["Breña",4], ["Carabayllo",5], ["Chaclacayo",6], ["Chorrillos",7], ["Cieneguilla",8], ["Comas",9], ["El Agustino",10]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
 		</div>
-		<div class="col-sm-2">
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :dirección, "Dirección" %>
 		</div>
 		<div class="col-sm-3">
 			<%= r.text_field :dirección, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
 		</div>
-	</div>
 
-	<div class="form-group">
-		<div class="col-sm-offset-1 col-sm-7">
-			<%= r.label :mapa, "Dele click en el boton para seleccionar la ubicación de su estacionamiento en el mapa" %>
+		<div class="col-sm-2">
+			<%= r.label :mapa, "Seleccionar ubicación en el mapa" %>
 		</div>
 		<div class="col-sm-3">
 			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Buscar mapa</button>
 		</div>
 	</div>
+
 	<div class="form-group">
 		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :latitud, "Latitud" %>
@@ -163,41 +151,56 @@
 		<div class="col-sm-offset-1 col-sm-2">
 			<%= r.label :dias, "Horario de atención" %>
 		</div>
-		<div class="col-sm-2">
-			<%= r.label :lunes, { :class => "checkbox" } do %>
+		<div class="col-sm-8">
+			<%= r.label :lunes, { :class => "checkbox-inline" } do %>
 			<%= r.check_box :lunes, {}, "Lunes", nil %>
 			Lunes
 			<% end %>
 
-			<%= r.label :martes, { :class => "checkbox" } do %>
+			<%= r.label :martes, { :class => "checkbox-inline" } do %>
 			<%= r.check_box :martes, {}, "Martes", nil %>
 			Martes
 			<% end %>
 
-			<%= r.label :miercoles, { :class => "checkbox" } do %>
+			<%= r.label :miercoles, { :class => "checkbox-inline" } do %>
 			<%= r.check_box :miercoles, {}, "Miércoles", nil %>
 			Miércoles
 			<% end %>
 
-			<%= r.label :jueves, { :class => "checkbox" } do %>
+			<%= r.label :jueves, { :class => "checkbox-inline" } do %>
 			<%= r.check_box :jueves, {}, "Jueves", nil %>
 			Jueves
 			<% end %>
 
-			<%= r.label :viernes, { :class => "checkbox" } do %>
+			<%= r.label :viernes, { :class => "checkbox-inline" } do %>
 			<%= r.check_box :viernes, {}, "Viernes", nil %>
 			Viernes
 			<% end %>
 
-			<%= r.label :sabado, { :class => "checkbox" } do %>
+			<%= r.label :sabado, { :class => "checkbox-inline" } do %>
 			<%= r.check_box :sabado, {}, "Sábado", nil %>
 			Sábado
 			<% end %>
 
-			<%= r.label :domingo, { :class => "checkbox" } do %>
+			<%= r.label :domingo, { :class => "checkbox-inline" } do %>
 			<%= r.check_box :domingo, {}, "Domingo", nil %>
 			Domingo
 			<% end %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-1 col-sm-2">
+			<%= r.label :hinicio, "Hora de inicio" %>
+		</div>
+		<div class="col-sm-3">
+			<%= r.time_select :hinicio %>
+		</div>
+		<div class="col-sm-2">
+			<%= r.label :hcierre, "Hora de cierre" %>
+		</div>
+		<div class="col-sm-3">
+			<%= r.time_select :hcierre %>
 		</div>
 	</div>
 
@@ -217,7 +220,7 @@
 		</div>
 	</div>
 
-	<p class="col-sm-offset-1"><b>Medidas del estacionamiento</b></p>
+	<p class="col-sm-offset-1"><b>Medidas del estacionamiento en metros:</b></p>
 	<div class="form-group">
 		<div class="col-sm-offset-1 col-sm-1">
 			<%= r.label :largo, "Largo" %>
@@ -274,29 +277,6 @@
 		</div>
 	</div>
 <% end %>
-
-<script type="text/javascript">
-	function _onclick1() {
-		var nombre = $("#registro_nombre").val();
-
-		if (nombre == '') {
-			alert('Ingresa el nombre');
-			$("#registro_nombre").focus();
-			return false;
-		}
-		var telf = $("#registro_telf").val();
-
-		if (telf == '') {
-			alert('Falta ingresar un numero de teléfono');
-			$("#registro_telf").focus();
-			return false;
-		}
-	}
-
-	function _onclick2() {
-		
-	}
-</script>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
