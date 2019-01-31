@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  departamento: 1
+  provincia: 1
+  distrito: 1
+  direccion: MyString
+  latitud: 1.5
+  longitud: 1.5
+  lunes: false
+  martes: false
+  miercoles: false
+  jueves: false
+  viernes: false
+  sabado: false
+  domingo: false
+  hinicio: 2019-01-31 07:26:18
+  hcierre: 2019-01-31 07:26:18
+  telf: MyString
+  nespac: 1
+  largo: 1
+  ancho: 1
+  alto: 1
+  precio: 1
+  img: MyString
+
+two:
+  nombre: MyString
+  departamento: 1
+  provincia: 1
+  distrito: 1
+  direccion: MyString
+  latitud: 1.5
+  longitud: 1.5
+  lunes: false
+  martes: false
+  miercoles: false
+  jueves: false
+  viernes: false
+  sabado: false
+  domingo: false
+  hinicio: 2019-01-31 07:26:18
+  hcierre: 2019-01-31 07:26:18
+  telf: MyString
+  nespac: 1
+  largo: 1
+  ancho: 1
+  alto: 1
+  precio: 1
+  img: MyString

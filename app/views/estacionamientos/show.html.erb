@@ -1,0 +1,119 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @estacionamiento.nombre %>
+</p>
+
+<p>
+  <strong>Departamento:</strong>
+  <%= @estacionamiento.departamento %>
+</p>
+
+<p>
+  <strong>Provincia:</strong>
+  <%= @estacionamiento.provincia %>
+</p>
+
+<p>
+  <strong>Distrito:</strong>
+  <%= @estacionamiento.distrito %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @estacionamiento.direccion %>
+</p>
+
+<p>
+  <strong>Latitud:</strong>
+  <%= @estacionamiento.latitud %>
+</p>
+
+<p>
+  <strong>Longitud:</strong>
+  <%= @estacionamiento.longitud %>
+</p>
+
+<p>
+  <strong>Lunes:</strong>
+  <%= @estacionamiento.lunes %>
+</p>
+
+<p>
+  <strong>Martes:</strong>
+  <%= @estacionamiento.martes %>
+</p>
+
+<p>
+  <strong>Miercoles:</strong>
+  <%= @estacionamiento.miercoles %>
+</p>
+
+<p>
+  <strong>Jueves:</strong>
+  <%= @estacionamiento.jueves %>
+</p>
+
+<p>
+  <strong>Viernes:</strong>
+  <%= @estacionamiento.viernes %>
+</p>
+
+<p>
+  <strong>Sabado:</strong>
+  <%= @estacionamiento.sabado %>
+</p>
+
+<p>
+  <strong>Domingo:</strong>
+  <%= @estacionamiento.domingo %>
+</p>
+
+<p>
+  <strong>Hinicio:</strong>
+  <%= @estacionamiento.hinicio %>
+</p>
+
+<p>
+  <strong>Hcierre:</strong>
+  <%= @estacionamiento.hcierre %>
+</p>
+
+<p>
+  <strong>Telf:</strong>
+  <%= @estacionamiento.telf %>
+</p>
+
+<p>
+  <strong>Nespac:</strong>
+  <%= @estacionamiento.nespac %>
+</p>
+
+<p>
+  <strong>Largo:</strong>
+  <%= @estacionamiento.largo %>
+</p>
+
+<p>
+  <strong>Ancho:</strong>
+  <%= @estacionamiento.ancho %>
+</p>
+
+<p>
+  <strong>Alto:</strong>
+  <%= @estacionamiento.alto %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @estacionamiento.precio %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @estacionamiento.img %>
+</p>
+
+<%= link_to 'Editar', edit_estacionamiento_path(@estacionamiento) %> |
+<%= link_to 'Cerrar', {:controller => "usuario", :action => "PrincipalDue"} %>
