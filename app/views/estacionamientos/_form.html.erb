@@ -1,4 +1,4 @@
-<%= form_with(model: estacionamiento, local: true) do |form| %>
+<%= form_with(model: estacionamiento, local: true, :html => { :class => "form-horizontal"}) do |form| %>
   <% if estacionamiento.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(estacionamiento.errors.count, "error") %> prohibited this estacionamiento from being saved:</h2>
@@ -45,16 +45,16 @@
 
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-2">
-      <%= form.label :dirección, "Dirección" %>
+      <%= form.label :direccion, "Dirección" %>
     </div>
     <div class="col-sm-3">
-      <%= form.text_field :dirección, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
+      <%= form.text_field :direccion, { :class => "form-control", :placeholder => "Ingrese su dirección"} %>
     </div>
     
     <div class="col-sm-2">
       <%= form.label :mapa, "Seleccionar ubicación" %>
     </div>
-    <div class="form-group col-sm-3 col-sm-offset-1">
+    <div class="col-sm-3 col-sm-offset-1">
       <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Buscar mapa</button>
     </div>
   </div>
@@ -75,10 +75,10 @@
   </div>
 
   <div class="form-group">
-    <div class="col-sm-offset-1 col-sm-2 col-sm-8 col-sm-offset-1">
+    <div class="col-sm-offset-1 col-sm-2">
       <%= form.label :dias, "Horario de atención" %>
     </div>
-    <div>
+    <div class="col-sm-8 col-sm-offset-1">
       <%= form.label :lunes, { :class => "checkbox-inline" } do %>
       <%= form.check_box :lunes, {}, "Lunes", nil %>
       Lunes

@@ -10,6 +10,7 @@ class EstacionamientosController < ApplicationController
   # GET /estacionamientos/1
   # GET /estacionamientos/1.json
   def show
+    #@departamento = Ubigeo.find_by_sql(where iddepartamento = @estacionamiento.departamento)
   end
 
   # GET /estacionamientos/new
@@ -65,6 +66,7 @@ class EstacionamientosController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_estacionamiento
       @estacionamiento = Estacionamiento.find(params[:id])
+      @estacionamiento.departamento = "Lima"
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

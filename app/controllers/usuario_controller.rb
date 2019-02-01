@@ -15,6 +15,7 @@ class UsuarioController < ApplicationController
   end
 
   def PrincipalDue
+     @estacionamientos = Estacionamiento.all
   end
 
   def modificar
