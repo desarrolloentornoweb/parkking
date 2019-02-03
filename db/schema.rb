@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_03_045537) do
+ActiveRecord::Schema.define(version: 2019_02_03_153251) do
+
+  create_table "comentarios", force: :cascade do |t|
+    t.string "descripcion"
+    t.string "idopinion"
+    t.integer "puntuacion"
+    t.integer "idusuario"
+    t.integer "idestacionamiento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "estacionamientos", force: :cascade do |t|
     t.string "nombre"
