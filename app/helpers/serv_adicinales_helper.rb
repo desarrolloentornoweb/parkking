@@ -1,0 +1,2 @@
+module ServAdicinalesHelper
+end

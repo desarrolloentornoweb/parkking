@@ -12759,3 +12759,577 @@ Processing by EstacionamientosController#show as HTML
 Completed 200 OK in 152ms (Views: 140.5ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-02 22:43:23 -0500
+  [1m[35m (20.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#Index as HTML
+Started GET "/" for 127.0.0.1 at 2019-02-02 22:43:24 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (105.5ms)
+  Rendered home/Index.html.erb within layouts/application (74.8ms)
+Completed 200 OK in 2319ms (Views: 1835.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 1975ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <!-- Latest compiled and minified CSS -->
+    12:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__793320467_51733080'
+Started GET "/" for 127.0.0.1 at 2019-02-02 22:46:56 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 145ms (Views: 130.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamiento/index" for 127.0.0.1 at 2019-02-02 22:47:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/estacionamiento/index"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/estacionamientos/index" for 127.0.0.1 at 2019-02-02 22:47:30 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mEstacionamiento Load (0.5ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:68
+Completed 404 Not Found in 93ms (ActiveRecord: 38.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Estacionamiento with 'id'=index):
+  
+app/controllers/estacionamientos_controller.rb:68:in `set_estacionamiento'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-02 22:47:40 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:68
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 215ms (Views: 138.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-02-02 22:47:58 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 237ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-02 22:48:04 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 144ms (Views: 133.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-02 22:48:09 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.6ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:68
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 136ms (Views: 119.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-02 23:10:46 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 207ms (Views: 175.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-02 23:11:32 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 136ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-02 23:12:14 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 151ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-02 23:16:04 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 142ms (Views: 127.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-02 23:23:14 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 135ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-02 23:23:18 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 159ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:23:33 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/RegServicio.html.erb:36: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/serv_adicionales/RegServicio.html.erb:36: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:25:43 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/RegServicio.html.erb:37: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/serv_adicionales/RegServicio.html.erb:37: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:26:38 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/RegServicio.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/serv_adicionales/RegServicio.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:28:34 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 193ms (Views: 179.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:29:34 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 168ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:30:11 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 137ms (Views: 127.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:37:53 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/RegServicio.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+...ffer.append=( a.label :nombre "Nombre del estacionamiento" )...
+...                              ^):
+  
+app/views/serv_adicionales/RegServicio.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:38:15 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+     8: 	
+     9: 	<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+    10:       <%= a.label :nombre, "Nombre del estacionamiento" %>
+    11:       <%= a.text_field :nombre, {:class => "text_field"}, :placeholder => "Ingrese el nombre" %>
+    12:     </div>
+    13:     <div>
+    14:       <%= a.label :precio, "Precio en soles" %>
+  
+app/views/serv_adicionales/RegServicio.html.erb:11:in `block in _app_views_serv_adicionales__eg_ervicio_html_erb__629403424_66065880'
+app/views/serv_adicionales/RegServicio.html.erb:7:in `_app_views_serv_adicionales__eg_ervicio_html_erb__629403424_66065880'
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:40:10 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 150ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:40:29 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 166ms (Views: 154.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:41:22 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 224ms (Views: 199.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:42:09 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 126ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:42:43 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 128ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:43:31 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 135ms (Views: 123.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/RegServicio" for 127.0.0.1 at 2019-02-02 23:43:40 -0500
+Processing by ServAdicionalesController#RegServicio as HTML
+  Rendering serv_adicionales/RegServicio.html.erb within layouts/application
+  Rendered serv_adicionales/RegServicio.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 123ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreateServAdicinales (20190203045537)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190203045537_create_serv_adicinales.rb:3
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "serv_adicinales" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "precio" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190203045537_create_serv_adicinales.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (18.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190203045537"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (137.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (15.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Started GET "/serv_adicinales/RegServicio" for 127.0.0.1 at 2019-02-02 23:58:00 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ServAdicinalesController#show as HTML
+  Parameters: {"id"=>"RegServicio"}
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+Completed 404 Not Found in 22ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ServAdicinale with 'id'=RegServicio):
+  
+app/controllers/serv_adicinales_controller.rb:67:in `set_serv_adicinale'
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-02 23:58:12 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (269.6ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (280.5ms)
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `a' for #<#<Class:0x0000000007cc88d0>:0x000000000636d8e0>):
+    12:   <% end %>
+    13: 
+    14: <div class="col-sm-offset-3 col-sm-3">
+    15:       <%= a.label :nombre, "Nombre del estacionamiento" %>
+    16:     </div>
+    17:     <div class="col-sm-3">
+    18:       <%= a.text_field :nombre, {:class => "form-control", :placeholder => "Ingrese el nombre"} %>
+  
+app/views/serv_adicinales/_form.html.erb:15:in `block in _app_views_serv_adicinales__form_html_erb__94876852_52110520'
+app/views/serv_adicinales/_form.html.erb:1:in `_app_views_serv_adicinales__form_html_erb__94876852_52110520'
+app/views/serv_adicinales/new.html.erb:3:in `_app_views_serv_adicinales_new_html_erb__813644282_65424080'
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-02 23:59:16 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (234.3ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (245.5ms)
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `a' for #<#<Class:0x0000000007cc88d0>:0x0000000009fe7460>):
+    12:   <% end %>
+    13: 
+    14:     <div class="col-sm-offset-3 col-sm-3">
+    15:       <%= a.label :nombre, "Nombre del servicio" %>
+    16:     </div>
+    17:     <div class="col-sm-3">
+    18:       <%= a.text_field :nombre, {:class => "form-control", :placeholder => "Ingrese el nombre"} %>
+  
+app/views/serv_adicinales/_form.html.erb:15:in `block in _app_views_serv_adicinales__form_html_erb__94876852_96658500'
+app/views/serv_adicinales/_form.html.erb:1:in `_app_views_serv_adicinales__form_html_erb__94876852_96658500'
+app/views/serv_adicinales/new.html.erb:3:in `_app_views_serv_adicinales_new_html_erb__813644282_83836600'
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:01:44 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (134.2ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (144.3ms)
+Completed 200 OK in 1309ms (Views: 1299.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:06:48 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.9ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 153ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:07:29 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.7ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 143ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:07:46 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.8ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 175ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:09:04 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.9ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 145ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serv_adicinales" for 127.0.0.1 at 2019-02-03 00:09:29 -0500
+Processing by ServAdicinalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6TYOyXmIZGHIWVbJWkBZmKrkZhG3CXTt3xcKv+FMozOBsaDxSpIzLIfo4WW31Dl0zUzmHwDAu48vImsFU0r+sA==", "serv_adicinale"=>{"nombre"=>"Lavado", "precio"=>"20"}, "commit"=>"Create Serv adicinale"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+  [1m[36mServAdicinale Create (1.7ms)[0m  [1m[32mINSERT INTO "serv_adicinales" ("nombre", "precio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Lavado"], ["precio", 20.0], ["created_at", "2019-02-03 05:09:29.262127"], ["updated_at", "2019-02-03 05:09:29.262127"]]
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+  [1m[35m (131.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+Redirected to http://localhost:3000/serv_adicinales/1
+Completed 302 Found in 149ms (ActiveRecord: 133.5ms)
+
+
+Started GET "/serv_adicinales/1" for 127.0.0.1 at 2019-02-03 00:09:29 -0500
+Processing by ServAdicinalesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mServAdicinale Load (0.2ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+  Rendering serv_adicinales/show.html.erb within layouts/application
+  Rendered serv_adicinales/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 146ms (Views: 129.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serv_adicinales" for 127.0.0.1 at 2019-02-03 00:09:33 -0500
+Processing by ServAdicinalesController#index as HTML
+  Rendering serv_adicinales/index.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/serv_adicinales/index.html.erb:15
+  Rendered serv_adicinales/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 128ms (Views: 119.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serv_adicinales/1" for 127.0.0.1 at 2019-02-03 00:09:43 -0500
+Processing by ServAdicinalesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+  Rendering serv_adicinales/show.html.erb within layouts/application
+  Rendered serv_adicinales/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 122ms (Views: 110.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serv_adicinales" for 127.0.0.1 at 2019-02-03 00:10:02 -0500
+Processing by ServAdicinalesController#index as HTML
+  Rendering serv_adicinales/index.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/serv_adicinales/index.html.erb:15
+  Rendered serv_adicinales/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 132ms (Views: 121.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serv_adicinales" for 127.0.0.1 at 2019-02-03 00:10:45 -0500
+Processing by ServAdicinalesController#index as HTML
+  Rendering serv_adicinales/index.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.4ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/serv_adicinales/index.html.erb:15
+  Rendered serv_adicinales/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 131ms (Views: 119.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/serv_adicinales" for 127.0.0.1 at 2019-02-03 00:11:19 -0500
+Processing by ServAdicinalesController#index as HTML
+  Rendering serv_adicinales/index.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/serv_adicinales/index.html.erb:15
+  Rendered serv_adicinales/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 161ms (Views: 148.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:11:23 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.8ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 137ms (Views: 127.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serv_adicinales" for 127.0.0.1 at 2019-02-03 00:11:33 -0500
+Processing by ServAdicinalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5NASSJdqK1qx4RuiK1iS6A2dV8iN2OukomeH6H8mAN/LgMgnm8y4u8FHHhKbR6gfmz1OTGRRB6O5RdA8uxOjWw==", "serv_adicinale"=>{"nombre"=>"Encerado", "precio"=>"12"}, "commit"=>"Create Serv adicinale"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+  [1m[36mServAdicinale Create (0.9ms)[0m  [1m[32mINSERT INTO "serv_adicinales" ("nombre", "precio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Encerado"], ["precio", 12.0], ["created_at", "2019-02-03 05:11:33.390195"], ["updated_at", "2019-02-03 05:11:33.390195"]]
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+  [1m[35m (338.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+Redirected to http://localhost:3000/serv_adicinales/2
+Completed 302 Found in 351ms (ActiveRecord: 339.5ms)
+
+
+Started GET "/serv_adicinales/2" for 127.0.0.1 at 2019-02-03 00:11:33 -0500
+Processing by ServAdicinalesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServAdicinale Load (0.6ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+  Rendering serv_adicinales/show.html.erb within layouts/application
+  Rendered serv_adicinales/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 144ms (Views: 125.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/serv_adicinales/2/edit" for 127.0.0.1 at 2019-02-03 00:11:36 -0500
+Processing by ServAdicinalesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServAdicinale Load (0.2ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+  Rendering serv_adicinales/edit.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.8ms)
+  Rendered serv_adicinales/edit.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 142ms (Views: 129.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/serv_adicinales/2" for 127.0.0.1 at 2019-02-03 00:11:37 -0500
+Processing by ServAdicinalesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qlFKHmbrpEfefEsP6M+irLlUYeThOqOy/2kGDeZ3KJnEOnrPnG9uHweYJ8/+WyR3ROJ49JshFhQVGaqUXL4KyA==", "serv_adicinale"=>{"nombre"=>"Encerado", "precio"=>"12.0"}, "commit"=>"Update Serv adicinale", "id"=>"2"}
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:44
+Redirected to http://localhost:3000/serv_adicinales/2
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/serv_adicinales/2" for 127.0.0.1 at 2019-02-03 00:11:37 -0500
+Processing by ServAdicinalesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServAdicinale Load (0.2ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+  Rendering serv_adicinales/show.html.erb within layouts/application
+  Rendered serv_adicinales/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 133ms (Views: 120.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serv_adicinales" for 127.0.0.1 at 2019-02-03 00:11:39 -0500
+Processing by ServAdicinalesController#index as HTML
+  Rendering serv_adicinales/index.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/serv_adicinales/index.html.erb:15
+  Rendered serv_adicinales/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 122ms (Views: 113.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:12:31 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.9ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 138ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-03 00:13:27 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (1.7ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 145ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+

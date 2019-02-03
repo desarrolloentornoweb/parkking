@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @serv_adicinale.nombre %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @serv_adicinale.precio %>
+</p>
+
+<%= link_to 'Editar', edit_serv_adicinale_path(@serv_adicinale) %> |
+<%= link_to 'Atrás', serv_adicinales_path %>
