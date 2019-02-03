@@ -16,6 +16,7 @@ class EstacionamientosController < ApplicationController
   # GET /estacionamientos/new
   def new
     @estacionamiento = Estacionamiento.new
+    @serv_adicinales = ServAdicinale.all
   end
 
   # GET /estacionamientos/1/edit

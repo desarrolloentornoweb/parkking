@@ -1,7 +1,7 @@
 <%= form_with(model: estacionamiento, local: true, :html => { :class => "form-horizontal"}) do |form| %>
   <% if estacionamiento.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(estacionamiento.errors.count, "error") %> prohibited this estacionamiento from being saved:</h2>
+      <h2><%= pluralize(estacionamiento.errors.count, "error") %>. No se pueden guardar los datos del estacionamiento:</h2>
 
       <ul>
       <% estacionamiento.errors.full_messages.each do |message| %>
@@ -188,13 +188,15 @@
   </div>
 
   <div class="col-sm-offset-1 col-sm-11">
-    <br>
+    <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicionale %>
     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    <br>
     <br>
   </div>
 
-  <div class="actions">
-    <%= form.submit "Guardar" %>
+  <div class="actions col-sm-offset-9 col-sm-1">
+    <br>
+    <%= form.submit "Guardar", {:class => "btn btn-info input-md"} %>
   </div>
 
 <% end %>
