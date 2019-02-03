@@ -10,7 +10,7 @@ class EstacionamientosController < ApplicationController
   # GET /estacionamientos/1
   # GET /estacionamientos/1.json
   def show
-    #@departamento = Ubigeo.find_by_sql(where iddepartamento = @estacionamiento.departamento)
+    #@departamento = Ubigeo.find_by_sql(where idDepartamento = @estacionamiento.departamento)
   end
 
   # GET /estacionamientos/new
