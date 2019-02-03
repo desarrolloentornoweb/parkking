@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :autenticacions
   resources :estacionamientos
   get 'busqueda/BuscarFiltro'
   get 'publicidad/PrincipalPublic'
@@ -42,6 +43,7 @@ Rails.application.routes.draw do
   get 'home/Contactenos'
   post 'home/EnvioContactenos'
   get 'home/Nosotros'
+  post 'comentario/enviarcomentario'
   root 'home#Index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

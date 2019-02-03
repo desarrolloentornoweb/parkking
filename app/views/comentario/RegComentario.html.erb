@@ -1,5 +1,5 @@
 <h1>Registre su Comentario </h1>
-	<%= form_for :comentario, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :RegComentario} do |a| %>
+	<%= form_for :comentario, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :enviarcomentario} do |a| %>
 			</br>
 
 	<div class="form-group">
@@ -22,7 +22,7 @@
 
  		<form>
    	 	<div class="form-group col-sm-9">
-     	<textarea class="form-control" rows="8" id="comment"></textarea>
+     	<%= a.text_area :descripcion %>
 		</br>
 	</div>
 	<div class="col-sm-offset-8 col-sm-2">

@@ -1,0 +1,27 @@
+<%= form_with(model: autenticacion, local: true) do |form| %>
+  <% if autenticacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(autenticacion.errors.count, "error") %> prohibited this autenticacion from being saved:</h2>
+
+      <ul>
+      <% autenticacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :correo %>
+    <%= form.text_field :correo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contrase¤a %>
+    <%= form.text_field :contrase¤a %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
