@@ -14,6 +14,7 @@
 
       <div class="panel-heading">CATEGORIAS</div>
         <div class="container">
+
             <h4>TIPO</h4>
 
                   <%= f.label :interior, { :class => "checkbox-inline"} do  %>
@@ -114,8 +115,14 @@
             <div class="col-sm-3">       
             <%= f.select :documentos, [["Lima",1],["Callao",2],["Cercado",3],["SMP",2],["SJL",2],["Surco",2]], {:include_blank => "Seleccione"},{:class=>"form-control"} %>
 
+            <br>
+            <div class="col-sm-4">
+            <%= f.submit "BUSCAR", :class => "btn btn-primary" %>
+             </div>
+
           </div>
         </div>
+
         <br>
       </div>
 
@@ -159,4 +166,5 @@
 
 
 </div>
+
 <% end %>
