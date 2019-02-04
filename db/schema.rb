@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_03_182535) do
+
+ActiveRecord::Schema.define(version: 2019_01_31_022839) do
+
+  create_table "autenticacions", force: :cascade do |t|
+    t.string "correo"
+    t.string "contrasena"
+
 
   create_table "estacionamientos", force: :cascade do |t|
     t.string "nombre"
@@ -54,6 +60,7 @@ ActiveRecord::Schema.define(version: 2019_02_03_182535) do
     t.string "Provincia"
     t.string "idDistrito"
     t.string "Distrito"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
