@@ -24699,3 +24699,989 @@ Processing by EstacionamientosController#show as HTML
 Completed 200 OK in 241ms (Views: 186.2ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-02-03 14:54:21 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 191ms (Views: 163.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-03 14:54:25 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/models/estacionamiento.rb:2: syntax error, unexpected tSTRING_BEG, expecting '('
+...:nombre, presence: {message:: " es requerido"}
+...                              ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/models/estacionamiento.rb:2: syntax error, unexpected '}', expecting keyword_end
+...ce: {message:: " es requerido"}
+...                              ^):
+  
+app/models/estacionamiento.rb:2: syntax error, unexpected tSTRING_BEG, expecting '('
+app/models/estacionamiento.rb:2: syntax error, unexpected '}', expecting keyword_end
+app/controllers/usuario_controller.rb:18:in `PrincipalDue'
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-03 14:54:43 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown key: :presence. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?):
+  
+app/models/estacionamiento.rb:2:in `<class:Estacionamiento>'
+app/models/estacionamiento.rb:1:in `<top (required)>'
+app/controllers/usuario_controller.rb:18:in `PrincipalDue'
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-03 14:55:10 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.5ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 162ms (Views: 149.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 14:55:12 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 148ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-03 14:55:15 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cA1r/K4pS33u++j6ayi088vvlw0ogBYLWZe0p05d1KE7yY5MlV0/j3vnFKxr1adVxsdoRYz/Mmv2luOLxtDc4w==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "provincia"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"3", "hinicio(4i)"=>"19", "hinicio(5i)"=>"55", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"3", "hcierre(4i)"=>"19", "hcierre(5i)"=>"55", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 265ms (Views: 145.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estacionamientos" for 127.0.0.1 at 2019-02-03 14:55:55 -0500
+Processing by EstacionamientosController#index as HTML
+  Rendering estacionamientos/index.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/estacionamientos/index.html.erb:36
+  Rendered estacionamientos/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 173ms (Views: 135.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-03 14:56:04 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 154ms (Views: 140.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 14:56:10 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (8.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 209ms (Views: 197.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-03 14:56:13 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...tput_buffer.append=  a.label :, { :class => "checkbox" } do ...
+...                              ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+... :, { :class => "checkbox" } do @output_buffer.safe_append='
+...                             ^~
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:33: syntax error, unexpected keyword_end, expecting end-of-input
+'.freeze; end 
+          ^~~):
+  
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/serv_adicionales/ServEstac.html.erb:33: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 14:56:32 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (8.2ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 158ms (Views: 148.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-03 14:56:39 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.6ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 162ms (Views: 148.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 14:56:42 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 139ms (Views: 130.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-03 14:56:44 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...tput_buffer.append=  a.label :, { :class => "checkbox" } do ...
+...                              ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+... :, { :class => "checkbox" } do @output_buffer.safe_append='
+...                             ^~
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:33: syntax error, unexpected keyword_end, expecting end-of-input
+'.freeze; end 
+          ^~~):
+  
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/serv_adicionales/ServEstac.html.erb:33: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 14:56:48 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.7ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 147ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-03 14:56:50 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Na8ic5Da/HTD/ndKzILaPicU0LwuOK0Ifa3E97FSSb9+a8fDq66IhlbiixzMf8mYKjwv9IpHiWjSrJPbOd9B/Q==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "provincia"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"3", "hinicio(4i)"=>"19", "hinicio(5i)"=>"56", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"3", "hcierre(4i)"=>"19", "hcierre(5i)"=>"56", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 146ms (Views: 139.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/estacionamientos" for 127.0.0.1 at 2019-02-03 15:01:31 -0500
+Processing by EstacionamientosController#index as HTML
+  Rendering estacionamientos/index.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/estacionamientos/index.html.erb:36
+  Rendered estacionamientos/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 177ms (Views: 163.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:01:38 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (8.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 146ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-03 15:01:43 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sY7ooxr78ZWulnYJQVwUtZVjlyiNhrBMUYzT6A628c9o+xY/E0gsY8nLcprliNTQDffw4r7tJSRjBiklUzWP+g==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "provincia"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"3", "hinicio(4i)"=>"20", "hinicio(5i)"=>"01", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"3", "hcierre(4i)"=>"20", "hcierre(5i)"=>"01", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (9.7ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 149ms (Views: 140.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/estacionamientos" for 127.0.0.1 at 2019-02-03 15:07:40 -0500
+Processing by EstacionamientosController#index as HTML
+  Rendering estacionamientos/index.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/estacionamientos/index.html.erb:36
+  Rendered estacionamientos/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 170ms (Views: 156.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:07:47 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 147ms (Views: 138.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:08:35 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 148ms (Views: 138.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:08:47 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 178ms (Views: 167.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:08:58 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 142ms (Views: 132.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:09:12 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 148ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:10:13 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 143ms (Views: 133.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:10:32 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (12.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 168ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:10:54 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (10.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 192ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:11:16 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 143ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:12:49 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 151ms (Views: 141.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:12:58 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (11.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 179ms (Views: 167.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:13:06 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 147ms (Views: 138.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:13:17 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 139ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:15:07 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.7ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (275.1ms)
+Completed 500 Internal Server Error in 323ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x000000000c4f0248>:0x000000000b5a4f50>
+Did you mean?  fork):
+    3: <%= render 'form', estacionamiento: @estacionamiento %> 
+    4: 
+    5: <div class="actions col-sm-offset-10 col-sm-1">
+    6: 	<%= form.submit "Cerrar", {:class => "btn btn-primary input-md"}, {:controller => "usuario", :action => "PrincipalDue"} %>
+    7: </div>
+    8: <%= link_to 'Cerrar', {:controller => "usuario", :action => "PrincipalDue"}, {:class => "btn btn-info input lg"} %>
+  
+app/views/estacionamientos/new.html.erb:6:in `_app_views_estacionamientos_new_html_erb__202075294_95238140'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:15:54 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (14.2ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (276.5ms)
+Completed 500 Internal Server Error in 327ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x000000000c4f0248>:0x000000000e866948>
+Did you mean?  fork):
+    3: <%= render 'form', estacionamiento: @estacionamiento %> 
+    4: 
+    5: <div class="actions col-sm-offset-10 col-sm-1">
+    6: 	<%= form.submit "Cerrar", {:class => "btn btn-primary input-md"}, {:controller => "usuario", :action => "PrincipalDue"} %>
+    7: </div>
+    8: <%= link_to 'Cerrar', {:controller => "usuario", :action => "PrincipalDue"}, {:class => "btn btn-info input-lg"} %>
+  
+app/views/estacionamientos/new.html.erb:6:in `_app_views_estacionamientos_new_html_erb__202075294_121846060'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:16:16 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (8.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (368.3ms)
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x000000000c4f0248>:0x000000000db57b08>
+Did you mean?  fork):
+    2: 
+    3: <%= render 'form', estacionamiento: @estacionamiento %> 
+    4: 
+    5: <%= form.submit "Cerrar", {:class => "btn btn-primary input-md"}, {:controller => "usuario", :action => "PrincipalDue"} %>
+    6: <%= link_to 'Cerrar', {:controller => "usuario", :action => "PrincipalDue"}, {:class => "btn btn-info input-lg"} %>
+  
+app/views/estacionamientos/new.html.erb:5:in `_app_views_estacionamientos_new_html_erb__202075294_113656380'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:16:29 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 158ms (Views: 149.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:16:38 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 186ms (Views: 174.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:16:54 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 148ms (Views: 138.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:17:00 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 160ms (Views: 147.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:17:05 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (8.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 146ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:17:17 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (6.7ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 144ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:17:24 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (7.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 146ms (Views: 137.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:19:33 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (16.0ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (24.8ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 0..2)):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:      <%= form.submit "Agregar servicio", {:class => "btn btn-info"}, {:controller => "ser_adicionales", :action => "index"} %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_121454240'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_121454240'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_121519340'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:23:59 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (275.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (284.4ms)
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `serv_adicionale' for #<#<Class:0x000000000c4f0248>:0x000000000a235c80>
+Did you mean?  serv_adicinale_url):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", serv_adicionale, {:class => "btn btn-info"} %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_65984740'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_65984740'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_85061640'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-03 15:24:26 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (9.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 175ms (Views: 163.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new?class=btn+btn-info" for 127.0.0.1 at 2019-02-03 15:24:46 -0500
+Processing by EstacionamientosController#new as HTML
+  Parameters: {"class"=>"btn btn-info"}
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (9.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 159ms (Views: 149.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/estacionamientos/new?class=btn+btn-info" for 127.0.0.1 at 2019-02-03 15:26:39 -0500
+Processing by EstacionamientosController#new as HTML
+  Parameters: {"class"=>"btn btn-info"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.1ms)
+
+
+  
+NameError (uninitialized constant EstacionamientosController::Serv_adicinales):
+  
+app/controllers/estacionamientos_controller.rb:19:in `new'
+Started GET "/estacionamientos/new?class=btn+btn-info" for 127.0.0.1 at 2019-02-03 15:26:50 -0500
+Processing by EstacionamientosController#new as HTML
+  Parameters: {"class"=>"btn btn-info"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (uninitialized constant EstacionamientosController::ServAdicinales):
+  
+app/controllers/estacionamientos_controller.rb:19:in `new'
+Started GET "/estacionamientos/new?class=btn+btn-info" for 127.0.0.1 at 2019-02-03 15:27:36 -0500
+Processing by EstacionamientosController#new as HTML
+  Parameters: {"class"=>"btn btn-info"}
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  Rendered estacionamientos/_form.html.erb (293.7ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (303.5ms)
+Completed 500 Internal Server Error in 362ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `serv_adicionale' for #<#<Class:0x000000000c7623c8>:0x000000000d683f50>
+Did you mean?  @serv_adicinales):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicionale %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_104825040'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_104825040'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_104535640'
+Started GET "/serv_adicinales/new" for 127.0.0.1 at 2019-02-04 00:58:58 -0500
+Processing by ServAdicinalesController#new as HTML
+  Rendering serv_adicinales/new.html.erb within layouts/application
+  Rendered serv_adicinales/_form.html.erb (36.3ms)
+  Rendered serv_adicinales/new.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 603ms (Views: 545.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serv_adicinales" for 127.0.0.1 at 2019-02-04 00:59:33 -0500
+Processing by ServAdicinalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gbwXAOITRSZnntxvSDp3c6uWxP9BsQACwFOoPcrzR2tYyemc66CY0ADD2Pzs7rcWMwKjNXLalWry2VLwl3A5Xg==", "serv_adicinale"=>{"nombre"=>"Revisión de llantas", "precio"=>"8"}, "commit"=>"Crear servicio"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+  [1m[36mServAdicinale Create (60.7ms)[0m  [1m[32mINSERT INTO "serv_adicinales" ("nombre", "precio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Revisión de llantas"], ["precio", 8.0], ["created_at", "2019-02-04 05:59:33.114829"], ["updated_at", "2019-02-04 05:59:33.114829"]]
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+  [1m[35m (124.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serv_adicinales_controller.rb:30
+Redirected to http://localhost:3000/serv_adicinales/3
+Completed 302 Found in 411ms (ActiveRecord: 185.0ms)
+
+
+Started GET "/serv_adicinales/3" for 127.0.0.1 at 2019-02-04 00:59:33 -0500
+Processing by ServAdicinalesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mServAdicinale Load (14.8ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" WHERE "serv_adicinales"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/serv_adicinales_controller.rb:67
+  Rendering serv_adicinales/show.html.erb within layouts/application
+  Rendered serv_adicinales/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 338ms (Views: 179.2ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/serv_adicinales" for 127.0.0.1 at 2019-02-04 00:59:36 -0500
+Processing by ServAdicinalesController#index as HTML
+  Rendering serv_adicinales/index.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.2ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/serv_adicinales/index.html.erb:15
+  Rendered serv_adicinales/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 118ms (Views: 109.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-04 01:00:39 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 195ms (Views: 169.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 01:00:47 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.7ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 298ms (Views: 210.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:00:49 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (31.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (39.8ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/serv_adicinales":String):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_99732700'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_99732700'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_99763760'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:01:56 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (19.0ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/serv_adicinales":String):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_99687980'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_99687980'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_99732040'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:02:11 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (27.7ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (37.2ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/serv_adicinales":String):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_98970440'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_98970440'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_99131840'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:08:13 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (23.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (33.1ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/serv_adicinales":String):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_95593000'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_95593000'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_95754220'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:14:21 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (20.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (30.3ms)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/serv_adicinales":String):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_58981200'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_58981200'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_62465760'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:16:05 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (24.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (33.7ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/serv_adicinales":String):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_99914840'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_99914840'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_121841020'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:17:56 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (23.2ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (33.2ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/serv_adicinales":String):
+    188:   </div>
+    189: 
+    190:   <div class="col-sm-offset-1 col-sm-11">
+    191:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    192:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    193:     <br>
+    194:     <br>
+  
+app/views/estacionamientos/_form.html.erb:191:in `block in _app_views_estacionamientos__form_html_erb__644121784_108844200'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_108844200'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_112380940'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:21:00 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (29.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (52.0ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:     </div>
+    188:   </div>
+    189: 
+    190:   <% @serv_adicionales.each do |servicios| %>
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <%= link_to "Agregar servicio ", {:class => "btn btn-info"}, serv_adicinales_path %>
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+  
+app/views/estacionamientos/_form.html.erb:190:in `block in _app_views_estacionamientos__form_html_erb__644121784_94883840'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_94883840'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_95318060'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:21:51 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (61.2ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (72.0ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:     </div>
+    188:   </div>
+    189: 
+    190:   <% @serv_adicionales.each do |servicios| %>
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <%= link_to "Agregar servicio ",  serv_adicinales_path %>
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+  
+app/views/estacionamientos/_form.html.erb:190:in `block in _app_views_estacionamientos__form_html_erb__644121784_127052280'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_127052280'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_122016340'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:22:43 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (24.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (51.3ms)
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:     </div>
+    188:   </div>
+    189: 
+    190:   <% @serv_adicionales.each do |servicios| %>
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <%= link_to "Agregar servicio ",  serv_adicinales_path %>
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+  
+app/views/estacionamientos/_form.html.erb:190:in `block in _app_views_estacionamientos__form_html_erb__644121784_87526060'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_87526060'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_88072620'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:23:37 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (21.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (30.8ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:     </div>
+    188:   </div>
+    189: 
+    190:   <% @serv_adicionales.each do |servicios| %>
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <%= link_to "Agregar servicio ",  serv_adicinales %>
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+  
+app/views/estacionamientos/_form.html.erb:190:in `block in _app_views_estacionamientos__form_html_erb__644121784_105053440'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_105053440'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_114949820'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:24:52 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (19.2ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (28.3ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:     </div>
+    188:   </div>
+    189: 
+    190:   <% @serv_adicionales.each do %>
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <%= link_to "Agregar servicio ",  serv_adicinales %>
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+  
+app/views/estacionamientos/_form.html.erb:190:in `block in _app_views_estacionamientos__form_html_erb__644121784_59335640'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_59335640'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_59350560'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:26:01 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (24.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (34.8ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:     </div>
+    188:   </div>
+    189: 
+    190: <!--  <% @serv_adicionales.each do %>-->
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <!--<%= link_to "Agregar servicio ",  serv_adicinales %>-->
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+  
+app/views/estacionamientos/_form.html.erb:190:in `block in _app_views_estacionamientos__form_html_erb__644121784_27739640'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_27739640'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_29210560'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:26:18 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (26.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (37.5ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/estacionamientos/_form.html.erb:260: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/estacionamientos/_form.html.erb:260: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_97081440'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:26:59 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (18.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (27.0ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:     </div>
+    188:   </div>
+    189: 
+    190: <!--  <% @serv_adicionales.each  %>-->
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <!--<%= link_to "Agregar servicio ",  serv_adicinales %>-->
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+  
+app/views/estacionamientos/_form.html.erb:190:in `block in _app_views_estacionamientos__form_html_erb__644121784_103724080'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_103724080'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_103756180'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:27:18 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  [1m[36mCACHE ServAdicinale Load (0.0ms)[0m  [1m[34mSELECT  "serv_adicinales".* FROM "serv_adicinales" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/estacionamientos/new.html.erb:3
+  Rendered estacionamientos/_form.html.erb (774.7ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (787.8ms)
+Completed 500 Internal Server Error in 828ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `serv_adicinales' for #<#<Class:0x000000000a7edd58>:0x000000000d016a50>
+Did you mean?  @serv_adicinales
+               serv_adicinales_url
+               serv_adicinale_url):
+    189: 
+    190: 
+    191:   <div class="col-sm-offset-1 col-sm-11">
+    192:     <!--<%= link_to "Agregar servicio ",  serv_adicinales %>-->
+    193:     <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    194:     <br>
+    195:     <br>
+  
+app/views/estacionamientos/_form.html.erb:192:in `block in _app_views_estacionamientos__form_html_erb__644121784_109067280'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__644121784_109067280'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__202075294_109099880'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 01:27:31 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (13.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 202ms (Views: 192.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-04 01:27:37 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...tput_buffer.append=  a.label :, { :class => "checkbox" } do ...
+...                              ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+... :, { :class => "checkbox" } do @output_buffer.safe_append='
+...                             ^~
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:33: syntax error, unexpected keyword_end, expecting end-of-input
+'.freeze; end 
+          ^~~):
+  
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/serv_adicionales/ServEstac.html.erb:33: syntax error, unexpected keyword_end, expecting end-of-input

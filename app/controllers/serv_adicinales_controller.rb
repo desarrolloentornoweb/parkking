@@ -5,11 +5,13 @@ class ServAdicinalesController < ApplicationController
   # GET /serv_adicinales.json
   def index
     @serv_adicinales = ServAdicinale.all
+    @estacionamientos = Estacionamiento.all
   end
 
   # GET /serv_adicinales/1
   # GET /serv_adicinales/1.json
   def show
+
   end
 
   # GET /serv_adicinales/new
