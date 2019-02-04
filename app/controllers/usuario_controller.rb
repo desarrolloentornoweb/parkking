@@ -15,6 +15,7 @@ class UsuarioController < ApplicationController
   end
 
   def PrincipalDue
+    @post=Autenticacion.new
   end
 
   def modificar
@@ -30,8 +31,15 @@ class UsuarioController < ApplicationController
       render "home/Index"
   end
 
-  def crear
+  def crear      
+      @post = Autenticacion.new(autenticacion_params)
+      @post.save
       render "home/Index"
+  end
+
+  private 
+  def autenticacion_params
+    params.require(:cuenta).permit(:correo, :contrasena)
   end
 
   def cambiar

@@ -11109,3 +11109,407 @@ Processing by AlquilerController#RegAlquiler as HTML
 Completed 200 OK in 184ms (Views: 172.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-30 21:15:45 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 2918ms (Views: 2896.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 21:15:53 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 245ms (Views: 224.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-01-30 21:15:55 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 146ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-01-30 21:15:59 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YeazLzsXV1bZJiJPJPmpMU5n7/1sOAKX4EmRRVqJlX7cPkC9sx79ZmnVQ5iK5p+/MVb+QgsYFoj7fnUO2Nhr9g==", "upc"=>{"usuario"=>"cliente@gmail.com"}, "password"=>"[FILTERED]", "commit"=>"LOGGIN"}
+  Rendering usuario/PrincipalCli.html.erb within layouts/application
+  Rendered usuario/PrincipalCli.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 198ms (Views: 197.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/EditPerfil" for 127.0.0.1 at 2019-01-30 21:16:01 -0500
+Processing by UsuarioController#EditPerfil as HTML
+  Rendering usuario/EditPerfil.html.erb within layouts/application
+  Rendered usuario/EditPerfil.html.erb within layouts/application (159.0ms)
+Completed 200 OK in 388ms (Views: 343.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreateAutenticacions (20190131022839)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "autenticacions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "correo" varchar, "contrasena" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190131022839_create_autenticacions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190131022839"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-31 02:48:18.914375"], ["updated_at", "2019-01-31 02:48:18.914375"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:01:30 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 646ms (Views: 625.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-01-30 22:01:45 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4mOTHGxbKxhPHPVJONsWdW+ooKkenR7U8EuoE4VR3w+7kJmw7dtA+QGic/FYIpmAJbFrFADvizSu6DEpvE0qow==", "upc"=>{"correo"=>"ggaribay@gmail.com", "documentos"=>"1", "contrasena"=>"perrito", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `post_params' for #<UsuarioController:0x000000000c691ed0>
+Did you mean?  to_param):
+  
+app/controllers/usuario_controller.rb:35:in `crear'
+Started GET "/" for 127.0.0.1 at 2019-01-30 22:07:37 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 163ms (Views: 146.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:07:41 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 282ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-01-30 22:07:48 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kngPqHXSfGAzVq1DNlmVROLBKw/KttOcpFdC+rj5XAHLiwUE9FIXgX3oK/tWoBqxqNjgstTERnz69NvAgeWprQ==", "upc"=>{"correo"=>"ggaribay@gmail.com", "documentos"=>"", "contrasena"=>"aa", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: cuenta):
+  
+app/controllers/usuario_controller.rb:40:in `autenticacion_params'
+app/controllers/usuario_controller.rb:35:in `crear'
+Started GET "/" for 127.0.0.1 at 2019-01-30 22:08:17 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 280ms (Views: 236.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:08:19 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 329ms (Views: 288.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-01-30 22:08:24 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O/jsRis6t4lnVPfPVfjz8lo26GyWfP3GUkfLZI/0YvRiC+bqqrrcaCnqcXc1AXwHEC8j0YgOaCYM5FJetuiXWA==", "cuenta"=>{"correo"=>"d", "documentos"=>"", "contrasena"=>"d", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameters: :documentos, :RPassword
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 219ms (Views: 206.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:15:47 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 156ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-01-30 22:15:51 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ooa5Kh5Fg4pfFniLNlOH/zjsS64NB/51X9x4yZ2MZAj7dbOGn8XoaxGo/jNWqggKcvWAExN1a5UBf+HzpJCRpA==", "cuenta"=>{"correo"=>"d", "documentos"=>"", "contrasena"=>"sds", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameters: :documentos, :RPassword
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[36mAutenticacion Create (1.2ms)[0m  [1m[32mINSERT INTO "autenticacions" ("correo", "contrasena", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["correo", "d"], ["contrasena", "sds"], ["created_at", "2019-01-31 03:15:51.272117"], ["updated_at", "2019-01-31 03:15:51.272117"]]
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 230ms (Views: 193.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:27:17 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 239ms (Views: 214.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-01-30 22:27:23 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VQefxDZoqNYx/85MrhyflCdfms5Bdjq8wmDjctJxMrQM9JVot+jDN39BSPTO5RBhbUZRc18Er1ycw3pI623HGA==", "cuenta"=>{"correo"=>"", "documentos"=>"", "contrasena"=>"s", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameters: :documentos, :RPassword
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 191ms (Views: 173.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:33:22 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 192ms (Views: 168.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-01-30 22:33:28 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zG2THhmYkoDDoy9lPI1xw2aR77vMiJZ6DRjPypOMCtCVnpmymBj5YY0dqd1cdP42LIgkBtL6A5pTu1bwqpD/fA==", "cuenta"=>{"correo"=>"", "documentos"=>"", "contrasena"=>"d", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameters: :documentos, :RPassword
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 250ms (Views: 205.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:38:49 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (51.5ms)
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>CREA TU CUENTA</h1>
+    2: <%= form_for :cuenta, :html => { :method => :post }, :url => { :action => :crear } do |f| %>
+    3: <% if @post.errors.any? %>
+    4:   <div id="errorExplanation">
+    5:     <h2><%= pluralize(@post.errors.count, "error") %> prohibited
+    6:       this post from being saved:</h2>
+  
+app/views/usuario/CrearCuenta.html.erb:3:in `block in _app_views_usuario__rear_uenta_html_erb__195485878_130486100'
+app/views/usuario/CrearCuenta.html.erb:2:in `_app_views_usuario__rear_uenta_html_erb__195485878_130486100'
+Started GET "/" for 127.0.0.1 at 2019-01-30 22:41:43 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 175ms (Views: 155.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:41:45 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>CREA TU CUENTA</h1>
+    2: <%= form_for @cuenta, :html => { :method => :post }, :url => { :action => :crear } do |f| %>
+    3: <% if @cuenta.errors.any? %>
+    4:   <div id="errorExplanation">
+    5:     <h2><%= pluralize(@cuenta.errors.count, "error") %> prohibited
+  
+app/views/usuario/CrearCuenta.html.erb:2:in `_app_views_usuario__rear_uenta_html_erb__195485878_103800280'
+Started GET "/" for 127.0.0.1 at 2019-01-30 22:42:51 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 198ms (Views: 176.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:42:53 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/PERSONAL/Documents/GitHub/parkking/app/views/usuario/CrearCuenta.html.erb:2: syntax error, unexpected tIVAR, expecting keyword_end
+...> { :action => :crear } @cuenta do |f| @output_buffer.safe_a...
+...                        ^~~~~~~
+C:/Users/PERSONAL/Documents/GitHub/parkking/app/views/usuario/CrearCuenta.html.erb:62: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/usuario/CrearCuenta.html.erb:2: syntax error, unexpected tIVAR, expecting keyword_end
+app/views/usuario/CrearCuenta.html.erb:62: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2019-01-30 22:47:05 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 181ms (Views: 154.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:47:07 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>CREA TU CUENTA</h1>
+    2: <%= form_for :cuenta , :html => { :method => :post }, :url => { :action => :crear } do |f| %>
+    3: <% if @post.errors.any? %>
+    4:   <div id="errorExplanation">
+    5:     <h2><%= pluralize(@post.errors.count, "error") %> prohibited
+    6:       this post from being saved:</h2>
+  
+app/views/usuario/CrearCuenta.html.erb:3:in `block in _app_views_usuario__rear_uenta_html_erb__195485878_100785220'
+app/views/usuario/CrearCuenta.html.erb:2:in `_app_views_usuario__rear_uenta_html_erb__195485878_100785220'
+Started GET "/" for 127.0.0.1 at 2019-01-30 22:49:48 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 243ms (Views: 203.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:49:51 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (22.3ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>CREA TU CUENTA</h1>
+    2: <%= form_for :cuenta , :html => { :method => :post }, :url => { :action => :crear } do |f| %>
+    3: 	<% if @post.errors.any? %>
+    4: 	 	<div id="errorExplanation">
+    5: 	    	<h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    6: 	    	<ul>
+  
+app/views/usuario/CrearCuenta.html.erb:3:in `block in _app_views_usuario__rear_uenta_html_erb__195485878_99386020'
+app/views/usuario/CrearCuenta.html.erb:2:in `_app_views_usuario__rear_uenta_html_erb__195485878_99386020'
+Started GET "/" for 127.0.0.1 at 2019-01-30 22:50:09 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 162ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-01-30 22:50:12 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 186ms (Views: 161.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-01 19:49:58 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 1704ms (Views: 1663.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-02-01 19:50:03 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (102.7ms)
+Completed 200 OK in 389ms (Views: 344.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-02-01 19:50:16 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y1oDZQSKD7pPsnZNfUL1U+dIUL2/RbkV9gP/iBM8aiKvssJABHb9/59ZOmDTTfPjYbdKKWS9hG73Kxoji4pXfQ==", "cuenta"=>{"correo"=>"cliente@gmail", "documentos"=>"", "contrasena"=>"perrito", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameters: :documentos, :RPassword
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[36mAutenticacion Create (1.6ms)[0m  [1m[32mINSERT INTO "autenticacions" ("correo", "contrasena", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["correo", "cliente@gmail"], ["contrasena", "perrito"], ["created_at", "2019-02-02 00:50:16.937936"], ["updated_at", "2019-02-02 00:50:16.937936"]]
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 361ms (Views: 273.4ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-02-01 19:50:31 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 220ms (Views: 193.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-02-01 19:50:48 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1McFUDsYn4drGb75tRhPo52AmuSXbrBK+TbIF8qktu0YL8R1O+Rtwrvy8tQbF0kTG3+AcEyWjTH4Hi28UhKLsg==", "cuenta"=>{"correo"=>"", "documentos"=>"", "contrasena"=>"sdadsa", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameters: :documentos, :RPassword
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 154ms (Views: 145.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-01 19:53:49 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 597ms (Views: 575.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/CrearCuenta" for 127.0.0.1 at 2019-02-01 19:54:41 -0500
+Processing by UsuarioController#CrearCuenta as HTML
+  Rendering usuario/CrearCuenta.html.erb within layouts/application
+  Rendered usuario/CrearCuenta.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 149ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/crear" for 127.0.0.1 at 2019-02-01 19:55:22 -0500
+Processing by UsuarioController#crear as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F3uxLqCEjhtlr+fAjGyzRfc3c8TvvuR596Vdv9gcE4rbk3ALoHh8XrVEq+0iY7X1cchpUDRG2QL2jbgUQKou1Q==", "cuenta"=>{"correo"=>"dueño@gmail.com", "documentos"=>"", "contrasena"=>"perrito", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameters: :documentos, :RPassword
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[36mAutenticacion Create (1.1ms)[0m  [1m[32mINSERT INTO "autenticacions" ("correo", "contrasena", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["correo", "dueño@gmail.com"], ["contrasena", "perrito"], ["created_at", "2019-02-02 00:55:22.919313"], ["updated_at", "2019-02-02 00:55:22.919313"]]
+  ↳ app/controllers/usuario_controller.rb:36
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuario_controller.rb:36
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 219ms (Views: 143.3ms | ActiveRecord: 13.0ms)
+
+
