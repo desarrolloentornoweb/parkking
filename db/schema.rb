@@ -10,11 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2019_01_31_022839) do
 
   create_table "autenticacions", force: :cascade do |t|
     t.string "correo"
     t.string "contrasena"
+
+
+  create_table "estacionamientos", force: :cascade do |t|
+    t.string "nombre"
+    t.integer "departamento"
+    t.integer "provincia"
+    t.integer "distrito"
+    t.string "direccion"
+    t.float "latitud"
+    t.float "longitud"
+    t.boolean "lunes"
+    t.boolean "martes"
+    t.boolean "miercoles"
+    t.boolean "jueves"
+    t.boolean "viernes"
+    t.boolean "sabado"
+    t.boolean "domingo"
+    t.time "hinicio"
+    t.time "hcierre"
+    t.string "telf"
+    t.integer "nespac"
+    t.integer "largo"
+    t.integer "ancho"
+    t.integer "alto"
+    t.integer "precio"
+    t.string "img"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "serv_adicinales", force: :cascade do |t|
+    t.string "nombre"
+    t.decimal "precio"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ubigeos", force: :cascade do |t|
+    t.string "idDepartamento"
+    t.string "Departamento"
+    t.string "idProvincia"
+    t.string "Provincia"
+    t.string "idDistrito"
+    t.string "Distrito"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

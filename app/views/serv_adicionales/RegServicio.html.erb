@@ -1,29 +1,25 @@
-<div class="text-justify">
+<div class="text-center">
   <h4>****************************************</h4>	
   <h3>       Nuevo Servicio Adicional         </h3>
   <h4>****************************************</h4>
 </div>
 
 <%= form_for :Servicios, :html => {:method => :post, :class => "form-horizontal"}, :url => { :action => :ServEstac} do |a| %>
-	<div class="form-group">
-		<div class="col-sm-3">
-			<%= a.label :fecha, "Nombre del nuevo Servicio" %>
-		</div>
-		<div class="col-sm-3">
-      <%= a.text_field :nuevoservicio, {:class => "form-control", :min => 8, :max => 240 } %>
+	
+	<div class="col-sm-offset-3 col-sm-3">
+      <%= a.label :nombre, "Nombre del estacionamiento" %>
     </div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-3">
-			<%= a.label :precios, "Precio sugerido nuevo servicio" %>
-		</div>
-		<div class="col-sm-3">
-			<%= a.text_field :precios, {:class => "form-control",:min => 7, :max => 24 }  %>
-		</div>
-	</div>
-	
-	
-	  
+    <div class="col-sm-3">
+      <%= a.text_field :nombre, {:class => "form-control", :placeholder => "Ingrese el nombre"} %>
+    </div>
+    <div class="col-sm-offset-3 col-sm-3">
+      <%= a.label :precio, "Precio en soles" %>
+    </div>
+    <div class="col-sm-3">
+      <%= a.number_field :precio, {:class => "form-control", :placeholder => "Ingrese el precio"} %>
+    </div>
+
+
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-9">
 			<%= a.submit "Aceptar", :class => "btn btn-info", :onclick => "return _onclick();" %>
@@ -32,16 +28,3 @@
 	</div>
 	
 <% end %>
-
-<script type="text/javascript">
-		function _onclick() {
-			var fecha = $("#alquilar_fecha").val();
-
-			if (fecha == '') {
-				alert('Falta ingresar la fecha de alquiler');
-				$("#alquilar_fecha").focus();
-				return false;
-			}
-		}
-		
-</script>

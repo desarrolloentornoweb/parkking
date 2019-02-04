@@ -1,0 +1,30 @@
+<%= form_with(model: serv_adicinale, local: true, :html => {:class => "form-horizontal"}) do |form| %>
+  <% if serv_adicinale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(serv_adicinale.errors.count, "error") %> prohibited this serv_adicinale from being saved:</h2>
+
+      <ul>
+      <% serv_adicinale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="col-sm-offset-3 col-sm-3">
+      <%= form.label :nombre, "Nombre del servicio" %>
+    </div>
+    <div class="col-sm-3">
+      <%= form.text_field :nombre, {:class => "form-control", :placeholder => "Ingrese el nombre"} %>
+    </div>
+    <div class="col-sm-offset-3 col-sm-3">
+      <%= form.label :precio, "Precio en soles" %>
+    </div>
+    <div class="col-sm-3">
+      <%= form.number_field :precio, {:class => "form-control", :placeholder => "Ingrese el precio"} %>
+    </div>
+
+  <div class="actions">
+    <%= form.submit "Crear servicio" %>
+  </div>
+<% end %>

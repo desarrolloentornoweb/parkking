@@ -11,119 +11,40 @@
 </div>
 <div class="form-group">
 	<div class="col-sm-12">
-		<%= link_to "Registrar nuevo estacionamiento", {:controller => "estacionamiento", :action => "RegEstac"}, {:class => "btn btn-primary btn-block"} %>
+		<%= link_to "Registrar nuevo estacionamiento", {:controller => "estacionamientos", :action => "new"}, {:class => "btn btn-primary btn-block"} %>
 	</div>
 </div>
 
+<% @estacionamientos.each do |estacionamiento| %>
 <div class="form-group">
 	<div class="col-sm-4">
 		<img src="/assets/img01.jpg" class="img-thumbnail" alt="Cinque Terre">
 	</div>
 	<div class="col-sm-6">
-		<h1>Alquiler de estacionamiento en Magdalena del MAR</h1>
-		<p>S/. 200.00</p>
-		<p>Lima-Lima-Magdalena del Mar</p>
-		<p>Av El morro 655</p>
-		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
-		<p>Interior</p>
-	</div>
-	<div class="col-sm-2">
-		<br>
-		<br>
-		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Editar", { :controller => "estacionamiento", :action => "EditEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
-		<br>
-		<br>
-		<%= link_to "Servicios Adicionales", { :controller => "serv_adicionales", :action => "ServEstac" } %>
-	</div>		
-</div>
+		<h2><%= estacionamiento.nombre %></h2>
 
-<div class="form-group">
-	<div class="col-sm-4">
-		<img src="/assets/img02.jpg" class="img-thumbnail" alt="Cinque Terre">
-	</div>
-<div class="col-sm-6">
-	  <h1>Rento estacionamiento en Cercado de Lima </h1>
-      <p>S/. 100.00</p>
-      <p>Lima-Lima-Cercado de Lima</p>
-      <p>Av Jiron de la Unión </p>
-      <p>Largo:4mtrs Alto:2mtrs Ancho:3mtrs</p>
-      <p>Interior</p>
+		<p><strong>Precio: </strong><%= estacionamiento.precio %></p>
+		<p><strong>Departamento: </strong><%= estacionamiento.departamento %> <strong>, Provincia: </strong><%= estacionamiento.provincia %> <strong>, Distrito: </strong><%= estacionamiento.distrito %></p>
+		<p><strong>Dirección: </strong><%= estacionamiento.direccion %></p>
+		<p><strong>Medidas: Largo: </strong><%= estacionamiento.largo %> <strong>m. Ancho: </strong></strong><%= estacionamiento.ancho %> <strong>m. Alto: </strong></strong><%= estacionamiento.alto %></p>
+		<p><strong>Teléfono: </strong><%= estacionamiento.telf %></p>>
 	</div>
 	<div class="col-sm-2">
 		<br>
 		<br>
-		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
+		<%= link_to 'Ver', estacionamiento %>
 		<br>
 		<br>
-		<%= link_to "Editar", { :controller => "estacionamiento", :action => "RegEstac" } %>
+		<%= link_to "Editar", edit_estacionamiento_path(estacionamiento) %>
 		<br>
 		<br>
-		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
+		<%= link_to 'Eliminar', estacionamiento, method: :delete, data: { confirm: '¿Está usted seguro?' } %>
 		<br>
 		<br>
 		<%= link_to "Servicios Adicionales", { :controller => "serv_adicionales", :action => "ServEstac" } %>
 	</div>		
 </div>
-<div class="form-group">
-	<div class="col-sm-4">
-		<img src="/assets/img03.jpg" class="img-thumbnail" alt="Cinque Terre">
-	</div>
-	<div class="col-sm-6">
-		<h1>Alquiler de estacionamiento en Magdalena del MAR</h1>
-		<p>S/. 200.00</p>
-		<p>Lima-Lima-Magdalena del Mar</p>
-		<p>Av El morro 655</p>
-		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
-		<p>Interior</p>
-	</div>
-	<div class="col-sm-2">
-		<br>
-		<br>
-		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Editar", { :controller => "estacionamiento", :action => "RegEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
-		<br>
-		<br>
-		<%= link_to "Servicios Adicionales", { :controller => "serv_adicionales", :action => "ServEstac" } %>
-	</div>	
-</div>
-<div class="form-group">
-	<div class="col-sm-4">
-		<img src="/assets/img04.jpg" class="img-thumbnail" alt="Cinque Terre">
-	</div>
-	<div class="col-sm-6">
-		<h1>Renta de estacionamiento en Magdalena del MAR</h1>
-		<p>S/. 200.00</p>
-		<p>Lima-Lima-Magdalena del Mar</p>
-		<p>Av El morro 655</p>
-		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
-		<p>Interior</p>
-	</div>
-	<div class="col-sm-2">
-		<br>
-		<br>
-		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Editar", { :controller => "estacionamiento", :action => "RegEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Eliminar", { :controller => "home", :action => "Nosotros" } %>
-		<br>
-		<br>
-		<%= link_to "Servicios Adicionales", { :controller => "serv_adicionales", :action => "ServEstac" } %>
-	</div>	
-</div>
+<% end %>
 
 <% end %>
 

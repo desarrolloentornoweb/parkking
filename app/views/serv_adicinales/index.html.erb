@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-center">Servicios Adicionales</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @serv_adicinales.each do |serv_adicinale| %>
+      <tr>
+        <td><%= serv_adicinale.nombre %></td>
+        <td><%= serv_adicinale.precio %></td>
+        <td><%= link_to 'Ver más', serv_adicinale %></td>
+        <td><%= link_to 'Editar', edit_serv_adicinale_path(serv_adicinale) %></td>
+        <td><%= link_to 'Eliminar', serv_adicinale, method: :delete, data: { confirm: '¿Está usted seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo servicio adicional', new_serv_adicinale_path %>

@@ -6,88 +6,124 @@
   <div class="col-sm-4">
     <div class="panel panel-primary">
       <div class="panel-heading">FILTRAR POR</div>
-  	     <%= f.label :todoslosresultados, { :class => "radio-inline"} do %>
-    	     <%= f.radio_button :todoslosresultados, "ValorSeleccionado" %>
-    	     Todos los resultados 
+         <%= f.label :todoslosresultados, { :class => "radio-inline"} do %>
+           <%= f.radio_button :todoslosresultados, "ValorSeleccionado" %>
+           Todos los resultados 
          <% end %>
     
 
       <div class="panel-heading">CATEGORIAS</div>
         <div class="container">
+
             <h4>TIPO</h4>
 
-                <div class="checkbox">
-                   <label><input type="checkbox" value="">Interior</label>
-                </div>
+                  <%= f.label :interior, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chkInterior, {}, "1", nil %> 
+                   Interior
+                    <% end %>
+                    <br>
 
-                <div class="checkbox">
-                <label><input type="checkbox" value="">Exterior</label>
-                </div>
+                  <%= f.label :exterior, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chkExterior, {}, "1", nil %> 
+                  Exterior
+                  <% end %>
+                  <br>
 
-                  <div class="checkbox">
-                <label><input type="checkbox" value="">Aire Libre</label>
-                </div>
+                  <%= f.label :airelibre, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chkAireLibre, {}, "1", nil %> 
+                  Aire Libre
+                  <% end %>
+                  <br>
+                  <br>
+
 
             <h4>UBICACIÓN</h4>
+
+                   <%= f.label :ubicacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chkPrimerPiso, {}, "1", nil %> 
+                   Primer Piso
+                    <% end %>
+                    <br>
            
-                <div class="checkbox">
-                   <label><input type="checkbox" value="">Primer Piso</label>
-                </div>
 
-                <div class="checkbox">
-                <label><input type="checkbox" value="">Segundo Piso</label>
-                </div>
+                   <%= f.label :ubicacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chkSegundoPiso, {}, "1", nil %> 
+                   Segundo Piso
+                    <% end %>
+                    <br>
 
-                  <div class="checkbox">
-                <label><input type="checkbox" value="">Sótano</label>
-                </div>
+
+                   <%= f.label :ubicacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chkSotano, {}, "1", nil %> 
+                   Sotano
+                    <% end %>
+                    <br>
 
             <br>
             <h4>CALIFICACIÓN</h4>
-        
-                <div class="checkbox">
 
-                   <label><input type="checkbox" value="">1</label>
-                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                </div>
-
-                <div class="checkbox">
-                <label><input type="checkbox" value="">2</label>
-                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <%= f.label :calificacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chk1, {}, "1", nil %> 
+                   1
+                  <% end %>
                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                </div>
+                  <br>
 
-                  <div class="checkbox">
-                <label><input type="checkbox" value="">3</label>
-                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+
+
+                  <%= f.label :calificacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :ch2, {}, "2", nil %> 
+                   2
+                  <% end %>
                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                </div>
-
-                <div class="checkbox">
-                <label><input type="checkbox" value="">4</label>
-                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <br>
 
-                </div>
-
-                <div class="checkbox">
-                <label><input type="checkbox" value="">5</label>
-                 <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <%= f.label :calificacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chk3, {}, "3", nil %> 
+                   3
+                  <% end %>
                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                   <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                    <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                     <label><p><span class="glyphicon glyphicon-star"></span></p></label>
-                </div>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>                                  
+                  <br>
+
+
+                  <%= f.label :calificacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chk4, {}, "4", nil %> 
+                   4
+                  <% end %>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <br>                 
+
+                  <%= f.label :calificacion, { :class => "checkbox-inline"} do  %>
+                  <%= f.check_box :chk5, {}, "5", nil %> 
+                   5
+                  <% end %>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+                  <br>                
 
              <br>
             <h4>DISTRITO</h4>
             <div class="col-sm-3">       
             <%= f.select :documentos, [["Lima",1],["Callao",2],["Cercado",3],["SMP",2],["SJL",2],["Surco",2]], {:include_blank => "Seleccione"},{:class=>"form-control"} %>
+
+            <br>
+            <div class="col-sm-4">
+            <%= f.submit "BUSCAR", :class => "btn btn-primary" %>
+             </div>
+
           </div>
         </div>
+
+        <br>
       </div>
 
   </div>
@@ -130,4 +166,5 @@
 
 
 </div>
+
 <% end %>
