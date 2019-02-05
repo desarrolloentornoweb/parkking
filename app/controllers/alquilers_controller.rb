@@ -30,7 +30,6 @@ class AlquilersController < ApplicationController
   def create
     @alquiler = Alquiler.new(alquiler_params)
     @serv_adicinales = ServAdicinale.all
-    
     respond_to do |format|
       if @alquiler.save
         format.html { redirect_to @alquiler, notice: 'Alquiler was successfully created.' }

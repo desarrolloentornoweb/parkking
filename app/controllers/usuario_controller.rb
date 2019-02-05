@@ -7,7 +7,11 @@ class UsuarioController < ApplicationController
   end
 
   def PrincipalCli
+
     #@estacionamientos = Estacionamiento.all  
+
+    @alquilers = Alquiler.all
+
   end
 
   def EditPerfil
@@ -19,6 +23,7 @@ class UsuarioController < ApplicationController
 
   def PrincipalDue
     @post=Autenticacion.new
+    @estacionamientos = Estacionamiento.all
   end
 
   def modificar

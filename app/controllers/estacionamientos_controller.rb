@@ -5,23 +5,38 @@ class EstacionamientosController < ApplicationController
   # GET /estacionamientos.json
   def index
     @estacionamientos = Estacionamiento.all
+    @serv_adicinales = ServAdicinale.all
+    @lista_estacionamientos = Estacionamiento.find_by_sql("select A.fecha, A.hora, E.nombre from alquilers A join estacionamientos E on A.idEstacionamiento = E.id where A.fecha between '1-11-2019' and '12-12-2019'")
   end
 
   # GET /estacionamientos/1
   # GET /estacionamientos/1.json
   def show
-    #@departamento = Ubigeo.find_by_sql(where idDepartamento = @estacionamiento.departamento)
+    #@departamento = Ubigeo.find_by_sql("where idDepartamento="+@estacionamiento.departamento.to_s)
     @serv_adicinales = ServAdicinale.all
+    @departamento = Ubigeo.where(:idDepartamento => @estacionamiento.departamento).first
+    @provincia = Ubigeo.where(:idProvincia => @estacionamiento.provincia).first
+    @distrito = Ubigeo.where(:idDistrito => @estacionamiento.distrito).first
+    @lista_departamentos = Ubigeo.find_by_sql("select  distinct idDepartamento, Departamento from ubigeos")
+    @lista_provincias = Ubigeo.find_by_sql("select  distinct idProvincia, Provincia from ubigeos")
+    @lista_distritos = Ubigeo.find_by_sql("select  distinct idDistrito, Distrito from ubigeos")
+    
   end
 
   # GET /estacionamientos/new
   def new
     @estacionamiento = Estacionamiento.new
+    @lista_departamentos = Ubigeo.find_by_sql("select  distinct idDepartamento, Departamento from ubigeos")
+    @lista_provincias = Ubigeo.find_by_sql("select  distinct idProvincia, Provincia from ubigeos")
+    @lista_distritos = Ubigeo.find_by_sql("select  distinct idDistrito, Distrito from ubigeos")
     @serv_adicinales = ServAdicinale.all
   end
 
   # GET /estacionamientos/1/edit
   def edit
+    @lista_departamentos = Ubigeo.find_by_sql("select  distinct idDepartamento, Departamento from ubigeos")
+    @lista_provincias = Ubigeo.find_by_sql("select  distinct idProvincia, Provincia from ubigeos")
+    @lista_distritos = Ubigeo.find_by_sql("select  distinct idDistrito, Distrito from ubigeos")
     @serv_adicinales = ServAdicinale.all
   end
 
@@ -29,6 +44,10 @@ class EstacionamientosController < ApplicationController
   # POST /estacionamientos.json
   def create
     @estacionamiento = Estacionamiento.new(estacionamiento_params)
+    @lista_departamentos = Ubigeo.find_by_sql("select  distinct idDepartamento, Departamento from ubigeos")
+    @lista_provincias = Ubigeo.find_by_sql("select  distinct idProvincia, Provincia from ubigeos")
+    @lista_distritos = Ubigeo.find_by_sql("select  distinct idDistrito, Distrito from ubigeos")
+    @serv_adicinales = ServAdicinale.all
 
     respond_to do |format|
       if @estacionamiento.save
@@ -69,7 +88,6 @@ class EstacionamientosController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_estacionamiento
       @estacionamiento = Estacionamiento.find(params[:id])
-      @estacionamiento.departamento = "Lima"
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

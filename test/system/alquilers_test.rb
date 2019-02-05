@@ -19,6 +19,7 @@ class AlquilersTest < ApplicationSystemTestCase
     fill_in "Hora", with: @alquiler.hora
     fill_in "Nhora", with: @alquiler.nhora
     fill_in "Tpaog", with: @alquiler.tpaog
+
     click_on "Create Alquiler"
 
     assert_text "Alquiler was successfully created"
@@ -29,11 +30,13 @@ class AlquilersTest < ApplicationSystemTestCase
     visit alquilers_url
     click_on "Edit", match: :first
 
+
     fill_in "Estacionamiento", with: @alquiler.estacionamiento_id
     fill_in "Fecha", with: @alquiler.fecha
     fill_in "Hora", with: @alquiler.hora
     fill_in "Nhora", with: @alquiler.nhora
     fill_in "Tpaog", with: @alquiler.tpaog
+
     click_on "Update Alquiler"
 
     assert_text "Alquiler was successfully updated"

@@ -1,6 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+
+  <strong>Idestacionamiento:</strong>
+  <%= @alquiler.estacionamiento_id %>
+</p>
+
+<p>
+
   <strong>Fecha:</strong>
   <%= @alquiler.fecha %>
 </p>
@@ -16,14 +23,11 @@
 </p>
 
 <p>
-  <strong>Tpaog:</strong>
+
+  <strong>Tpago:</strong>
   <%= @alquiler.tpaog %>
 </p>
 
-<p>
-  <strong>Estacionamiento:</strong>
-  <%= @alquiler.estacionamiento %>
-</p>
+<%= link_to 'Editar', edit_alquiler_path(@alquiler) %> |
+<%= link_to 'Atrás', alquilers_path %>
 
-<%= link_to 'Edit', edit_alquiler_path(@alquiler) %> |
-<%= link_to 'Back', alquilers_path %>

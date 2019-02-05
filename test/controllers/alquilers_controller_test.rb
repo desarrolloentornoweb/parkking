@@ -17,7 +17,9 @@ class AlquilersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create alquiler" do
     assert_difference('Alquiler.count') do
+
       post alquilers_url, params: { alquiler: { estacionamiento_id: @alquiler.estacionamiento_id, fecha: @alquiler.fecha, hora: @alquiler.hora, nhora: @alquiler.nhora, tpaog: @alquiler.tpaog } }
+
     end
 
     assert_redirected_to alquiler_url(Alquiler.last)
@@ -34,7 +36,9 @@ class AlquilersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update alquiler" do
+
     patch alquiler_url(@alquiler), params: { alquiler: { estacionamiento_id: @alquiler.estacionamiento_id, fecha: @alquiler.fecha, hora: @alquiler.hora, nhora: @alquiler.nhora, tpaog: @alquiler.tpaog } }
+
     assert_redirected_to alquiler_url(@alquiler)
   end
 

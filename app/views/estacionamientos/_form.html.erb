@@ -23,7 +23,15 @@
       <%= form.label :departamento, "Departamento" %>
     </div>
     <div class="col-sm-3 col-sm-offset-1">
-      <%= form.select :departamento, [["Amazonas",1], ["Áncash",2], ["Apurímac",3], ["Arequipa",4], ["Ayacucho",5], ["Cajamarca",6], ["Cusco",7], ["huancavelica",8], ["Huánuco",9], ["Ica",10], ["Junín",11], ["La Libertad",12], ["Lambayeque",13], ["Lima",14], ["Loreto",15], ["Madre de Dios",16], ["Moquegua",17], ["Pasco",18], ["Piura",19], ["Puno",20], ["San Martín",21], ["Tacna",22], ["Tumbes",23], ["Ucayali",24]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+      <select id = "estacionamiento_departamento" name="estacionamiento[departamento]" class="form-control">
+      <option value="">
+        Seleccionar 
+      </option>
+      <% @lista_departamentos.each do |departamento| %>
+      <option value="<%= departamento.idDepartamento %>">
+        <%= departamento.Departamento %>
+      </option>
+      <% end %>
     </div>
   </div>
 
@@ -32,14 +40,30 @@
       <%= form.label :provincia, "Provincia" %>
     </div>
     <div class="col-sm-3">
-      <%= form.select :provincia, [["Bagua",1], ["Chachapoyas",2]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+      <select id = "estacionamiento_provincia" name="estacionamiento[provincia]" class="form-control">
+      <option value="">
+        Seleccionar 
+      </option>
+      <% @lista_provincias.each do |provincia| %>
+      <option value="<%= provincia.idProvincia %>">
+        <%= provincia.Provincia %>
+      </option>
+      <% end %>
     </div>
 
     <div class="col-sm-2">
       <%= form.label :distrito, "Distrito" %>
     </div>
     <div class="col-sm-3 col-sm-offset-1">
-      <%= form.select :distrito, [["Ancón",1], ["Ate",2], ["Barranco",3], ["Breña",4], ["Carabayllo",5], ["Chaclacayo",6], ["Chorrillos",7], ["Cieneguilla",8], ["Comas",9], ["El Agustino",10]], {:include_blank => "Seleccionar" }, { :class => "form-control"} %>
+      <select id = "estacionamiento_distrito" name="estacionamiento[distrito]" class="form-control">
+      <option value="">
+        Seleccionar 
+      </option>
+      <% @lista_distritos.each do |distrito| %>
+      <option value="<%= distrito.idDistrito %>">
+        <%= distrito.Distrito %>
+      </option>
+      <% end %>
     </div>
   </div>
 
@@ -189,8 +213,7 @@
 
 
   <div class="col-sm-offset-1 col-sm-11">
-
-    <%= link_to "Agregar servicio adicional", {:controller => "serv_adicionales", :action => "ServEstac"}, {:class => "btn btn-info"} %>
+    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#mdServicios">Buscar servicio</button>
     <br>
     <br>
   </div>
@@ -224,6 +247,46 @@
 
   </div>
 </div>
+
+<div id="mdServicios" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Seleccionar Servicio</h4>
+      </div>
+      <div class="modal-body">
+       <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @serv_adicinales.each do |serv_adicinale| %>
+            <tr>
+              <td><input type="checkbox" name="checkeServicio" idSev="<%= serv_adicinale.id %>"></td>
+              <td><%= serv_adicinale.nombre %></td>
+              <td><input type="text" id="txtPrecio_<%= serv_adicinale.id %>" name="txtprecio"></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 <script>
     var map;
