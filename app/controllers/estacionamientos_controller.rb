@@ -6,6 +6,7 @@ class EstacionamientosController < ApplicationController
   def index
     @estacionamientos = Estacionamiento.all
     @serv_adicinales = ServAdicinale.all
+    @lista_estacionamientos = Estacionamiento.find_by_sql("select A.fecha, A.hora, E.nombre from alquilers A join estacionamientos E on A.idEstacionamiento = E.id where A.fecha between '1-11-2019' and '12-12-2019'")
   end
 
   # GET /estacionamientos/1
