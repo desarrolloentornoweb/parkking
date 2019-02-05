@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idEstacionamiento: 1
+  fecha: 2019-02-04
+  hora: 2019-02-04 23:57:04
+  nhora: 1
+  tpago: MyString
+
+two:
+  idEstacionamiento: 1
+  fecha: 2019-02-04
+  hora: 2019-02-04 23:57:04
+  nhora: 1
+  tpago: MyString

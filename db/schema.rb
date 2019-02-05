@@ -10,13 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 2019_02_05_045704) do
 
-ActiveRecord::Schema.define(version: 2019_01_31_022839) do
+  create_table "alquilers", force: :cascade do |t|
+    t.integer "idEstacionamiento"
+    t.date "fecha"
+    t.time "hora"
+    t.integer "nhora"
+    t.string "tpago"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "autenticacions", force: :cascade do |t|
     t.string "correo"
     t.string "contrasena"
-
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "estacionamientos", force: :cascade do |t|
     t.string "nombre"
@@ -60,7 +71,6 @@ ActiveRecord::Schema.define(version: 2019_01_31_022839) do
     t.string "Provincia"
     t.string "idDistrito"
     t.string "Distrito"
-
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

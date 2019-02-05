@@ -1,0 +1,77 @@
+<%= form_with(model: alquiler, local: true, :html => { :class => "form-horizontal"}) do |form| %>
+  <% if alquiler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(alquiler.errors.count, "error") %> No se puede realizar el alquiler:</h2>
+
+      <ul>
+      <% alquiler.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= form.hidden_field :idEstacionamientos %>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-2">
+      <%= form.label :fecha, "Fecha" %>
+    </div>
+    <div class="col-sm-2">
+      <%= form.date_field :fecha, {:class => "form-control"} %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-2">
+      <%= form.label :hora, "Hora" %>
+    </div>
+    <div class="col-sm-2">
+      <%= form.time_select :hora %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-2">
+      <%= form.label :nhora, "Número de horas" %>
+    </div>
+    <div class="col-sm-2">
+      <%= form.number_field :nhora, {:class => "form-control", :min => 1, :max => 24 } %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-2">
+      <%= form.label :tpago, "Tipo de pago" %>
+    </div>
+    <div class="col-sm-2">
+      <%= form.select :tpago, [["Efectivo",1], ["Tarjeta",2]], {:include_blank => "Seleccionar"}, {:class => "form-control", :placeholder => "Seleccione un tipo de pago"} %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-2">
+      <%= form.label :sadicionales, "Servicios Adicionales" %>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="col-sm-offset-4"></th>
+            <th class="col-sm-4">Nombre</th>
+            <th class="col-sm-4">Precio</th>
+            
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @serv_adicinales.each do |serv_adicinale| %>
+            <tr>
+              <td><input type="checkbox" name="checkeServicio" idSev="<%= serv_adicinale.id %>"></td>
+              <td><%= serv_adicinale.nombre %></td>
+              <td><input type="text" id="txtPrecio_<%= serv_adicinale.id %>" name="txtprecio"></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+  </div>
+
+  <div class="actions col-sm-offset-7">
+    <%= form.submit "Alquilar", {:class => "btn btn-info"} %>
+  </div>
+<% end %>

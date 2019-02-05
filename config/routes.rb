@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :alquilers
   resources :serv_adicinales
   resources :estacionamientos
   get 'busqueda/BuscarFiltro'

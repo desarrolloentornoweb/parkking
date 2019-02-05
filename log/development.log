@@ -985,3 +985,1855 @@ D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adiciona
 app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
 app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
 app/views/serv_adicionales/ServEstac.html.erb:33: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2019-02-04 21:38:09 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-04 21:38:14 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateAutenticacions (20190131022839)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190131022839_create_autenticacions.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "autenticacions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "correo" varchar, "contrasena" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190131022839_create_autenticacions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190131022839"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (160.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2019-02-04 21:40:36 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 2081ms (Views: 2041.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 21:41:16 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 216ms (Views: 166.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 21:41:21 -0500
+Processing by EstacionamientosController#new as HTML
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (21.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 200ms (Views: 186.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 21:41:53 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EWcHVv9K5NsLRAvqabH9XUSRjekAOFoun8RlMDR0zDXJ3C/tXNVcZMl4giq7TbxhIp3v6Djp1V19QvqNOV/EVg==", "estacionamiento"=>{"nombre"=>"Sexto", "departamento"=>"4", "provincia"=>"1", "distrito"=>"3", "direccion"=>"Av. Girasoles 242", "latitud"=>"", "longitud"=>"", "lunes"=>"Lunes", "miercoles"=>"Miércoles", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"02", "hinicio(5i)"=>"41", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"02", "hcierre(5i)"=>"41", "telf"=>"", "nespac"=>"2", "largo"=>"2", "ancho"=>"2", "alto"=>"2", "precio"=>"2"}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:34
+  [1m[36mEstacionamiento Create (0.9ms)[0m  [1m[32mINSERT INTO "estacionamientos" ("nombre", "departamento", "provincia", "distrito", "direccion", "lunes", "miercoles", "hinicio", "hcierre", "telf", "nespac", "largo", "ancho", "alto", "precio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Sexto"], ["departamento", 4], ["provincia", 1], ["distrito", 3], ["direccion", "Av. Girasoles 242"], ["lunes", 1], ["miercoles", 1], ["hinicio", "2000-01-01 02:41:00"], ["hcierre", "2000-01-01 02:41:00"], ["telf", ""], ["nespac", 2], ["largo", 2], ["ancho", 2], ["alto", 2], ["precio", 2], ["created_at", "2019-02-05 02:41:53.550126"], ["updated_at", "2019-02-05 02:41:53.550126"]]
+  ↳ app/controllers/estacionamientos_controller.rb:34
+  [1m[35m (179.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:34
+Redirected to http://localhost:3000/estacionamientos/6
+Completed 302 Found in 198ms (ActiveRecord: 180.4ms)
+
+
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 21:41:53 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.5ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:71
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 226ms (Views: 155.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 21:58:30 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 1.8ms)
+
+
+  
+NoMethodError (undefined method `departamento' for nil:NilClass):
+  
+app/controllers/estacionamientos_controller.rb:15:in `show'
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:01:12 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `nombre' for nil:NilClass):
+  
+app/controllers/estacionamientos_controller.rb:15:in `show'
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:05:35 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "0"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:15
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 255ms (Views: 194.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:06:27 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "0"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:15
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 305ms (Views: 214.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:07:52 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "0"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:15
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `Departamento' for nil:NilClass):
+    60:     <tbody>
+    61:       <tr>
+    62:         <th scope="row">Departamento</th>
+    63:           <td><%= @departamento.Departamento %></td>
+    64:       </tr>
+    65:       <tr>
+    66:         <th scope="row">Provincia</th>
+  
+app/views/estacionamientos/show.html.erb:63:in `_app_views_estacionamientos_show_html_erb___232123277_95892108'
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:08:42 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "0"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:15
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 199ms (Views: 179.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:11:22 -0500
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/controllers/estacionamientos_controller.rb:13: syntax error, unexpected tIVAR, expecting ')'
+...epartamento= " @estacionamiento.departamento)
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/controllers/estacionamientos_controller.rb:13: syntax error, unexpected ')', expecting keyword_end):
+  
+app/controllers/estacionamientos_controller.rb:13: syntax error, unexpected tIVAR, expecting ')'
+app/controllers/estacionamientos_controller.rb:13: syntax error, unexpected ')', expecting keyword_end
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:13:04 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[35mwhere idDepartamento=4[0m
+  ↳ app/controllers/estacionamientos_controller.rb:13
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "where": syntax error: where idDepartamento=4):
+  
+app/controllers/estacionamientos_controller.rb:13:in `show'
+Started GET "/estacionamientos/6" for 127.0.0.1 at 2019-02-04 22:13:30 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "4"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:15
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 274ms (Views: 194.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 22:13:49 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 181ms (Views: 149.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/estacionamientos/6/edit" for 127.0.0.1 at 2019-02-04 22:13:57 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:73
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (15.7ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 185ms (Views: 172.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:28:48 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.2ms)[0m  [1m[34mselect  distinct iddepartamento,departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (30.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (42.5ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `iddepartamento' for #<Ubigeo id: nil, idDepartamento: "1", Departamento: "Amazonas">
+Did you mean?  idDepartamento
+               idDepartamento=
+               idDepartamento?
+               idDepartamento_was
+               Departamento
+               idDepartamento_change
+               Departamento=
+               Departamento?):
+    28:         Seleccionar 
+    29:       </option>
+    30:       <% @lista_departamentos.each do |departamento| %>
+    31:       <option value="<%= departamento.iddepartamento %>">
+    32:         <%= departamento.departamento %>
+    33:       </option>
+    34:       <% end %>
+  
+app/views/estacionamientos/_form.html.erb:31:in `block (2 levels) in _app_views_estacionamientos__form_html_erb__12932836_78132900'
+app/views/estacionamientos/_form.html.erb:30:in `each'
+app/views/estacionamientos/_form.html.erb:30:in `block in _app_views_estacionamientos__form_html_erb__12932836_78132900'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_78132900'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_78480516'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:29:41 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.1ms)[0m  [1m[34mselect  distinct iddepartamento,departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (29.0ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (39.1ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `departamento' for #<Ubigeo id: nil, idDepartamento: "1", Departamento: "Amazonas">
+Did you mean?  idDepartamento
+               Departamento
+               idDepartamento?
+               idDepartamento=
+               Departamento?
+               Departamento=):
+    29:       </option>
+    30:       <% @lista_departamentos.each do |departamento| %>
+    31:       <option value="<%= departamento.idDepartamento %>">
+    32:         <%= departamento.departamento %>
+    33:       </option>
+    34:       <% end %>
+    35:     </div>
+  
+app/views/estacionamientos/_form.html.erb:32:in `block (2 levels) in _app_views_estacionamientos__form_html_erb__12932836_95361732'
+app/views/estacionamientos/_form.html.erb:30:in `each'
+app/views/estacionamientos/_form.html.erb:30:in `block in _app_views_estacionamientos__form_html_erb__12932836_95361732'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_95361732'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_95717940'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:29:56 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.1ms)[0m  [1m[34mselect  distinct idDepartamento,departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (30.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (40.4ms)
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `departamento' for #<Ubigeo id: nil, idDepartamento: "1", Departamento: "Amazonas">
+Did you mean?  idDepartamento
+               Departamento
+               idDepartamento?
+               idDepartamento=
+               Departamento?
+               Departamento=):
+    29:       </option>
+    30:       <% @lista_departamentos.each do |departamento| %>
+    31:       <option value="<%= departamento.idDepartamento %>">
+    32:         <%= departamento.departamento %>
+    33:       </option>
+    34:       <% end %>
+    35:     </div>
+  
+app/views/estacionamientos/_form.html.erb:32:in `block (2 levels) in _app_views_estacionamientos__form_html_erb__12932836_89106144'
+app/views/estacionamientos/_form.html.erb:30:in `each'
+app/views/estacionamientos/_form.html.erb:30:in `block in _app_views_estacionamientos__form_html_erb__12932836_89106144'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_89106144'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_89127204'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:30:08 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.2ms)[0m  [1m[34mselect  distinct idDepartamento,departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (11.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 221ms (Views: 204.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:31:00 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.6ms)[0m  [1m[34mselect  distinct idDepartamento,departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (16.2ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 228ms (Views: 208.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-04 22:32:20 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...tput_buffer.append=  a.label :, { :class => "checkbox" } do ...
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+... :, { :class => "checkbox" } do @output_buffer.safe_append='
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/serv_adicionales/ServEstac.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:32:23 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.5ms)[0m  [1m[34mselect  distinct idDepartamento,departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (11.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (598.2ms)
+Completed 200 OK in 4104ms (Views: 2954.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:47:20 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.0ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:256
+  Rendered estacionamientos/_form.html.erb (30.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 274ms (Views: 207.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:48:16 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.2ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:256
+  Rendered estacionamientos/_form.html.erb (13.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 197ms (Views: 183.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 22:50:27 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vnaepwcY/QWp16wTvUSwOUFeTlmBMp7+gvFfPkm35mUaLnYJyjdiLmmHQpj06uZh6gCQSPFC4nfCN1nDluPCAA==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"03", "hinicio(5i)"=>"48", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"03", "hcierre(5i)"=>"48", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (21.4ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (32.3ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    27:       <option value="">
+    28:         Seleccionar 
+    29:       </option>
+    30:       <% @lista_departamentos.each do |departamento| %>
+    31:       <option value="<%= departamento.idDepartamento %>">
+    32:         <%= departamento.Departamento %>
+    33:       </option>
+  
+app/views/estacionamientos/_form.html.erb:30:in `block in _app_views_estacionamientos__form_html_erb__12932836_99247656'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_99247656'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_99280692'
+app/controllers/estacionamientos_controller.rb:41:in `block (2 levels) in create'
+app/controllers/estacionamientos_controller.rb:36:in `create'
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 22:50:51 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.5ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 197ms (Views: 168.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:50:55 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.2ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:22
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:256
+  Rendered estacionamientos/_form.html.erb (22.0ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 199ms (Views: 184.0ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 22:51:00 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IApOVv+rv4bAfNz2gqW/OLc2t3nEHS+RjOpeUpZtDiX4sWbtXDQHOQJAVTZQWf4E0TrVePzMoOJubMHvm0YGRg==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"03", "hinicio(5i)"=>"50", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"03", "hcierre(5i)"=>"50", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (18.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (28.9ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    27:       <option value="">
+    28:         Seleccionar 
+    29:       </option>
+    30:       <% @lista_departamentos.each do |departamento| %>
+    31:       <option value="<%= departamento.idDepartamento %>">
+    32:         <%= departamento.Departamento %>
+    33:       </option>
+  
+app/views/estacionamientos/_form.html.erb:30:in `block in _app_views_estacionamientos__form_html_erb__12932836_94496676'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_94496676'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_94529436'
+app/controllers/estacionamientos_controller.rb:41:in `block (2 levels) in create'
+app/controllers/estacionamientos_controller.rb:36:in `create'
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 22:51:49 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9egIz3L0Zn9MrdcOkaA85WpfiUmT8juy9/aoffTs/QRRsOBhv9v5VIz9OYXYDmq9wQFXWOOCRzu3MK6AK7jZYQ==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"3", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"03", "hinicio(5i)"=>"50", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"03", "hcierre(5i)"=>"50", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (16.9ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (30.3ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    27:       <option value="">
+    28:         Seleccionar 
+    29:       </option>
+    30:       <% @lista_departamentos.each do |departamento| %>
+    31:       <option value="<%= departamento.idDepartamento %>">
+    32:         <%= departamento.Departamento %>
+    33:       </option>
+  
+app/views/estacionamientos/_form.html.erb:30:in `block in _app_views_estacionamientos__form_html_erb__12932836_93675192'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_93675192'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_93733632'
+app/controllers/estacionamientos_controller.rb:41:in `block (2 levels) in create'
+app/controllers/estacionamientos_controller.rb:36:in `create'
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 22:54:14 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9egIz3L0Zn9MrdcOkaA85WpfiUmT8juy9/aoffTs/QRRsOBhv9v5VIz9OYXYDmq9wQFXWOOCRzu3MK6AK7jZYQ==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"3", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"03", "hinicio(5i)"=>"50", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"03", "hcierre(5i)"=>"50", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:41
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:41
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (19.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (31.2ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    27:       <option value="">
+    28:         Seleccionar 
+    29:       </option>
+    30:       <% @lista_departamentos.each do |departamento| %>
+    31:       <option value="<%= departamento.idDepartamento %>">
+    32:         <%= departamento.Departamento %>
+    33:       </option>
+  
+app/views/estacionamientos/_form.html.erb:30:in `block in _app_views_estacionamientos__form_html_erb__12932836_100471752'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_100471752'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_85469040'
+app/controllers/estacionamientos_controller.rb:45:in `block (2 levels) in create'
+app/controllers/estacionamientos_controller.rb:40:in `create'
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 22:55:18 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9egIz3L0Zn9MrdcOkaA85WpfiUmT8juy9/aoffTs/QRRsOBhv9v5VIz9OYXYDmq9wQFXWOOCRzu3MK6AK7jZYQ==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"3", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"03", "hinicio(5i)"=>"50", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"03", "hcierre(5i)"=>"50", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[36mUbigeo Load (1.4ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:39
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:42
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (25.5ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (36.6ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 5.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    253:         </thead>
+    254: 
+    255:         <tbody>
+    256:           <% @serv_adicinales.each do |serv_adicinale| %>
+    257:             <tr>
+    258:               <td><input type="checkbox" name="checkeServicio" idSev="<%= serv_adicinale.id %>"></td>
+    259:               <td><%= serv_adicinale.nombre %></td>
+  
+app/views/estacionamientos/_form.html.erb:256:in `_app_views_estacionamientos__form_html_erb__12932836_97516536'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_97576740'
+app/controllers/estacionamientos_controller.rb:46:in `block (2 levels) in create'
+app/controllers/estacionamientos_controller.rb:41:in `create'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-04 22:55:41 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (1.6ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:24
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:256
+  Rendered estacionamientos/_form.html.erb (18.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 251ms (Views: 222.3ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 22:55:49 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b/0x3NBUilZN0HHKunvDYq5C8W0rscRHtOTEmHtug1zLpdlyHXsVfY2An0Hz1ZU6BRwvfFvBuM70IsJlpDqnOQ==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"03", "hinicio(5i)"=>"55", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"03", "hcierre(5i)"=>"55", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[36mUbigeo Load (1.0ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:39
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:42
+  Rendering estacionamientos/new.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (23.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (36.2ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    253:         </thead>
+    254: 
+    255:         <tbody>
+    256:           <% @serv_adicinales.each do |serv_adicinale| %>
+    257:             <tr>
+    258:               <td><input type="checkbox" name="checkeServicio" idSev="<%= serv_adicinale.id %>"></td>
+    259:               <td><%= serv_adicinale.nombre %></td>
+  
+app/views/estacionamientos/_form.html.erb:256:in `_app_views_estacionamientos__form_html_erb__12932836_88973940'
+app/views/estacionamientos/new.html.erb:3:in `_app_views_estacionamientos_new_html_erb__237644004_89387316'
+app/controllers/estacionamientos_controller.rb:46:in `block (2 levels) in create'
+app/controllers/estacionamientos_controller.rb:41:in `create'
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-04 22:56:31 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b/0x3NBUilZN0HHKunvDYq5C8W0rscRHtOTEmHtug1zLpdlyHXsVfY2An0Hz1ZU6BRwvfFvBuM70IsJlpDqnOQ==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"", "longitud"=>"", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"5", "hinicio(4i)"=>"03", "hinicio(5i)"=>"55", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"5", "hcierre(4i)"=>"03", "hcierre(5i)"=>"55", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[36mUbigeo Load (1.8ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:44
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:256
+  Rendered estacionamientos/_form.html.erb (21.1ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 252ms (Views: 186.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 22:56:53 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.6ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 203ms (Views: 171.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/serv_adicionales/ServEstac" for 127.0.0.1 at 2019-02-04 22:57:04 -0500
+Processing by ServAdicionalesController#ServEstac as HTML
+  Rendering serv_adicionales/ServEstac.html.erb within layouts/application
+  Rendered serv_adicionales/ServEstac.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...tput_buffer.append=  a.label :, { :class => "checkbox" } do ...
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+... :, { :class => "checkbox" } do @output_buffer.safe_append='
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/serv_adicionales/ServEstac.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/views/serv_adicionales/ServEstac.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/serv_adicionales/ServEstac.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 22:57:07 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 4673ms (Views: 4657.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/usuario/PrincipalCli" for 127.0.0.1 at 2019-02-04 22:59:55 -0500
+Processing by UsuarioController#PrincipalCli as HTML
+  Rendering usuario/PrincipalCli.html.erb within layouts/application
+  Rendered usuario/PrincipalCli.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 191ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-02-04 23:00:04 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 179ms (Views: 168.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-02-04 23:01:39 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 215ms (Views: 198.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 23:03:48 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.5ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 183ms (Views: 169.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/estacionamiento/ListarEstac" for 127.0.0.1 at 2019-02-04 23:03:53 -0500
+Processing by EstacionamientoController#ListarEstac as HTML
+  Rendering estacionamiento/ListarEstac.html.erb within layouts/application
+  Rendered estacionamiento/ListarEstac.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 165ms (Views: 141.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/HistoricoEstac" for 127.0.0.1 at 2019-02-04 23:04:00 -0500
+Processing by AlquilerController#HistoricoEstac as HTML
+  Rendering alquiler/HistoricoEstac.html.erb within layouts/application
+  Rendered alquiler/HistoricoEstac.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 250ms (Views: 208.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-02-04 23:04:58 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 164ms (Views: 153.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquiler/RegAlquiler" for 127.0.0.1 at 2019-02-04 23:05:20 -0500
+Processing by AlquilerController#RegAlquiler as HTML
+  Rendering alquiler/RegAlquiler.html.erb within layouts/application
+  Rendered alquiler/RegAlquiler.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 163ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 23:26:55 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 202ms (Views: 177.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:26:58 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:90
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.1ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.6ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.4ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 12.8ms)
+
+
+  
+NameError (uninitialized constant EstacionamientosController::Alquiler):
+  
+app/controllers/estacionamientos_controller.rb:22:in `show'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:27:26 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.0ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.7ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.9ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 253ms (Views: 150.9ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 23:31:46 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 186ms (Views: 163.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:31:48 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (1.2ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (1.7ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (7.5ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  Rendered estacionamientos/_form.html.erb (15.2ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (24.8ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 10.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    59:       <option value="">
+    60:         Seleccionar 
+    61:       </option>
+    62:       <% @lista_distrito.each do |distrito| %>
+    63:       <option value="<%= distrito.idDistrito %>">
+    64:         <%= distrito.Distrito %>
+    65:       </option>
+  
+app/views/estacionamientos/_form.html.erb:62:in `block in _app_views_estacionamientos__form_html_erb__12932836_74672076'
+app/views/estacionamientos/_form.html.erb:1:in `_app_views_estacionamientos__form_html_erb__12932836_74672076'
+app/views/estacionamientos/edit.html.erb:3:in `_app_views_estacionamientos_edit_html_erb__743577635_74961852'
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:32:30 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (1.8ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (13.0ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.5ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:272
+  Rendered estacionamientos/_form.html.erb (60.5ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (76.3ms)
+Completed 200 OK in 286ms (Views: 221.8ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:35:57 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.8ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (1.0ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (1.7ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (9.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:273
+  Rendered estacionamientos/_form.html.erb (32.0ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 253ms (Views: 198.2ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:36:00 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (1.0ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (1.5ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (7.8ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:273
+  Rendered estacionamientos/_form.html.erb (35.8ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 226ms (Views: 176.1ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:37:25 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (1.8ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (2.9ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (7.6ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:273
+  Rendered estacionamientos/_form.html.erb (32.7ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 225ms (Views: 174.7ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:37:27 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (1.1ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (3.3ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (10.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:273
+  Rendered estacionamientos/_form.html.erb (33.2ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 246ms (Views: 169.6ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:38:23 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (2.0ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (9.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:272
+  Rendered estacionamientos/_form.html.erb (32.7ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 229ms (Views: 177.2ms | ActiveRecord: 12.5ms)
+
+
+Started PATCH "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:39:02 -0500
+Processing by EstacionamientosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1bBu8YIh3r4nWFDvo7Mhb6/mqvNwYtU0rTCvhg783TvDikVCycYUTjNj8j3IJrdFeFEur2x992ScsRDx2/XEQ==", "estacionamiento"=>{"nombre"=>"Primero", "departamento"=>"", "distrito"=>"13", "direccion"=>"Av. Girasoles 242", "latitud"=>"-12.041729101430096", "longitud"=>"-77.04111453834537", "lunes"=>"Lunes", "martes"=>"Martes", "miercoles"=>"Miércoles", "jueves"=>"Jueves", "viernes"=>"Viernes", "sabado"=>"Sábado", "domingo"=>"Domingo", "hinicio(1i)"=>"2000", "hinicio(2i)"=>"1", "hinicio(3i)"=>"1", "hinicio(4i)"=>"08", "hinicio(5i)"=>"00", "hcierre(1i)"=>"2000", "hcierre(2i)"=>"1", "hcierre(3i)"=>"1", "hcierre(4i)"=>"22", "hcierre(5i)"=>"00", "telf"=>"3334543", "nespac"=>"12", "largo"=>"3", "ancho"=>"4", "alto"=>"2", "precio"=>"10"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[36mEstacionamiento Update (0.8ms)[0m  [1m[33mUPDATE "estacionamientos" SET "departamento" = ?, "distrito" = ?, "updated_at" = ? WHERE "estacionamientos"."id" = ?[0m  [["departamento", nil], ["distrito", 13], ["updated_at", "2019-02-05 04:39:02.562159"], ["id", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[35m (129.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+Redirected to http://localhost:3000/estacionamientos/1
+Completed 302 Found in 147ms (ActiveRecord: 131.0ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:39:02 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "13"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.6ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (2.4ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (12.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 243ms (Views: 170.3ms | ActiveRecord: 17.7ms)
+
+
+Started PATCH "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:39:33 -0500
+Processing by EstacionamientosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1bBu8YIh3r4nWFDvo7Mhb6/mqvNwYtU0rTCvhg783TvDikVCycYUTjNj8j3IJrdFeFEur2x992ScsRDx2/XEQ==", "estacionamiento"=>{"nombre"=>"Primero", "departamento"=>"", "distrito"=>"13", "direccion"=>"Av. Girasoles 242", "latitud"=>"-12.041729101430096", "longitud"=>"-77.04111453834537", "lunes"=>"Lunes", "martes"=>"Martes", "miercoles"=>"Miércoles", "jueves"=>"Jueves", "viernes"=>"Viernes", "sabado"=>"Sábado", "domingo"=>"Domingo", "hinicio(1i)"=>"2000", "hinicio(2i)"=>"1", "hinicio(3i)"=>"1", "hinicio(4i)"=>"08", "hinicio(5i)"=>"00", "hcierre(1i)"=>"2000", "hcierre(2i)"=>"1", "hcierre(3i)"=>"1", "hcierre(4i)"=>"22", "hcierre(5i)"=>"00", "telf"=>"3334543", "nespac"=>"12", "largo"=>"3", "ancho"=>"4", "alto"=>"2", "precio"=>"10"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+Redirected to http://localhost:3000/estacionamientos/1
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:39:33 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.7ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "13"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.2ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.8ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.7ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 248ms (Views: 188.5ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:39:39 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (2.0ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (9.8ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:272
+  Rendered estacionamientos/_form.html.erb (37.2ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 243ms (Views: 186.7ms | ActiveRecord: 13.2ms)
+
+
+Started PATCH "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:39:49 -0500
+Processing by EstacionamientosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w/tSeLiHVINSVNwiIQ3tv35Q8YFg5YyU1tjFZHbG4tZb0zfEhDGJW2vaj3vWVKX0gDpjhsZtrQQtqYVkdPar8w==", "estacionamiento"=>{"nombre"=>"Primero", "departamento"=>"", "distrito"=>"2", "direccion"=>"Av. Girasoles 242", "latitud"=>"-12.041729101430096", "longitud"=>"-77.04111453834537", "lunes"=>"Lunes", "martes"=>"Martes", "miercoles"=>"Miércoles", "jueves"=>"Jueves", "viernes"=>"Viernes", "sabado"=>"Sábado", "domingo"=>"Domingo", "hinicio(1i)"=>"2000", "hinicio(2i)"=>"1", "hinicio(3i)"=>"1", "hinicio(4i)"=>"08", "hinicio(5i)"=>"00", "hcierre(1i)"=>"2000", "hcierre(2i)"=>"1", "hcierre(3i)"=>"1", "hcierre(4i)"=>"22", "hcierre(5i)"=>"00", "telf"=>"3334543", "nespac"=>"12", "largo"=>"3", "ancho"=>"4", "alto"=>"2", "precio"=>"10"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[36mEstacionamiento Update (0.7ms)[0m  [1m[33mUPDATE "estacionamientos" SET "distrito" = ?, "updated_at" = ? WHERE "estacionamientos"."id" = ?[0m  [["distrito", 2], ["updated_at", "2019-02-05 04:39:49.689117"], ["id", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[35m (137.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+Redirected to http://localhost:3000/estacionamientos/1
+Completed 302 Found in 158ms (ActiveRecord: 138.9ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:39:49 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.5ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.9ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 206ms (Views: 151.8ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 23:39:53 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.5ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 146ms (Views: 135.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:40:02 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.6ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (8.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 205ms (Views: 150.5ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:40:18 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (1.5ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (7.4ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:272
+  Rendered estacionamientos/_form.html.erb (31.2ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 217ms (Views: 168.1ms | ActiveRecord: 10.3ms)
+
+
+Started PATCH "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:40:25 -0500
+Processing by EstacionamientosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fBp72Sx/BTusj+0d+qrIm8InIw+jZu6Eda65h2nn6MTkMh5lEMnY45UBvkQN84DQPE2xCAXuzxSO3/mHa9eh4Q==", "estacionamiento"=>{"nombre"=>"Primero", "departamento"=>"6", "distrito"=>"", "direccion"=>"Av. Girasoles 242", "latitud"=>"-12.041729101430096", "longitud"=>"-77.04111453834537", "lunes"=>"Lunes", "martes"=>"Martes", "miercoles"=>"Miércoles", "jueves"=>"Jueves", "viernes"=>"Viernes", "sabado"=>"Sábado", "domingo"=>"Domingo", "hinicio(1i)"=>"2000", "hinicio(2i)"=>"1", "hinicio(3i)"=>"1", "hinicio(4i)"=>"08", "hinicio(5i)"=>"00", "hcierre(1i)"=>"2000", "hcierre(2i)"=>"1", "hcierre(3i)"=>"1", "hcierre(4i)"=>"22", "hcierre(5i)"=>"00", "telf"=>"3334543", "nespac"=>"12", "largo"=>"3", "ancho"=>"4", "alto"=>"2", "precio"=>"10"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[36mEstacionamiento Update (0.7ms)[0m  [1m[33mUPDATE "estacionamientos" SET "departamento" = ?, "distrito" = ?, "updated_at" = ? WHERE "estacionamientos"."id" = ?[0m  [["departamento", 6], ["distrito", nil], ["updated_at", "2019-02-05 04:40:25.517898"], ["id", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[35m (172.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+Redirected to http://localhost:3000/estacionamientos/1
+Completed 302 Found in 192ms (ActiveRecord: 173.6ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:40:25 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.8ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.8ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.5ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.9ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 202ms (Views: 144.5ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-04 23:40:29 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 150ms (Views: 141.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:40:32 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.7ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.0ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 201ms (Views: 148.1ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:41:12 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.0ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.8ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.5ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (19.3ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 11.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `Distrito' for nil:NilClass):
+    68:       </tr>
+    69:       <tr>
+    70:         <th scope="row">Distrito</th>
+    71:         <td><%= @distrito.Distrito %></td>
+    72:       </tr>
+    73:       <tr>
+    74:         <th scope="row">Dirección</th>
+  
+app/views/estacionamientos/show.html.erb:71:in `_app_views_estacionamientos_show_html_erb___232123277_87838452'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:42:48 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.8ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.6ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (21.9ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 13.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `Distrito' for nil:NilClass):
+    68:       </tr>
+    69:       <tr>
+    70:         <th scope="row">Distrito</th>
+    71:         <td><%= @distrito.Distrito %></td>
+    72:       </tr>
+    73:       <tr>
+    74:         <th scope="row">Dirección</th>
+  
+app/views/estacionamientos/show.html.erb:71:in `_app_views_estacionamientos_show_html_erb___232123277_101385360'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:45:23 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.9ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (3.0ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (11.8ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 17.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `distrito' for nil:NilClass):
+    68:       </tr>
+    69:       <tr>
+    70:         <th scope="row">Distrito</th>
+    71:         <td><%= @distrito.distrito %></td>
+    72:       </tr>
+    73:       <tr>
+    74:         <th scope="row">Dirección</th>
+  
+app/views/estacionamientos/show.html.erb:71:in `_app_views_estacionamientos_show_html_erb___232123277_85359600'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:45:46 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.8ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.8ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.6ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 256ms (Views: 196.9ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:48:29 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (1.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.2ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (2.7ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (9.0ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 249ms (Views: 181.3ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:48:33 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDepartamento", "6"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.6ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (0.8ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (2.0ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.9ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 204ms (Views: 148.8ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/estacionamientos/1/edit" for 127.0.0.1 at 2019-02-04 23:48:37 -0500
+Processing by EstacionamientosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.8ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:36
+  [1m[36mUbigeo Load (1.6ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:37
+  [1m[36mUbigeo Load (8.1ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:38
+  Rendering estacionamientos/edit.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.2ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:272
+  Rendered estacionamientos/_form.html.erb (38.2ms)
+  Rendered estacionamientos/edit.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 237ms (Views: 186.1ms | ActiveRecord: 11.9ms)
+
+
+Started PATCH "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:48:45 -0500
+Processing by EstacionamientosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fOgShhjBE8SKgyweaEnCafa5rBM4seme8sLCoEAiwh3kwHc6JHfOHLMNf0efEIoiCNM+FJ45yA4Js4KgQhKLOA==", "estacionamiento"=>{"nombre"=>"Primero", "departamento"=>"", "distrito"=>"14", "direccion"=>"Av. Girasoles 242", "latitud"=>"-12.041729101430096", "longitud"=>"-77.04111453834537", "lunes"=>"Lunes", "martes"=>"Martes", "miercoles"=>"Miércoles", "jueves"=>"Jueves", "viernes"=>"Viernes", "sabado"=>"Sábado", "domingo"=>"Domingo", "hinicio(1i)"=>"2000", "hinicio(2i)"=>"1", "hinicio(3i)"=>"1", "hinicio(4i)"=>"08", "hinicio(5i)"=>"00", "hcierre(1i)"=>"2000", "hcierre(2i)"=>"1", "hcierre(3i)"=>"1", "hcierre(4i)"=>"22", "hcierre(5i)"=>"00", "telf"=>"3334543", "nespac"=>"12", "largo"=>"3", "ancho"=>"4", "alto"=>"2", "precio"=>"10"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[36mEstacionamiento Update (0.8ms)[0m  [1m[33mUPDATE "estacionamientos" SET "departamento" = ?, "distrito" = ?, "updated_at" = ? WHERE "estacionamientos"."id" = ?[0m  [["departamento", nil], ["distrito", 14], ["updated_at", "2019-02-05 04:48:45.458748"], ["id", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:66
+  [1m[35m (208.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:66
+Redirected to http://localhost:3000/estacionamientos/1
+Completed 302 Found in 225ms (ActiveRecord: 209.2ms)
+
+
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:48:45 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.8ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "14"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.0ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.9ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (10.4ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 15.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `Departamento' for nil:NilClass):
+    60:     <tbody>
+    61:       <tr>
+    62:         <th scope="row">Departamento</th>
+    63:         <td><%= @departamento.Departamento %></td>
+    64:       </tr>
+    65:       <tr>
+    66:         <th scope="row">Provincia</th>
+  
+app/views/estacionamientos/show.html.erb:63:in `_app_views_estacionamientos_show_html_erb___232123277_95878440'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:51:50 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "14"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.7ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.6ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 11.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `departamento' for nil:NilClass):
+    60:     <tbody>
+    61:       <tr>
+    62:         <th scope="row">Departamento</th>
+    63:         <td><%= @departamento.departamento %></td>
+    64:       </tr>
+    65:       <tr>
+    66:         <th scope="row">Provincia</th>
+  
+app/views/estacionamientos/show.html.erb:63:in `_app_views_estacionamientos_show_html_erb___232123277_84041196'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:52:13 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.4ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "14"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.7ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (1.7ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (8.5ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (25.3ms)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 13.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `Departamentos' for nil:NilClass):
+    60:     <tbody>
+    61:       <tr>
+    62:         <th scope="row">Departamento</th>
+    63:         <td><%= @departamento.Departamentos %></td>
+    64:       </tr>
+    65:       <tr>
+    66:         <th scope="row">Provincia</th>
+  
+app/views/estacionamientos/show.html.erb:63:in `_app_views_estacionamientos_show_html_erb___232123277_95774112'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:52:23 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "14"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.3ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (2.3ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.3ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (20.3ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 12.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `departamentos' for nil:NilClass):
+    60:     <tbody>
+    61:       <tr>
+    62:         <th scope="row">Departamento</th>
+    63:         <td><%= @departamento.departamentos %></td>
+    64:       </tr>
+    65:       <tr>
+    66:         <th scope="row">Provincia</th>
+  
+app/views/estacionamientos/show.html.erb:63:in `_app_views_estacionamientos_show_html_erb___232123277_119089968'
+Started GET "/estacionamientos/1" for 127.0.0.1 at 2019-02-04 23:52:43 -0500
+Processing by EstacionamientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEstacionamiento Load (0.2ms)[0m  [1m[34mSELECT  "estacionamientos".* FROM "estacionamientos" WHERE "estacionamientos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:89
+  [1m[36mUbigeo Load (0.5ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDepartamento" IS NULL ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:16
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idProvincia" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idProvincia", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:17
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mSELECT  "ubigeos".* FROM "ubigeos" WHERE "ubigeos"."idDistrito" = ? ORDER BY "ubigeos"."id" ASC LIMIT ?[0m  [["idDistrito", "14"], ["LIMIT", 1]]
+  ↳ app/controllers/estacionamientos_controller.rb:18
+  [1m[36mUbigeo Load (1.2ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:19
+  [1m[36mUbigeo Load (2.5ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:20
+  [1m[36mUbigeo Load (7.4ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:21
+  Rendering estacionamientos/show.html.erb within layouts/application
+  Rendered estacionamientos/show.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 12.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `Departamento' for nil:NilClass):
+    60:     <tbody>
+    61:       <tr>
+    62:         <th scope="row">Departamento</th>
+    63:         <td><%= @departamento.Departamento %></td>
+    64:       </tr>
+    65:       <tr>
+    66:         <th scope="row">Provincia</th>
+  
+app/views/estacionamientos/show.html.erb:63:in `_app_views_estacionamientos_show_html_erb___232123277_122667600'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateAlquilers (20190205045704)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190205045704_create_alquilers.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "alquilers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "idEstacionamiento" integer, "fecha" date, "hora" time, "nhora" integer, "tpago" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190205045704_create_alquilers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205045704"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (168.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-05 00:04:27 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (39.4ms)
+Started GET "/usuario/PrincipalCli" for 127.0.0.1 at 2019-02-05 00:04:29 -0500
+Completed 200 OK in 1170ms (Views: 1134.8ms | ActiveRecord: 2.1ms)
+
+
+Processing by UsuarioController#PrincipalCli as HTML
+  Rendering usuario/PrincipalCli.html.erb within layouts/application
+  Rendered usuario/PrincipalCli.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 155ms (Views: 142.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:04:47 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (274.7ms)
+  Rendered alquilers/new.html.erb within layouts/application (283.7ms)
+Completed 500 Internal Server Error in 327ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `a' for #<#<Class:0xa64e2d8>:0xa64d210>):
+    15:   <%= form.hidden_field :idEstacionamiento %>
+    16:   <div class="form-group">
+    17:     <div class="col-sm-offset-4 col-sm-2">
+    18:       <%= a.label :fecha, "Fecha" %>
+    19:     </div>
+    20:     <div class="col-sm-2">
+    21:       <%= a.date_field :fecha, {:class => "form-control"} %>
+  
+app/views/alquilers/_form.html.erb:18:in `block in _app_views_alquilers__form_html_erb__849016545_87208416'
+app/views/alquilers/_form.html.erb:1:in `_app_views_alquilers__form_html_erb__849016545_87208416'
+app/views/alquilers/new.html.erb:3:in `_app_views_alquilers_new_html_erb__854635311_87192600'
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:06:22 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (68.7ms)
+  Rendered alquilers/new.html.erb within layouts/application (79.2ms)
+Completed 200 OK in 256ms (Views: 245.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:06:59 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (2.7ms)
+  Rendered alquilers/new.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:1: syntax error, unexpected ':', expecting ')'
+...(model: alquiler, local: true :html => {:class => "form-hori...
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+...{:class => "form-horizontal"} ) do |form| @output_buffer.saf...
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:75: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/alquilers/_form.html.erb:1: syntax error, unexpected ':', expecting ')'
+app/views/alquilers/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/alquilers/_form.html.erb:75: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/alquilers/new.html.erb:3:in `_app_views_alquilers_new_html_erb__854635311_95242272'
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:07:43 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (1.3ms)
+  Rendered alquilers/new.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:1: syntax error, unexpected ':', expecting ')'
+...(model: alquiler, local: true :html => {:class => "form-hori...
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+... {:class => "form-horizontal"}) do |form| @output_buffer.saf...
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:75: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/alquilers/_form.html.erb:1: syntax error, unexpected ':', expecting ')'
+app/views/alquilers/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/alquilers/_form.html.erb:75: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/alquilers/new.html.erb:3:in `_app_views_alquilers_new_html_erb__854635311_104629104'
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:08:37 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (5.6ms)
+  Rendered alquilers/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 185ms (Views: 168.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:09:55 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (4.5ms)
+  Rendered alquilers/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 166ms (Views: 155.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:10:42 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (7.2ms)
+  Rendered alquilers/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 203ms (Views: 188.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:12:10 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (2.7ms)
+  Rendered alquilers/new.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:71: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...end=( form.submit, "Alquilar" );@output_buffer.safe_append='
+...                               ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:73: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:75: syntax error, unexpected keyword_ensure, expecting ')'
+D:/UPC/13. Desarrollo para Entorno Web/Proyecto/parkking/app/views/alquilers/_form.html.erb:77: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/alquilers/_form.html.erb:71: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/alquilers/_form.html.erb:73: syntax error, unexpected keyword_end, expecting ')'
+app/views/alquilers/_form.html.erb:75: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/alquilers/_form.html.erb:77: syntax error, unexpected keyword_end, expecting ')'
+app/views/alquilers/new.html.erb:3:in `_app_views_alquilers_new_html_erb__854635311_104764380'
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:13:14 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (4.7ms)
+  Rendered alquilers/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 178ms (Views: 166.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:13:30 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (5.1ms)
+  Rendered alquilers/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 197ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:14:03 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (6.1ms)
+  Rendered alquilers/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 190ms (Views: 178.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:14:35 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (5.1ms)
+  Rendered alquilers/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 165ms (Views: 155.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:15:05 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (6.6ms)
+  Rendered alquilers/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 199ms (Views: 186.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:15:44 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  Rendered alquilers/_form.html.erb (4.3ms)
+  Rendered alquilers/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 172ms (Views: 156.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:18:39 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/alquilers/_form.html.erb:63
+  Rendered alquilers/_form.html.erb (13.5ms)
+  Rendered alquilers/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 191ms (Views: 167.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:19:28 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/alquilers/_form.html.erb:63
+  Rendered alquilers/_form.html.erb (6.3ms)
+  Rendered alquilers/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 173ms (Views: 163.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:20:19 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/alquilers/_form.html.erb:63
+  Rendered alquilers/_form.html.erb (7.0ms)
+  Rendered alquilers/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 163ms (Views: 152.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alquilers/new" for 127.0.0.1 at 2019-02-05 00:20:36 -0500
+Processing by AlquilersController#new as HTML
+  Rendering alquilers/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.4ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/alquilers/_form.html.erb:63
+  Rendered alquilers/_form.html.erb (7.1ms)
+  Rendered alquilers/new.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 198ms (Views: 185.7ms | ActiveRecord: 0.4ms)
+
+
