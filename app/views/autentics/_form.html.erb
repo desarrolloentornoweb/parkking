@@ -1,0 +1,59 @@
+<%= form_with(model: autentic, local: true) do |f| %>
+  <% if autentic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(autentic.errors.count, "error") %> prohibited this autentic from being saved:</h2>
+
+      <ul>
+      <% autentic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="form-group">
+  <div class="col-sm-2">
+    <%= f.label :usuario %>
+  </div>
+  <div class="col-sm-10">
+    <%= f.text_field :correo, { :class => "form-control", :placeholder => "Email o nombre de usuario" } %>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-2">
+    <%= f.label :documentos, "Tipo Usuario" %>
+  </div>
+  <div class="col-sm-10">
+    <%= f.select :tipo_usuario_id, [["Cliente",1],["Dueño",2]], {:include_blank => "Seleccione"},{:class=>"form-control"} %>
+  </div>
+</div>  
+<div class="form-group">
+  <div class="col-sm-2">
+    <%= f.label :Password, "Password" %>
+  </div>
+  <div class="col-sm-10">
+    <%= f.text_field :contrasena, { :type => "password", :class => "form-control", :placeholder => "Tu contrasena" } %>
+  </div>    
+</div>
+<div class="form-group">
+  <div class="col-sm-2">
+    <%= f.label :RPassword, "Confirmar password" %>
+  </div>
+  <div class="col-sm-10">
+    <%= f.text_field :RPassword, { :type => "password", :class => "form-control", :placeholder => "Verifica tu contrasena" } %>
+  </div>    
+</div>
+<br>
+<div class="form-group">
+  <div class="col-sm-2">
+  </div>    
+  <div class="col-sm-4">
+    <%= f.submit "CREAR", :class => "btn btn-primary" %>
+  </div>
+  <div class="col-sm-4">
+    <%= f.submit "SALIR", :class => "btn btn-primary" %>
+  </div>
+  <div class="col-sm-2">
+  </div>    
+</div>
+<% end %>

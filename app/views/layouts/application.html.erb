@@ -33,7 +33,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a><span class="glyphicon"></span>Bienvenido: <%= session[:usuario] %> </a></li>
-          <li><%= link_to " Registrarse", { :controller => "usuario", :action => "CrearCuenta" },:class => "glyphicon glyphicon-user" %>
+          <li><%= link_to " Registrarse", { :controller => "autentics", :action => "new" },:class => "glyphicon glyphicon-user" %>
           </li>          
           <li><%= link_to " Ingresar", { :controller => "seguridad", :action => "Login" },:class => "glyphicon glyphicon-log-in" %>
           </li>

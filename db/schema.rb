@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_05_045704) do
+ActiveRecord::Schema.define(version: 2019_02_05_135153) do
 
   create_table "alquilers", force: :cascade do |t|
     t.integer "idEstacionamiento"
@@ -22,11 +22,14 @@ ActiveRecord::Schema.define(version: 2019_02_05_045704) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "autenticacions", force: :cascade do |t|
+
+  create_table "autentics", force: :cascade do |t|
     t.string "correo"
     t.string "contrasena"
+    t.integer "tipo_usuario_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["tipo_usuario_id"], name: "index_autentics_on_tipo_usuario_id"
   end
 
   create_table "estacionamientos", force: :cascade do |t|
@@ -60,6 +63,12 @@ ActiveRecord::Schema.define(version: 2019_02_05_045704) do
   create_table "serv_adicinales", force: :cascade do |t|
     t.string "nombre"
     t.decimal "precio"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tipo_usuarios", force: :cascade do |t|
+    t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
