@@ -2837,3 +2837,51 @@ Processing by AlquilersController#new as HTML
 Completed 200 OK in 198ms (Views: 185.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-05 01:37:35 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (79.9ms)
+Started GET "/" for 127.0.0.1 at 2019-02-05 01:37:37 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 2170ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/upc/github/parkking/tmp/cache/assets/sprockets/v3.0/AG/AG4YTgADp81baLnhuA1XcZXAl6f01gSMlIOHdPmhhcA.cache.59321040.2432.728617, C:/upc/github/parkking/tmp/cache/assets/sprockets/v3.0/AG/AG4YTgADp81baLnhuA1XcZXAl6f01gSMlIOHdPmhhcA.cache)):
+     5:     <%= csrf_meta_tags %>
+     6:     <!--<%= csp_meta_tag %>-->
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <!-- Latest compiled and minified CSS -->
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__907871704_57360460'
+Completed 200 OK in 17833ms (Views: 17795.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-05 01:41:26 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 853ms (Views: 798.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-02-05 01:41:31 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 881ms (Views: 831.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-05 01:41:37 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 690ms (Views: 648.5ms | ActiveRecord: 0.0ms)
+
+

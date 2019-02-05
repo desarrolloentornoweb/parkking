@@ -18,11 +18,9 @@
 			<%= a.label :contraseña, "Contraseña" %>
 		</div>
 
-   <div class="input-group">
-      <input id="password" type="password" class="form-control" name="password" placeholder="Ingrese su Contraseña">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-    </div>
-	</div>
+        <div id="password" class="form-group">
+ 		<%= password_field_tag(:password) %>
+        </div>
 	
 
 	<div class="form-group">
