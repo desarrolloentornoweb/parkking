@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  distrito: MyString
+  idProvincia: 1
+  Provincia: MyString
+  idDepartamento: 1
+  Departamento: MyString
+
+two:
+  distrito: MyString
+  idProvincia: 1
+  Provincia: MyString
+  idDepartamento: 1
+  Departamento: MyString

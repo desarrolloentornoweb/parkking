@@ -3,7 +3,9 @@
 one:
   correo: MyString
   contrasena: MyString
+  tipo_usuario: one
 
 two:
   correo: MyString
   contrasena: MyString
+  tipo_usuario: two

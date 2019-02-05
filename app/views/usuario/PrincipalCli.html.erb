@@ -5,21 +5,23 @@
 <div class="form-group">
 	<div class="col-sm-offset-10 col-sm-2">
 		<%= link_to "Cambiar Contraseña", { :controller => "usuario", :action => "CambPass" } %>		
-		<%= link_to "Editar Perfil", { :controller => "usuario", :action => "EditPerfil" } %>
+		<%= link_to "Editar Perfil", { :controller => "usuarios", :action => "new" } %>
 		<%= link_to "Dar baja", { :controller => "usuario", :action => "ElimCuenta" } %>
 	</div>
 </div>
 
+
+<% @estacionamientos.each do |establecimiento| %>
 <div class="form-group">
 	<div class="col-sm-4">
-		<img src="/assets/img01.jpg" class="img-thumbnail" alt="Cinque Terre">
+		<img src=<%= establecimiento.img %> class="img-thumbnail" alt="Cinque Terre">
 	</div>
 	<div class="col-sm-6">
-		<h1>Alquiler mi estacionamiento en Magdalena del MAR</h1>
-		<p>S/. 200.00</p>
-		<p>Lima-Lima-Magdalena del Mar</p>
-		<p>Av El morro 655</p>
-		<p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
+		<h1><%= establecimiento.nombre %></h1>
+		<p>S/. <%= establecimiento.precio %>.00</p>
+		<p><%= establecimiento.distrito %></p>
+		<p><%= establecimiento.direccion %></p>
+		<p>Largo:<%= establecimiento.largo %>mtrs Alto:<%= establecimiento.alto %>mtrs Ancho:<%= establecimiento.ancho %>mtrs</p>
 		<p>Interior</p>
 	</div>
 	<div class="col-sm-2">
@@ -28,84 +30,15 @@
 		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
 		<br>
 		<br>
-		<%= link_to "Alquilar", { :controller => "alquiler", :action => "RegAlquiler" } %>
+		<%= link_to "Alquilar", new_alquiler_path %>
 		<br>
 		<br>
-		<%= link_to "Comentar", { :controller => "comentario", :action => "RegComentario" } %>				
+		<%= link_to "Comentar", { :controller => "comentarios", :action => "new" } %>				
 	</div>		
 </div>
-<div class="form-group">
-	<div class="col-sm-4">
-		<img src="/assets/img02.jpg" class="img-thumbnail" alt="Cinque Terre">
-	</div>
-	<div class="col-sm-6">
-	  <h1>Rento estacionamiento en Cercado de Lima </h1>
-      <p>S/. 100.00</p>
-      <p>Lima-Lima-Cercado de Lima</p>
-      <p>Av Jiron de la Unión </p>
-      <p>Largo:4mtrs Alto:2mtrs Ancho:3mtrs</p>
-      <p>Interior</p>
-	</div>
-	<div class="col-sm-2">
-		<br>
-		<br>
-		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Alquilar", { :controller => "alquiler", :action => "RegAlquiler" } %>
-		<br>
-		<br>
-		<%= link_to "Comentar", { :controller => "comentario", :action => "RegComentario" } %>					
-	</div>			
-</div>
-<div class="form-group">
-	<div class="col-sm-4">
-		<img src="/assets/img03.jpg" class="img-thumbnail" alt="Cinque Terre">
-	</div>
-    <div class="col-sm-4">
-      <h1>Alquilo estacionamiento en Surco</h1>
-      <p>S/. 150.00</p>
-      <p>Lima-Lima-Surco</p>
-      <p>Av Primavera </p>
-      <p>Largo:3mtrs Alto:2mtrs Ancho:2mtrs</p>
-      <p>Interior</p>
-      
-    </div>	<div class="col-sm-2">
-		<br>
-		<br>
-		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Alquilar", { :controller => "alquiler", :action => "RegAlquiler" } %>
-		<br>
-		<br>
-		<%= link_to "Comentar", { :controller => "comentario", :action => "RegComentario" } %>					
-	</div>		
-</div>
-<div class="form-group">
-	<div class="col-sm-4">
-		<img src="/assets/img04.jpg" class="img-thumbnail" alt="Cinque Terre">
-	</div>
-	<div class="col-sm-6">
-	  <h1>Rento estacionamiento en Callao </h1>
-      <p>S/. 100.00</p>
-      <p>Lima-Lima-Callao</p>
-      <p>Av. Elmer Faucett </p>
-      <p>Largo:4mtrs Alto:2mtrs Ancho:3mtrs</p>
-      <p>Interior</p>
-	</div>
-	<div class="col-sm-2">
-		<br>
-		<br>
-		<%= link_to "Ver mas", { :controller => "estacionamiento", :action => "DetalleEstac" } %>
-		<br>
-		<br>
-		<%= link_to "Alquilar", { :controller => "alquiler", :action => "RegAlquiler" } %>
-		<br>
-		<br>
-		<%= link_to "Comentar", { :controller => "comentario", :action => "RegComentario" } %>					
-	</div>		
-</div>
+<% end %>
+
+
 
 <% end %>
 

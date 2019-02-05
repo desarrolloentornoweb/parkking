@@ -9,7 +9,7 @@
 		</div>
 
     <div class="input-group">
-    	<%= a.text_field :usuario, {:class => "form-control", :placeholder => "Ingrese su cuenta de correo"} %>
+    	<%= a.text_field :correo, {:class => "form-control", :placeholder => "Ingrese su cuenta de correo"} %>
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
     </div>
 	</div>
@@ -19,7 +19,7 @@
 		</div>
 
    <div class="input-group">
-      <input id="password" type="password" class="form-control" name="password" placeholder="Ingrese su Contraseña">
+      <%= a.text_field :contrasena, { :type => "password", :class => "form-control", :placeholder => "Tu contrasena" } %>
       <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
     </div>
 	</div>

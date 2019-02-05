@@ -18,7 +18,7 @@
 <% @estacionamientos.each do |estacionamiento| %>
 <div class="form-group">
 	<div class="col-sm-4">
-		<img src="/assets/img01.jpg" class="img-thumbnail" alt="Cinque Terre">
+		<img src=<%= estacionamiento.img %> class="img-thumbnail" alt="Cinque Terre">
 	</div>
 	<div class="col-sm-6">
 		<h2><%= estacionamiento.nombre %></h2>

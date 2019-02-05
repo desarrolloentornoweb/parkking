@@ -1,0 +1,49 @@
+<%= form_with(model: comentario, local: true) do |a| %>
+  <% if comentario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(comentario.errors.count, "error") %> prohibited this comentario from being saved:</h2>
+
+      <ul>
+      <% comentario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="form-group">
+    <div class="col-sm-3">
+      <%= a.label :gg, "Puntuación" %>
+          <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+          <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+          <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+          <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+          <label><p><span class="glyphicon glyphicon-star"></span></p></label>
+    </div>
+    <div class="col-sm-9">
+      <%= a.select :puntuacion, [["(5) - Excelente",1], ["(4) - Bueno",2],["(3) - Regular",3],["(2) - Malo",2],["(1) - Muy Malo",2]], {:include_blank => "Seleccionar del 1 al 5"}, {:class => "form-control", :placeholder => "Seleccione"} %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-3">
+      <%= a.label :descripcion, "Comentar" %>
+  </div>
+  <%= a.hidden_field :usuario_id, :value => session[:idusuario]  %>
+  <%= a.hidden_field :autenticacion_id, :value => session[:idusuario]  %>
+  
+
+      <div class="form-group col-sm-9">
+      <%= a.text_area :descripcion %>
+    </br>
+  </div>
+  <div class="col-sm-offset-8 col-sm-2">
+    <br>
+    <%= a.submit "Enviar comentario ", :class => "btn btn-info", :onclick => "return _onclick();" %>
+  </div>
+  <div class="col-sm-2">
+    <br>
+    <%= a.submit "Cancelar", :class => "btn btn-info", :onclick => "return _onclick();" %>
+  </div>
+
+<% end %>

@@ -10,13 +10,56 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 2019_02_05_200943) do
 
-ActiveRecord::Schema.define(version: 2019_01_31_022839) do
+  create_table "alquilers", force: :cascade do |t|
+    t.date "fecha"
+    t.time "hora"
+    t.integer "nhora"
+    t.string "tpaog"
+    t.integer "estacionamiento_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["estacionamiento_id"], name: "index_alquilers_on_estacionamiento_id"
+  end
 
   create_table "autenticacions", force: :cascade do |t|
     t.string "correo"
     t.string "contrasena"
+    t.integer "tipo_usuario_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tipo_usuario_id"], name: "index_autenticacions_on_tipo_usuario_id"
+  end
 
+  create_table "bajas", force: :cascade do |t|
+    t.string "motivo"
+    t.integer "autenticacion_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["autenticacion_id"], name: "index_bajas_on_autenticacion_id"
+  end
+
+  create_table "comentarios", force: :cascade do |t|
+    t.integer "puntuacion"
+    t.string "descripcion"
+    t.integer "usuario_id"
+    t.integer "autenticacion_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["autenticacion_id"], name: "index_comentarios_on_autenticacion_id"
+    t.index ["usuario_id"], name: "index_comentarios_on_usuario_id"
+  end
+
+  create_table "distritos", force: :cascade do |t|
+    t.string "distrito"
+    t.integer "idProvincia"
+    t.string "Provincia"
+    t.integer "idDepartamento"
+    t.string "Departamento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "estacionamientos", force: :cascade do |t|
     t.string "nombre"
@@ -53,6 +96,18 @@ ActiveRecord::Schema.define(version: 2019_01_31_022839) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tipo_documentos", force: :cascade do |t|
+    t.string "descripcion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tipo_usuarios", force: :cascade do |t|
+    t.string "descripcion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "ubigeos", force: :cascade do |t|
     t.string "idDepartamento"
     t.string "Departamento"
@@ -60,9 +115,27 @@ ActiveRecord::Schema.define(version: 2019_01_31_022839) do
     t.string "Provincia"
     t.string "idDistrito"
     t.string "Distrito"
-
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "usuarios", force: :cascade do |t|
+    t.string "nroDocumento"
+    t.string "nombres"
+    t.string "apellidoPaterno"
+    t.string "apellidoMaterno"
+    t.date "fechaNacimiento"
+    t.string "celular"
+    t.string "sexo"
+    t.string "direccion"
+    t.integer "autenticacion_id"
+    t.integer "distrito_id"
+    t.integer "tipo_documento_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["autenticacion_id"], name: "index_usuarios_on_autenticacion_id"
+    t.index ["distrito_id"], name: "index_usuarios_on_distrito_id"
+    t.index ["tipo_documento_id"], name: "index_usuarios_on_tipo_documento_id"
   end
 
 end

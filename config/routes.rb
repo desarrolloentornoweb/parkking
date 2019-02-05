@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
+  resources :alquilers
+  resources :comentarios
+  resources :usuarios
+  #get 'sesion/new'
+  #post 'sesion/create'
+  #get 'sesion/destroy'
+  resources :autenticacions
   resources :serv_adicinales
   resources :estacionamientos
+  resources :sesion, only: [:new, :create]
+  get 'login', to: 'sesion#new', as: 'login'
+  get 'logout', to: 'sesion#destroy', as: 'logout'
   get 'busqueda/BuscarFiltro'
   get 'publicidad/PrincipalPublic'
   get 'publicidad/RegPublic'
