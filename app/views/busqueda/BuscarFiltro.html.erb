@@ -131,20 +131,23 @@
 <% @estacionamientos.each do |establecimiento| %>
 
 
-    <div class="col-sm-4">
+
+    <div class="col-sm-5">
       <img src=<%= establecimiento.img %> class="img-thumbnail" alt="Cinque Terre">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-2">
       <h1><%= establecimiento.nombre %></h1>
     <p>S/. <%= establecimiento.precio %>.00</p>
     <p><%= establecimiento.distrito %></p>
     <p><%= establecimiento.direccion %></p>
+
     <p>Largo:<%= establecimiento.largo %>mtrs Alto:<%= establecimiento.alto %>mtrs Ancho:<%= establecimiento.ancho %>mtrs</p>
     <p>Interior</p>
+   <br>
+
     </div>
 
 <% end %>
-
 
 
 </div>
