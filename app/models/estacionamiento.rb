@@ -1,6 +1,9 @@
 class Estacionamiento < ApplicationRecord
 	validates :nombre, presence: {message: " es requerido."}
 	validates :direccion, presence: {message: " es requerido."}
+	validates :departamento, presence: {message: " es requerido."}
+	validates :distrito, presence: {message: " es requerido."}
+	validates :direccion, presence: {message: " es requerido."}
 	validates :hinicio, presence: {message: " es requerido."}
 	validates :hcierre, presence: {message: " es requerido."}
 	validates :nespac, presence: {message: " es requerido."}
