@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2019_02_05_200943) do
+ActiveRecord::Schema.define(version: 2019_02_07_221345) do
 
   create_table "alquilers", force: :cascade do |t|
     t.date "fecha"
@@ -22,6 +21,24 @@ ActiveRecord::Schema.define(version: 2019_02_05_200943) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["estacionamiento_id"], name: "index_alquilers_on_estacionamiento_id"
+  end
+
+  create_table "autenticacions", force: :cascade do |t|
+    t.string "correo"
+    t.string "contrasena"
+    t.integer "tipo_usuario_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tipo_usuario_id"], name: "index_autenticacions_on_tipo_usuario_id"
+  end
+
+  create_table "autentics", force: :cascade do |t|
+    t.string "correo"
+    t.string "contrasena"
+    t.integer "tipo_usuario_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tipo_usuario_id"], name: "index_autentics_on_tipo_usuario_id"
   end
 
   create_table "bajas", force: :cascade do |t|

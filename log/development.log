@@ -5631,3 +5631,1359 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
   ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:22:49 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:22:53 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:29:47 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateTipoUsuarios (20190205134956)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190205134956_create_tipo_usuarios.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "tipo_usuarios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190205134956_create_tipo_usuarios.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:31:40 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateTipoUsuarios (20190205134956)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190205134956_create_tipo_usuarios.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "tipo_usuarios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190205134956_create_tipo_usuarios.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:33:20 -0500
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:33:20 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateTipoUsuarios (20190205134956)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190205134956_create_tipo_usuarios.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "tipo_usuarios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190205134956_create_tipo_usuarios.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (160.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (140.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateEstacionamientos (20190131122618)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "estacionamientos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "departamento" integer, "provincia" integer, "distrito" integer, "direccion" varchar, "latitud" float, "longitud" float, "lunes" boolean, "martes" boolean, "miercoles" boolean, "jueves" boolean, "viernes" boolean, "sabado" boolean, "domingo" boolean, "hinicio" time, "hcierre" time, "telf" varchar, "nespac" integer, "largo" integer, "ancho" integer, "alto" integer, "precio" integer, "img" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190131122618_create_estacionamientos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190131122618"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (106.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateServAdicinales (20190203045537)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "serv_adicinales" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "precio" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190203045537_create_serv_adicinales.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190203045537"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (124.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUbigeos (20190203153510)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ubigeos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "idDepartamento" varchar, "Departamento" varchar, "idProvincia" varchar, "Provincia" varchar, "idDistrito" varchar, "Distrito" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190203153510_create_ubigeos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190203153510"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (196.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to DepartamentoUbigeo (20190203182535)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:47:48 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-07 15:52:37 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to DepartamentoUbigeo (20190203182535)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to DepartamentoUbigeo (20190203182535)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to DepartamentoUbigeo (20190203182535)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-07 21:02:03.635664"], ["updated_at", "2019-02-07 21:02:03.635664"]]
+  ↳ bin/rails:4
+  [1m[35m (126.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Started GET "/" for 127.0.0.1 at 2019-02-07 16:02:18 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to DepartamentoUbigeo (20190203182535)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to DepartamentoUbigeo (20190203182535)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateAutenticacions (20190205010228)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190205010228_create_autenticacions.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "autenticacions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "correo" varchar, "contrasena" varchar, "tipo_usuario_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_90aae15fe3"
+FOREIGN KEY ("tipo_usuario_id")
+  REFERENCES "tipo_usuarios" ("id")
+)[0m
+  ↳ db/migrate/20190205010228_create_autenticacions.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_autenticacions_on_tipo_usuario_id" ON "autenticacions" ("tipo_usuario_id")[0m
+  ↳ db/migrate/20190205010228_create_autenticacions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205010228"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (130.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateDistritos (20190205070558)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "distritos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "distrito" varchar, "idProvincia" integer, "Provincia" varchar, "idDepartamento" integer, "Departamento" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190205070558_create_distritos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205070558"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (126.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateTipoDocumentos (20190205071321)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "tipo_documentos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190205071321_create_tipo_documentos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205071321"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (97.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUsuarios (20190205072116)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "usuarios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nroDocumento" varchar, "nombres" varchar, "apellidoPaterno" varchar, "apellidoMaterno" varchar, "fechaNacimiento" date, "celular" varchar, "sexo" varchar, "direccion" varchar, "autenticacion_id" integer, "distrito_id" integer, "tipo_documento_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_dd9d4549d2"
+FOREIGN KEY ("autenticacion_id")
+  REFERENCES "autenticacions" ("id")
+, CONSTRAINT "fk_rails_d9beebf97f"
+FOREIGN KEY ("distrito_id")
+  REFERENCES "distritos" ("id")
+, CONSTRAINT "fk_rails_eea13a9a9e"
+FOREIGN KEY ("tipo_documento_id")
+  REFERENCES "tipo_documentos" ("id")
+)[0m
+  ↳ db/migrate/20190205072116_create_usuarios.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_usuarios_on_autenticacion_id" ON "usuarios" ("autenticacion_id")[0m
+  ↳ db/migrate/20190205072116_create_usuarios.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_usuarios_on_distrito_id" ON "usuarios" ("distrito_id")[0m
+  ↳ db/migrate/20190205072116_create_usuarios.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_usuarios_on_tipo_documento_id" ON "usuarios" ("tipo_documento_id")[0m
+  ↳ db/migrate/20190205072116_create_usuarios.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205072116"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (92.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateTipoUsuarios (20190205134956)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "tipo_usuarios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190205134956_create_tipo_usuarios.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205134956"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (83.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateAutentics (20190205135153)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "autentics" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "correo" varchar, "contrasena" varchar, "tipo_usuario_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_c6a4b3be6b"
+FOREIGN KEY ("tipo_usuario_id")
+  REFERENCES "tipo_usuarios" ("id")
+)[0m
+  ↳ db/migrate/20190205135153_create_autentics.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_autentics_on_tipo_usuario_id" ON "autentics" ("tipo_usuario_id")[0m
+  ↳ db/migrate/20190205135153_create_autentics.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205135153"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (135.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateBajas (20190205164823)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "bajas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "motivo" varchar, "autenticacion_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_b39673ce7f"
+FOREIGN KEY ("autenticacion_id")
+  REFERENCES "autenticacions" ("id")
+)[0m
+  ↳ db/migrate/20190205164823_create_bajas.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_bajas_on_autenticacion_id" ON "bajas" ("autenticacion_id")[0m
+  ↳ db/migrate/20190205164823_create_bajas.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205164823"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (93.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateComentarios (20190205184723)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "comentarios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "puntuacion" integer, "descripcion" varchar, "usuario_id" integer, "autenticacion_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_0ceedb79ec"
+FOREIGN KEY ("usuario_id")
+  REFERENCES "usuarios" ("id")
+, CONSTRAINT "fk_rails_5bf85463d7"
+FOREIGN KEY ("autenticacion_id")
+  REFERENCES "autenticacions" ("id")
+)[0m
+  ↳ db/migrate/20190205184723_create_comentarios.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_comentarios_on_usuario_id" ON "comentarios" ("usuario_id")[0m
+  ↳ db/migrate/20190205184723_create_comentarios.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_comentarios_on_autenticacion_id" ON "comentarios" ("autenticacion_id")[0m
+  ↳ db/migrate/20190205184723_create_comentarios.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205184723"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (94.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateAlquilers (20190205200943)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "alquilers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "fecha" date, "hora" time, "nhora" integer, "tpaog" varchar, "estacionamiento_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_f61398ed04"
+FOREIGN KEY ("estacionamiento_id")
+  REFERENCES "estacionamientos" ("id")
+)[0m
+  ↳ db/migrate/20190205200943_create_alquilers.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_alquilers_on_estacionamiento_id" ON "alquilers" ("estacionamiento_id")[0m
+  ↳ db/migrate/20190205200943_create_alquilers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190205200943"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (93.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2019-02-07 16:13:49 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (78.5ms)
+Completed 200 OK in 2160ms (Views: 2141.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUbigeos (20190207212030)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUbigeos (20190207212416)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190207212416_create_ubigeos.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ubigeos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "idDepartamento" varchar, "Departamento" varchar, "idProvincia" varchar, "Provincia" varchar, "idDistrito" varchar, "Distrito" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190207212416_create_ubigeos.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUbigeos (20190207213154)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190207213154_create_ubigeos.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ubigeos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "idDepartamento" varchar, "Departamento" varchar, "idProvincia" varchar, "Provincia" varchar, "idDistrito" varchar, "Distrito" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190207213154_create_ubigeos.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for 127.0.0.1 at 2019-02-07 16:38:34 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 1060ms (Views: 1041.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-02-07 16:40:09 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 225ms (Views: 214.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-02-07 16:40:23 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhL7fkQxuKE+IKtqVuY4Srsf3SYWKj2uozFN9bAKeAiN9J21ILtG/0XPAQ4ojBR3Y0iYvAyFxVSv4ci6fJX65g==", "upc"=>{"correo"=>"dueno@gmail.com", "contrasena"=>"123"}, "commit"=>"LOGGIN"}
+  [1m[36mAutenticacion Load (0.3ms)[0m  [1m[34mSELECT  "autenticacions".* FROM "autenticacions" WHERE "autenticacions"."correo" = ? LIMIT ?[0m  [["correo", "dueno@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/seguridad_controller.rb:9
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `contrasena' for nil:NilClass):
+  
+app/controllers/seguridad_controller.rb:10:in `validar'
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-02-07 16:41:08 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pbVjRSz77UGBLUHEqgQ7VqcWtqJX8WOU27L//5z0xZa6HWiOv5GeKoRcJOoVqoH31VHJowrBrCqdWmJ3RYP7Q==", "upc"=>{"correo"=>"dueno@gmail.com", "contrasena"=>"123"}, "commit"=>"LOGGIN"}
+  [1m[36mAutenticacion Load (0.3ms)[0m  [1m[34mSELECT  "autenticacions".* FROM "autenticacions" WHERE "autenticacions"."correo" = ? LIMIT ?[0m  [["correo", "dueno@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/seguridad_controller.rb:9
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `contrasena' for nil:NilClass):
+  
+app/controllers/seguridad_controller.rb:10:in `validar'
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-02-07 16:41:55 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pbVjRSz77UGBLUHEqgQ7VqcWtqJX8WOU27L//5z0xZa6HWiOv5GeKoRcJOoVqoH31VHJowrBrCqdWmJ3RYP7Q==", "upc"=>{"correo"=>"dueño@gmail.com", "contrasena"=>"123"}, "commit"=>"LOGGIN"}
+  [1m[36mAutenticacion Load (0.3ms)[0m  [1m[34mSELECT  "autenticacions".* FROM "autenticacions" WHERE "autenticacions"."correo" = ? LIMIT ?[0m  [["correo", "dueño@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/seguridad_controller.rb:9
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `contrasena' for nil:NilClass):
+  
+app/controllers/seguridad_controller.rb:10:in `validar'
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-02-07 16:42:25 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pbVjRSz77UGBLUHEqgQ7VqcWtqJX8WOU27L//5z0xZa6HWiOv5GeKoRcJOoVqoH31VHJowrBrCqdWmJ3RYP7Q==", "upc"=>{"correo"=>"dueño4@gmail.com", "contrasena"=>"123"}, "commit"=>"LOGGIN"}
+  [1m[36mAutenticacion Load (0.3ms)[0m  [1m[34mSELECT  "autenticacions".* FROM "autenticacions" WHERE "autenticacions"."correo" = ? LIMIT ?[0m  [["correo", "dueño4@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/seguridad_controller.rb:9
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `contrasena' for nil:NilClass):
+  
+app/controllers/seguridad_controller.rb:10:in `validar'
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-07 16:47:01 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 215ms (Views: 190.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 16:47:10 -0500
+Processing by EstacionamientosController#new as HTML
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant EstacionamientosController::Ubigeo):
+  
+app/controllers/estacionamientos_controller.rb:29:in `new'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUbigeos (20190207220134)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190207220134_create_ubigeos.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ubigeos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "idDepartamento" varchar, "Departamento" varchar, "idProvincia" varchar, "Provincia" varchar, "idDistrito" varchar, "Distrito" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190207220134_create_ubigeos.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 17:02:49 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUbigeos (20190207220134)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190207220134_create_ubigeos.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ubigeos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "idDepartamento" varchar, "Departamento" varchar, "idProvincia" varchar, "Provincia" varchar, "idDistrito" varchar, "Distrito" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190207220134_create_ubigeos.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 17:07:13 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by EstacionamientosController#new as HTML
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 1.1ms)
+
+
+  
+NameError (uninitialized constant EstacionamientosController::Ubigeo):
+  
+app/controllers/estacionamientos_controller.rb:29:in `new'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 17:08:04 -0500
+Processing by EstacionamientosController#new as HTML
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.7ms)
+
+
+  
+NameError (uninitialized constant EstacionamientosController::Ubigeo):
+  
+app/controllers/estacionamientos_controller.rb:29:in `new'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to EliminarUbigeo (20190207221100)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "ubigeos"[0m
+  ↳ db/migrate/20190207221100_eliminar_ubigeo.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190207221100"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (189.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateUbigeos (20190207221345)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190207221345_create_ubigeos.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ubigeos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "idDepartamento" varchar, "Departamento" varchar, "idProvincia" varchar, "Provincia" varchar, "idDistrito" varchar, "Distrito" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190207221345_create_ubigeos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190207221345"]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (151.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 17:15:15 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:29
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:30
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:275
+  Rendered estacionamientos/_form.html.erb (76.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 1005ms (Views: 932.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 17:17:22 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:29
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:30
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:275
+  Rendered estacionamientos/_form.html.erb (12.8ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 256ms (Views: 207.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 17:24:37 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:29
+  [1m[36mUbigeo Load (0.7ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:30
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:31
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:275
+  Rendered estacionamientos/_form.html.erb (15.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 232ms (Views: 213.6ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-07 17:29:01 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JwFA3QmHwnw7nZ3iftEJWjTpuIXxBztuIQlZQg93bnCjf+DyJ8prsZeIWHbEL7OwsSClefRz+FDYEvs0LBKyiw==", "estacionamiento"=>{"nombre"=>"", "departamento"=>"", "provincia"=>"", "distrito"=>"", "direccion"=>"", "latitud"=>"-12.05843145623677", "longitud"=>"-77.05561714017472", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"7", "hinicio(4i)"=>"22", "hinicio(5i)"=>"24", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"7", "hcierre(4i)"=>"22", "hcierre(5i)"=>"24", "telf"=>"", "nespac"=>"", "largo"=>"", "ancho"=>"", "alto"=>"", "precio"=>""}, "commit"=>"Guardar"}
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:47
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:48
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:53
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.4ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:275
+  Rendered estacionamientos/_form.html.erb (15.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 323ms (Views: 233.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/estacionamientos" for 127.0.0.1 at 2019-02-07 17:29:25 -0500
+Processing by EstacionamientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YHFM2Vu5mhy44ZOd/QPQeM7ZqBX04iBnafnmUlrBg8rkD+z2dfQz0RT0VglH/WqSSxC16fGW41mQ4kQkeaRfMQ==", "estacionamiento"=>{"nombre"=>"Primero", "departamento"=>"", "provincia"=>"", "distrito"=>"", "direccion"=>"Av. Girasoles 242", "latitud"=>"-12.05843145623677", "longitud"=>"-77.05561714017472", "hinicio(1i)"=>"2019", "hinicio(2i)"=>"2", "hinicio(3i)"=>"7", "hinicio(4i)"=>"22", "hinicio(5i)"=>"24", "hcierre(1i)"=>"2019", "hcierre(2i)"=>"2", "hcierre(3i)"=>"7", "hcierre(4i)"=>"22", "hcierre(5i)"=>"24", "telf"=>"", "nespac"=>"12", "largo"=>"2", "ancho"=>"2", "alto"=>"2", "precio"=>"5"}, "commit"=>"Guardar"}
+  [1m[36mUbigeo Load (0.4ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:47
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:48
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/estacionamientos_controller.rb:53
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.4ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:275
+  Rendered estacionamientos/_form.html.erb (12.2ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 211ms (Views: 198.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/estacionamientos" for 127.0.0.1 at 2019-02-07 17:33:33 -0500
+Processing by EstacionamientosController#index as HTML
+  [1m[36mEstacionamiento Load (0.8ms)[0m  [1m[34mselect A.fecha, A.hora, E.nombre from alquilers A join estacionamientos E on A.idEstacionamiento = E.id where A.fecha between '1-11-2019' and '12-12-2019'[0m
+  ↳ app/controllers/estacionamientos_controller.rb:9
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: A.idEstacionamiento: select A.fecha, A.hora, E.nombre from alquilers A join estacionamientos E on A.idEstacionamiento = E.id where A.fecha between '1-11-2019' and '12-12-2019'):
+  
+app/controllers/estacionamientos_controller.rb:9:in `index'
+Started GET "/estacionamientos" for 127.0.0.1 at 2019-02-07 17:33:49 -0500
+Processing by EstacionamientosController#index as HTML
+  [1m[36mEstacionamiento Load (0.6ms)[0m  [1m[34mselect A.fecha, A.hora, E.nombre from alquilers A join estacionamientos E on A.idEstacionamiento = E.id where A.fecha between '1-11-2019' and '12-12-2019'[0m
+  ↳ app/controllers/estacionamientos_controller.rb:9
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: A.idEstacionamiento: select A.fecha, A.hora, E.nombre from alquilers A join estacionamientos E on A.idEstacionamiento = E.id where A.fecha between '1-11-2019' and '12-12-2019'):
+  
+app/controllers/estacionamientos_controller.rb:9:in `index'
+Started GET "/estacionamientos" for 127.0.0.1 at 2019-02-07 17:35:22 -0500
+Processing by EstacionamientosController#index as HTML
+  Rendering estacionamientos/index.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.3ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/estacionamientos/index.html.erb:36
+  Rendered estacionamientos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 198ms (Views: 182.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/usuario/PrincipalDue" for 127.0.0.1 at 2019-02-07 17:35:33 -0500
+Processing by UsuarioController#PrincipalDue as HTML
+  Rendering usuario/PrincipalDue.html.erb within layouts/application
+  [1m[36mEstacionamiento Load (0.5ms)[0m  [1m[34mSELECT "estacionamientos".* FROM "estacionamientos"[0m
+  ↳ app/views/usuario/PrincipalDue.html.erb:18
+  Rendered usuario/PrincipalDue.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 304ms (Views: 271.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 17:35:37 -0500
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:28
+  [1m[36mUbigeo Load (0.1ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:29
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:30
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.2ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:275
+  Rendered estacionamientos/_form.html.erb (11.6ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 230ms (Views: 179.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/autenticacions/new" for 127.0.0.1 at 2019-02-07 17:36:11 -0500
+Processing by AutenticacionsController#new as HTML
+  Rendering autenticacions/new.html.erb within layouts/application
+  Rendered autenticacions/_form.html.erb (21.3ms)
+  Rendered autenticacions/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 211ms (Views: 192.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/Nosotros" for 127.0.0.1 at 2019-02-07 17:36:14 -0500
+Processing by HomeController#Nosotros as HTML
+  Rendering home/Nosotros.html.erb within layouts/application
+  Rendered home/Nosotros.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 165ms (Views: 156.4ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/nosotros.jpeg"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/home/Contactenos" for 127.0.0.1 at 2019-02-07 17:36:16 -0500
+Processing by HomeController#Contactenos as HTML
+  Rendering home/Contactenos.html.erb within layouts/application
+  Rendered home/Contactenos.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 6187ms (Views: 5501.0ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/nosotros.jpeg"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-07 17:36:26 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3908ms (Views: 3325.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-07 17:37:08 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 187ms (Views: 175.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-02-07 17:37:21 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 169ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-02-07 17:37:28 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GzY/2S+F0YKB5waLw+TpFxAp86c2mv3qwDWUHkcjzzL00FkSSw8v3PoIrO+9jsUqyH62PSw1BRDM5RFRi7xN3A==", "upc"=>{"correo"=>"dueño4@gmail.com", "contrasena"=>"123"}, "commit"=>"LOGGIN"}
+  [1m[36mAutenticacion Load (0.4ms)[0m  [1m[34mSELECT  "autenticacions".* FROM "autenticacions" WHERE "autenticacions"."correo" = ? LIMIT ?[0m  [["correo", "dueño4@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/seguridad_controller.rb:9
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `contrasena' for nil:NilClass):
+  
+app/controllers/seguridad_controller.rb:10:in `validar'
+Started GET "/autenticacions/new" for 127.0.0.1 at 2019-02-07 17:47:06 -0500
+Processing by AutenticacionsController#new as HTML
+  Rendering autenticacions/new.html.erb within layouts/application
+  Rendered autenticacions/_form.html.erb (2.8ms)
+  Rendered autenticacions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 197ms (Views: 186.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/autenticacions" for 127.0.0.1 at 2019-02-07 17:47:23 -0500
+Processing by AutenticacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y110Iq6WYbLw2iYXJ+LgL+j4TTmJHTATtSOr+2sQlsY5hVTIK8NHPBzwmOYjT6LaHkMs486By5e68vmhTesGDw==", "autenticacion"=>{"correo"=>"prueba@hotmail.com", "tipo_usuario_id"=>"2", "contrasena"=>"dueño", "RPassword"=>"[FILTERED]"}, "commit"=>"CREAR"}
+Unpermitted parameter: :RPassword
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/autenticacions_controller.rb:30
+  [1m[36mTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT  "tipo_usuarios".* FROM "tipo_usuarios" WHERE "tipo_usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/autenticacions_controller.rb:30
+  [1m[36mAutenticacion Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "autenticacions" WHERE LOWER("autenticacions"."correo") = LOWER(?) LIMIT ?[0m  [["correo", "prueba@hotmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/autenticacions_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/autenticacions_controller.rb:30
+  Rendering autenticacions/new.html.erb within layouts/application
+  Rendered autenticacions/_form.html.erb (4.8ms)
+  Rendered autenticacions/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 342ms (Views: 206.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-02-07 17:47:38 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 177ms (Views: 167.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-02-07 17:47:48 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ko2Zuord6Wjxhoi/c5tMbLPO5HG+e4e4K4FiNCR4EW59a/9x7lcXNoppItsN8WBRa5mh66TUf0InUed76OeTgA==", "upc"=>{"correo"=>"prueba@hotmail.com", "contrasena"=>"prueba"}, "commit"=>"LOGGIN"}
+  [1m[36mAutenticacion Load (0.3ms)[0m  [1m[34mSELECT  "autenticacions".* FROM "autenticacions" WHERE "autenticacions"."correo" = ? LIMIT ?[0m  [["correo", "prueba@hotmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/seguridad_controller.rb:9
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `contrasena' for nil:NilClass):
+  
+app/controllers/seguridad_controller.rb:10:in `validar'
+Started GET "/estacionamientos/new" for 127.0.0.1 at 2019-02-07 18:04:01 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by EstacionamientosController#new as HTML
+  [1m[36mUbigeo Load (0.3ms)[0m  [1m[34mselect  distinct idDepartamento, Departamento from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:28
+  [1m[36mUbigeo Load (0.1ms)[0m  [1m[34mselect  distinct idProvincia, Provincia from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:29
+  [1m[36mUbigeo Load (0.2ms)[0m  [1m[34mselect  distinct idDistrito, Distrito from ubigeos[0m
+  ↳ app/controllers/estacionamientos_controller.rb:30
+  Rendering estacionamientos/new.html.erb within layouts/application
+  [1m[36mServAdicinale Load (0.3ms)[0m  [1m[34mSELECT "serv_adicinales".* FROM "serv_adicinales"[0m
+  ↳ app/views/estacionamientos/_form.html.erb:275
+  Rendered estacionamientos/_form.html.erb (52.3ms)
+  Rendered estacionamientos/new.html.erb within layouts/application (67.6ms)
+Completed 200 OK in 1097ms (Views: 1016.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-07 18:08:56 -0500
+Processing by HomeController#Index as HTML
+  Rendering home/Index.html.erb within layouts/application
+  Rendered home/Index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 233ms (Views: 222.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seguridad/Login" for 127.0.0.1 at 2019-02-07 18:09:08 -0500
+Processing by SeguridadController#Login as HTML
+  Rendering seguridad/Login.html.erb within layouts/application
+  Rendered seguridad/Login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 168ms (Views: 157.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/seguridad/validar" for 127.0.0.1 at 2019-02-07 18:09:35 -0500
+Processing by SeguridadController#validar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/1yy1h6ZHDi0g8N2W2UOwHBMkdT52+GyZIZ8V3Ew/koQutQdehPiZs9saRIlDyL9qBvUTuN0GUhoVvkYva98pA==", "upc"=>{"correo"=>"dueño4@gmail.com", "contrasena"=>"123"}, "commit"=>"LOGGIN"}
+  [1m[36mAutenticacion Load (0.3ms)[0m  [1m[34mSELECT  "autenticacions".* FROM "autenticacions" WHERE "autenticacions"."correo" = ? LIMIT ?[0m  [["correo", "dueño4@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/seguridad_controller.rb:9
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `contrasena' for nil:NilClass):
+  
+app/controllers/seguridad_controller.rb:10:in `validar'
